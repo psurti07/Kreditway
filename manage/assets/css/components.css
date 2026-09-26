@@ -311,9 +311,9 @@ footer.footer-dark {
     .main-menu.menu-dark .navigation {
       background: #373737; }
       .main-menu.menu-dark .navigation .navigation-header {
-        color: #018837;
-        padding: 12px 30px 12px 18px;
-		background-color: #2a2a2a; }
+            color: #fff;
+    padding: 12px 30px 12px 18px;
+    background-color: #002254; }
         .main-menu.menu-dark .navigation .navigation-header span {
           font-weight: 500; }
       .main-menu.menu-dark .navigation li a {
@@ -354,9 +354,9 @@ footer.footer-dark {
           .main-menu.menu-dark .navigation > li.hover > a.mm-next, .main-menu.menu-dark .navigation > li:hover > a.mm-next, .main-menu.menu-dark .navigation > li.active > a.mm-next {
             background-color: inherit; }
         .main-menu.menu-dark .navigation > li.active > a {
-          color: #2c303b;
-          font-weight: 700;
-          background: #018837; }
+             color: #fff;
+    font-weight: 700;
+    background: #002254; }
         .main-menu.menu-dark .navigation > li .active {
           background: #154428; }
           .main-menu.menu-dark .navigation > li .active > a {

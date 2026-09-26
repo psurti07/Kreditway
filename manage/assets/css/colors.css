@@ -413,7 +413,7 @@ input:focus ~ .bg-primary {
   color: #018837!important; }
 
 .bg-primary {
-  background-color: #018837!important; }
+  background-color: #002254!important; }
   .bg-primary .card-header, .bg-primary .card-footer {
     background-color: transparent; }
   .bg-primary.bg-glow {
@@ -447,8 +447,8 @@ input:focus ~ .bg-primary {
         }
       } */
 .btn-primary {
-  border-color: #00b074!important;
-  background-color: #00b074!important;
+  border-color: #fe7e03 !important;
+  background-color: #fe7e03 !important;
   color: #FFFFFF; }
   .btn-primary:hover {
     border-color: #1f2320 !important;
