@@ -29,7 +29,7 @@
 .range__slider [type="range"] {
 	width: 100%;
 	-webkit-appearance: none;
-	height: 11px;
+	height: 8px;
 	border-radius: 6px;
 	background: #f1f1f1;
 	outline: none;

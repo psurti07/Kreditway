@@ -25,6 +25,7 @@
 .journey_area-seven {
 	position: relative;
 }
+
 /* Loan amount slider */
 
 /* custom thumb */
@@ -35,7 +36,7 @@
 	height: 20px;
 	border-radius: 50%;
 	background: #f0f8ff;
-	border: #4ac19f 3px solid;
+	border: #FB710F 3px solid;
 	cursor: pointer;
 	-webkit-transition: background 0.15s ease-in-out;
 	transition: background 0.15s ease-in-out;
@@ -50,8 +51,8 @@
 	height: 20px;
 	border: 0;
 	border-radius: 50%;
-	background: #1c5296;
-	border: #1c5296 5px solid;
+	background: #f0f8ff;
+	border: #FB710F 5px solid;
 	cursor: pointer;
 	-webkit-transition: background 0.15s ease-in-out;
 	transition: background 0.15s ease-in-out;
@@ -59,9 +60,11 @@
 
 .range__tooltip {
 	position: absolute;
-	top: -40px; /* Move tooltip slightly above */
+	top: -40px;
+	/* Move tooltip slightly above */
 	transform: translateX(0);
-	background: #1c5296;
+	background: #f0f8ff;
+
 	color: white;
 	padding: 5px 10px;
 	border-radius: 6px;
@@ -71,13 +74,14 @@
 	z-index: 2;
 	pointer-events: none;
 	/* transition: left 0.2s ease; */
-	max-width: 90vw; /* prevent overflow on tiny screens */
+	max-width: 90vw;
+	/* prevent overflow on tiny screens */
 }
 
 .range__slider {
 	position: relative;
 	width: 100%;
-	height: 30px; 
+	height: 30px;
 }
 
 .range__tooltip::after {
@@ -100,7 +104,7 @@
 }
 
 .digi_range__slider input[type="range"]::-webkit-slider-thumb:hover {
-	background: #348a43 !important;
+	background: #FB710F !important;
 }
 
 /* Webkit Browsers (Chrome, Safari) */
@@ -110,9 +114,8 @@
 	width: 25px;
 	height: 25px;
 	border-radius: 50%;
-	background: #1c5296;
-	/* same as tooltip */
-	border: 3px solid #fff;
+	background: #f0f8ff;
+	border: #FB710F 5px solid;
 	cursor: pointer;
 	transition: background 0.15s ease-in-out;
 	margin-top: -1px;
@@ -120,7 +123,7 @@
 }
 
 .digi_range__slider input[type="range"]::-webkit-slider-thumb:hover {
-	background: #348a43;
+	background: #FB710F;
 }
 
 /* Firefox */
@@ -128,9 +131,10 @@
 	width: 25px;
 	height: 25px;
 	border-radius: 50%;
-	background: #1c5296;
+	background: #f0f8ff;
+	border: #FB710F 5px solid;
 	/* same as tooltip */
-	border: 3px solid #fff;
+
 	cursor: pointer;
 	transition: background 0.15s ease-in-out;
 }
@@ -140,10 +144,58 @@
 	width: 25px;
 	height: 25px;
 	border-radius: 50%;
-	background: #1c5296;
-	/* same as tooltip */
-	border: 3px solid #fff;
+	background: #f0f8ff;
+	border: #FB710F 5px solid;
 	cursor: pointer;
 }
 
 /* Loan amount slider */
+
+.sub-title.sub-title-wrap {
+	background-color: #FFF1E6;
+	border: 1px solid #FE7E03;
+	color: #FE7E03;
+}
+
+@media screen and (max-width:991px) and (min-width:768px) {
+
+	.subscription-section h4.offer-price {
+		font-size: 23px !important;
+	}
+}
+
+@media screen and (max-width:425px) {
+	.otp-velidation-form .input-field input {
+		height: 45px !important;
+		width: 45px !important;
+		border-radius: 10px !important;
+	}
+
+	.subscription-section h4.offer-price {
+		font-size: 17px !important;
+	}
+}
+
+
+
+.subscription-section .counter-box .icon-wrap {
+	width: 40px;
+	height: 40px;
+	margin: auto;
+}
+
+.bg-light-success {
+	background-color: #F0FDF4 !important;
+}
+
+.bg-soft-pink {
+	background-color: #FFE7D7 !important;
+}
+
+.text-orange {
+	color: #FB710F;
+}
+
+.text-navy {
+	color: #0A1A3A;
+}

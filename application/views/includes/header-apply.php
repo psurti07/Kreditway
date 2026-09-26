@@ -58,7 +58,7 @@
 	<link rel="stylesheet" href="<?= base_url('assets/css/fontawesome-all.min.css'); ?>">
 	<link rel="stylesheet" href="<?= base_url('assets/css/flaticon.css'); ?>">
 	<link rel="stylesheet" href="<?= base_url('assets/css/odometer.css'); ?>">
-	<link rel="stylesheet" href="<?= base_url('assets/css/swiper-bundle.css'); ?>">
+	<link rel="stylesheet" href="<?= base_url('assets/css/swiper-bundle.css') ?>">
 	<link rel="stylesheet" href="<?= base_url('assets/css/aos.css'); ?>">
 	<link rel="stylesheet" href="<?= base_url('assets/css/default.css'); ?>">
 	<link rel="stylesheet" href="<?= base_url('assets/css/main.css'); ?>">
@@ -208,14 +208,14 @@
 	<!-- Scroll-top-end-->
 	<!-- header-area -->
 	<header class="tg-header__style-five transparent-header">
-		<div id="sticky-header" class="tg-header__area tg-header__area-five">
+		<div id="sticky-header" class="tg-header__area tg-header__area-five border-bottom">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
 						<div class="tgmenu__wrap">
 							<nav class="tgmenu__nav">
-								<div class="py-0 py-lg-4">
-									<a><img src="<?= base_url('assets/img/logo/logo.png'); ?>" alt="Logo"></a>
+								<div class="py-0 py-lg-2">
+									<a><img src="<?= base_url('assets/img/logo/logo.png'); ?>" alt="Logo" width="180"></a>
 								</div>
 							</nav>
 						</div>

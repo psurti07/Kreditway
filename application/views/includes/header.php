@@ -66,8 +66,10 @@
 	<link rel="stylesheet" href="<?= base_url('assets/css/swiper-bundle.css') ?>">
 	<link rel="stylesheet" href="<?= base_url('assets/css/aos.css') ?>">
 	<link rel="stylesheet" href="<?= base_url('assets/css/default.css') ?>">
+		<link rel="stylesheet" href="<?= base_url('assets/css/custom.css') ?>">
 	<link rel="stylesheet" href="<?= base_url('assets/css/main.css?t=1000') ?>">
 	<link rel="stylesheet" href="<?= base_url('assets/css/toastr.min.css') ?>">
+		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
 	<script>
 		const base_url = '<?php echo base_url(); ?>';
 	</script>
@@ -274,7 +276,7 @@
 	<!-- Scroll-top-end-->
 	<!-- header-area -->
 	<header class="tg-header__style-five transparent-header">
-		<div id="sticky-header" class="tg-header__area tg-header__area-five">
+		<div id="sticky-header" class="tg-header__area tg-header__area-five border-bottom">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
@@ -282,7 +284,7 @@
 							<nav class="tgmenu__nav">
 								<div class="">
 									<a href="<?= site_url(); ?>"><img src="<?= base_url('assets/img/logo/logo.png'); ?>"
-											alt="Logo"></a>
+											alt="Logo" width="180"></a>
 								</div>
 								<div class="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
 									<ul class="navigation">
@@ -292,13 +294,13 @@
 										<li><a href="javascript:;" onclick="goToMenu('company')">Company</a></li>
 										<li><a href="javascript:;" onclick="goToMenu('plans')">Subscription</a></li>
 										<li><a href="javascript:;" onclick="goToMenu('contact')">Contact Us</a></li>
-										<li><a href="<?= base_url('customer') ?>">Customer Login</a></li>
+									
 
 									</ul>
 								</div>
 								<div class="tgmenu__action tgmenu__action-five d-none d-md-block">
 									<ul class="list-wrap res-btn-menu">
-
+	<li><a href="<?= base_url('customer') ?>">Login</a></li>
 										<li class="header-btn"><a href="<?= base_url('onlineprocess/applynow') ?>"
 												class="btn">Apply Now</a>
 										</li>

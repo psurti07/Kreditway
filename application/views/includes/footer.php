@@ -10,7 +10,7 @@
 						<div class="footer-widget">
 							<div class="footer__content-two">
 								<div class="mb-25">
-									<a><img src="<?= base_url('assets/img/logo/w_logo.png');?>" alt=""></a>
+									<a><img src="<?= base_url('assets/img/logo/w_logo.png');?>" alt="" width="185"></a>
 								</div>
 								<p class="mb-40">Presenting Rupay Credit – the simplest and most effective way to get top-tier financial services from industry experts.
 								</p>

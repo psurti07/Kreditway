@@ -8,6 +8,11 @@
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6">
                     <div class="banner__content-four">
+                        <div class="d-flex gap-2 mb-2 flex-wrap">
+                        <span class="sub-title sub-title-wrap fa-xs rounded-pill px-2 py-1">8+ NBFC Partners</span>
+                        <span class="sub-title sub-title-wrap fa-xs rounded-pill px-2 py-1">100% Digital Process</span>
+                        <span class="sub-title sub-title-wrap fa-xs rounded-pill px-2 py-1">Loan approval in 24-48 hrs</span>
+</div>
                         <h1 class="title">Empowering Your Goals with Smart <span>Financial Solutions</span></h1>
                         <p class="">Loan approval and disbursement help you reach your financial goals. Get instant
                             loans at competitive rates with minimal documentation.
@@ -18,14 +23,7 @@
                 <div class="col-lg-6 col-md-9">
                     <div class="banner__img-two">
                         <img src="<?= base_url('assets/img/banner/h5_banner_img01.png'); ?>" alt="">
-                        <div class="img__shape">
-                            <img src="" alt="" class="rightToLeft">
-                            <!-- <img src="<?= base_url('assets/img/banner/h5_banner_shape02.png'); ?>" alt="" class="rightToLeft"> -->
-                            <img src="<?= base_url('assets/img/banner/h5_banner_shape03.png'); ?>" alt=""
-                                class="alltuchtopdown">
-                            <img src="<?= base_url('assets/img/banner/h5_banner_shape04.png'); ?>" alt="">
-                            <img src="<?= base_url('assets/img/banner/h5_banner_shape05.png'); ?>" alt="">
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -33,7 +31,7 @@
     </section>
     <!-- banner-area-end -->
     <!-- services-area -->
-    <section class="services-area services-bg">
+    <section class="services-area services-bg section-padding">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
@@ -41,7 +39,7 @@
                         <div class="section-title text-center mb-50 tg-heading-subheading animation-style3">
                             <span class="sub-title">The Advantage</span>
                             <h2 class="title">
-                                Why KreditWay — The Difference We Bring</span>
+                                Why KreditWay — The Difference We Bring
                             </h2>
 
                         </div>
@@ -49,11 +47,12 @@
                 </div>
             </div>
             <div class="services__item-wrap-two">
-                <div class="row justify-content-center gutter-24">
+                <div class="row justify-content-center g-3">
                     <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="services__item-five">
-                            <div class="services__icon-five">
-                                <i class="flaticon-profit"></i>
+                        <div class="services__item-five text-start h-100">
+                            <div class="services__icon-five rounded-3 bg-soft-pink p-2">
+
+                                <i class="flaticon-profit fs-4"></i>
 
                             </div>
                             <div class="services__content-five">
@@ -64,9 +63,9 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="services__item-five">
-                            <div class="services__icon-five">
-                                <i class="flaticon-light-bulb"></i>
+                        <div class="services__item-five text-start h-100">
+                                       <div class="services__icon-five rounded-3 bg-soft-pink p-2">
+                                <i class="flaticon-light-bulb fs-4"></i>
 
                             </div>
                             <div class="services__content-five">
@@ -78,9 +77,9 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="services__item-five">
-                            <div class="services__icon-five">
-                                <i class="flaticon-startup"></i>
+                        <div class="services__item-five text-start h-100">
+                                      <div class="services__icon-five rounded-3 bg-soft-pink p-2">
+                                <i class="flaticon-startup fs-4"></i>
 
                             </div>
                             <div class="services__content-five">
@@ -92,7 +91,8 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="services__item-five" style="background: #002254;">
+                        <div class="services__item-five d-flex align-items-center justify-content-center h-100"
+                            style="background: #002254;">
 
                             <div class="services__content-five">
                                 <h1 class="" style="color:#FB710F">4.5k+</h1>
@@ -107,11 +107,11 @@
     <!-- services-area-end -->
 
     <!-- about-area order-lg-2-->
-    <section class="about__area-eight banner__bg-four bg-theme-1" id="company" style="padding: 100px 0;">
+    <section class="about__area-eight banner__bg-four bg-theme-1 section-padding" id="company" style="padding: 100px 0;">
         <div class="container">
             <div class="row align-items-center justify-content-center ">
                 <div class="col-lg-5 col-md-9  r-order ">
-                    <div class="about__img-wrap-seven">
+                    <div class="about__img-wrap-seven mb-0">
                         <img src="<?= base_url('assets/img/images/inner04_about_img.png'); ?>" alt="">
 
                     </div>
@@ -130,13 +130,13 @@
 
                         </p>
 
-                        <div class="about__content-inner-five gap-12 pl-20">
+                        <div class="about__content-inner-five gap-12 pl-20 mb-4">
                             <div class="about__list-box">
                                 <ul class="list-wrap">
-                                    <li style="color: #1B2B5E;"><i class="flaticon-arrow-button"></i>Tailored Loan
+                                    <li><i class="flaticon-arrow-button"></i>Tailored Loan
                                         Comparison across certified NBFCs
                                     </li>
-                                    <li style="color: #1B2B5E;"><i class="flaticon-arrow-button"></i>100% digital
+                                    <li><i class="flaticon-arrow-button"></i>100% digital
                                         matching with zero impact on credit scores
                                     </li>
                                 </ul>
@@ -156,15 +156,15 @@
     <section class="choose__area-five section-padding" id="plans">
         <div class="container">
             <div class="row align-items-center justify-content-center">
-				<div class="col-lg-7">
+                <div class="col-lg-7 col-md-12 col-12">
                     <div class="choose__content-five">
                         <div class="section-title mb-30 tg-heading-subheading animation-style3">
                             <span class="sub-title">Grow Smart</span>
                             <h2 class="title">Grow Your Finance the Smart Way
                             </h2>
                         </div>
-                        <p>Unleash the hidden power of your gold ornaments. KreditWay offers easy pathways to acquire
-                            low-interest credit leveraging your collateral gold securely with instant evaluation.
+                        <p>Unleash the hidden power of your personal loan ornaments. KreditWay offers easy pathways to acquire
+                            low-interest credit leveraging your collateral personal loan securely with instant evaluation.
                         </p>
                         <div class="about__content-inner-five gap-12 mb-3">
                             <div class="about__list-box">
@@ -182,27 +182,27 @@
                             </div>
 
                         </div>
-						<div class="section-title mb-30 tg-heading-subheading animation-style3">
-                           <a href="<?= base_url('onlineprocess/applynow') ?>" class="btn">APPLY FOR GOLD LOAN</a>
+                        <div class="section-title mb-30 tg-heading-subheading animation-style3">
+                            <a href="<?= base_url('onlineprocess/applynow') ?>" class="btn">APPLY FOR GOLD LOAN</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-9">
-                    <div class="choose__img-wrap-five">
+                <div class="col-lg-5 col-md-12 col-12">
+                    <div class="choose__img-wrap-five mb-0 pb-0">
 
                         <div class="services__item-wrap-two">
-                            <div class="row justify-content-center gutter-24">
-                                <div class="col-xl-12 col-lg-12 col-md-6">
+                            <div class="row">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-12">
                                     <div class="services__item-five" style="background: #1B2B5E;">
                                         <div class="about__content-inner-five mb-2 pl-20">
-                                            <h2 class="text-light text-left" style="text-align: left;">Gold Loan Pro
+                                            <h2 class="text-light text-left" style="text-align: left;">Personal Loan
                                             </h2>
                                         </div>
                                         <div class="services__content-five text-left pl-20">
 
                                             <p class="text-light mb-0">Monthly Interest Rates</p>
                                             <h3 class="text-light" style="font-size: 50px; color: #FB710F !important">
-                                                ₹0.89% <span
+                                                ₹12.5% <span
                                                     style="font-size: 18px; color:#fff !important">onwards</span></h3>
                                         </div>
                                         <hr>
@@ -228,12 +228,12 @@
                         </div>
                     </div>
                 </div>
-                
+
 
             </div>
         </div>
     </section>
-<!-- services-area -->
+    <!-- services-area -->
     <section class="services-area bg-theme-1 section-padding">
         <div class="container">
             <div class="row justify-content-center">
@@ -241,7 +241,7 @@
                     <div class="about__content-seven">
                         <div class="section-title text-center mb-50 tg-heading-subheading animation-style3">
                             <span class="sub-title">Seamless Process</span>
-                            <h2 class="title">Don't Worry!! — Apply Now in 4 Easy Steps</span>
+                            <h2 class="title">Don't Worry!! — Apply Now in 4 Easy Steps
                             </h2>
 
                         </div>
@@ -249,12 +249,13 @@
                 </div>
             </div>
             <div class="services__item-wrap-two">
-                <div class="row justify-content-center gutter-24">
+                <div class="row justify-content-center g-3">
                     <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="services__item-five1">
+                        <div class="services__item-five1 h-100">
                             <div class="services__icon-five w-100 mb-0" style="line-height: 1;">
                                 <span>01</span>
-								<img src="<?= base_url('assets/img/images/Frame.png'); ?>" alt="" class="img-fluid" style="float: right;">
+                                <img src="<?= base_url('assets/img/images/Frame.png'); ?>" alt="" class="img-fluid"
+                                    style="float: right;">
                             </div>
                             <div class="services__content-five  mt-3">
                                 <h2 class="title"><a>Fill basic details
@@ -264,10 +265,11 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="services__item-five1">
+                        <div class="services__item-five1 h-100">
                             <div class="services__icon-five w-100 mb-0" style="line-height: 1;">
                                 <span>02</span>
-								<img src="<?= base_url('assets/img/images/Vector.png'); ?>" alt="" class="img-fluid" style="float: right;">
+                                <img src="<?= base_url('assets/img/images/Vector.png'); ?>" alt="" class="img-fluid"
+                                    style="float: right;">
                             </div>
                             <div class="services__content-five mt-3">
                                 <h2 class="title"><a>Select Loan Amount
@@ -278,10 +280,11 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="services__item-five1">
+                        <div class="services__item-five1 h-100">
                             <div class="services__icon-five w-100 mb-0" style="line-height: 1;">
                                 <span>03</span>
-								<img src="<?= base_url('assets/img/images/Frame_1.png'); ?>" alt="" class="img-fluid" style="float: right;">
+                                <img src="<?= base_url('assets/img/images/Frame_1.png'); ?>" alt="" class="img-fluid"
+                                    style="float: right;">
                             </div>
                             <div class="services__content-five mt-3">
                                 <h2 class="title"><a>Submit & Compare
@@ -292,13 +295,14 @@
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="services__item-five1">
-							<div class="services__icon-five w-100 mb-0" style="line-height: 1;">
+                        <div class="services__item-five1 h-100">
+                            <div class="services__icon-five w-100 mb-0" style="line-height: 1;">
                                 <span>04</span>
-								<img src="<?= base_url('assets/img/images/Frame_3.png'); ?>" alt="" class="img-fluid" style="float: right;">
+                                <img src="<?= base_url('assets/img/images/Frame_3.png'); ?>" alt="" class="img-fluid"
+                                    style="float: right;">
                             </div>
                             <div class="services__content-five mt-3">
-								<h2 class="title"><a>Get Money (3 hrs)
+                                <h2 class="title"><a>Get Money (3 hrs)
                                     </a></h2>
                                 <p>Quick verification and instant disbursal direct to bank vault.</p>
                             </div>
@@ -310,33 +314,36 @@
     </section>
     <!-- services-area-end -->
 
-	<section id="privacy-page" class="section-padding">
-		<div class="container">
-  				<div class="row justify-content-center">
+    <section id="privacy-page" class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="about__content-seven">
                         <div class="section-title text-center mb-50 tg-heading-subheading animation-style3">
                             <span class="sub-title">Instant Estimate</span>
-                            <h2 class="title">Know Your EMI in Seconds</span>
+                            <h2 class="title">Know Your EMI in Seconds
                             </h2>
 
                         </div>
                     </div>
                 </div>
             </div>
-		<div class="row">
-			<div class="col-lg-12">
-				<!-- EMI Calculator Widget START -->
-				<script src="https://emicalculator.net/widget/2.0/js/emicalc-loader.min.js" type="text/javascript"></script>
-				<div id="ecww-widgetwrapper" style="min-width:250px;width:100%;">
-					<div id="ecww-widget" style="position:relative;padding-top:0;padding-bottom:280px;height:0;overflow:hidden;"></div>
-				</div>
-				<!-- EMI Calculator Widget END -->
-			</div>
-		</div>
-	</div>
-</section>
-<!--
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- EMI Calculator Widget START -->
+                    <script src="https://emicalculator.net/widget/2.0/js/emicalc-loader.min.js" type="text/javascript">
+                    </script>
+                    <div id="ecww-widgetwrapper" style="min-width:250px;width:100%;">
+                        <div id="ecww-widget"
+                            style="position:relative;padding-top:0;padding-bottom:280px;height:0;overflow:hidden;">
+                        </div>
+                    </div>
+                    <!-- EMI Calculator Widget END -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--
     
     <section class="box-yellow-about" id="banks">
         <div class="container">
@@ -366,23 +373,17 @@
     <!-- testimonial start -->
     <section class="testimonials__area-home8 bg-theme-1 section-padding" id="testimonials">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-7 col-md-6 mb-50">
-                    <div class="section-title tg-heading-subheading animation-style3">
-                        <span class="sub-title">Testimonials</span>
-                        <h2 class="title">Hear from Our Customers</h2>
-                    </div>
-                </div>
-                <div class="col-xl-5 col-md-6 mb-50">
-                    <div class="box-button-slider-right text-end">
-                        <div class="testimonial__nav-four">
-                            <div class="testimonial-two-button-prev button-swiper-testimonial-prev"><i
-                                    class="flaticon-right-arrow"></i></div>
-                            <div class="testimonial-two-button-next button-swiper-testimonial-next"><i
-                                    class="flaticon-right-arrow"></i></div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="about__content-seven">
+                        <div class="section-title text-center mb-50 tg-heading-subheading animation-style3">
+                            <span class="sub-title">Testimonials</span>
+                            <h2 class="title">Hear from Our Customers</h2>
                         </div>
+
                     </div>
                 </div>
+
             </div>
             <div class="box-slide-testimonials">
                 <div class="swiper-container testiminials-active-2">
@@ -393,7 +394,7 @@
                                         <img src="assets/img/home8/author.png" alt="" />
                                     </div> -->
                                 <div class="card-info">
-                                    <p class="card-position">Bhavesh Solanki
+                                    <p class="card-position mb-0">Bhavesh Solanki
                                     </p>
                                     <div class="rates-review">
                                         <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
@@ -415,7 +416,7 @@
                         <div class="swiper-slide">
                             <div class="card-testimonials">
                                 <div class="card-info">
-                                    <p class="card-position">Karthika Manikandan</p>
+                                    <p class="card-position mb-0">Karthika Manikandan</p>
                                     <div class="rates-review">
                                         <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
@@ -435,7 +436,7 @@
                         <div class="swiper-slide">
                             <div class="card-testimonials">
                                 <div class="card-info">
-                                    <p class="card-position">Manish Pandey</p>
+                                    <p class="card-position mb-0">Manish Pandey</p>
                                     <div class="rates-review">
                                         <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
@@ -455,7 +456,7 @@
                         <div class="swiper-slide">
                             <div class="card-testimonials">
                                 <div class="card-info">
-                                    <p class="card-position">Vikram Singh
+                                    <p class="card-position mb-0">Vikram Singh
                                     </p>
                                     <div class="rates-review">
                                         <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
@@ -483,73 +484,87 @@
     <!-- testimonial end    -->
 
     <!-- contact form start -->
-    <section class="contact__area" id="contact">
+    <section class="contact__area section-padding" id="contact">
         <div class="container">
-			<div class="row justify-content-center">
+            <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="about__content-seven">
                         <div class="section-title text-center mb-50 tg-heading-subheading animation-style3">
                             <span class="sub-title">Get In Touch</span>
-                            <h2 class="title">We'll Love To Hear From You — Get In Touch</span>
+                            <h2 class="title">We'll Love To Hear From You — Get In Touch
                             </h2>
 
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row align-items-center">
-				<div class="col-lg-7">
-                    <div class="contact__form-wrap" style="background: var(--tg-color-yellow-light); padding: 30px; border-radius: 10px;">
+            <div class="row align-items-start">
+                <div class="col-lg-7">
+                    <div class="contact__form-wrap mb-lg-0 mb-3"
+                        style="background: var(--tg-color-yellow-light); padding: 30px; border-radius: 10px;">
                         </h2>
                         <?php echo form_open('', array('id' => 'contactForm', 'class' => 'mt-4 contact-form', 'novalidate' => 'novalidate')); ?>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-grp">
+                                           <label for="firstname" class="w-500 text-uppercase fa-xs mb-2">Full
+                                        Name *</label>
                                     <input id="form_name" type="text" name="name" placeholder="Your Name" required=""
-                                        data-validation-regex-regex="^[a-zA-Z ]*$">
+                                        data-validation-regex-regex="^[a-zA-Z ]*$" class="border">
                                     <div class="error-message" id="form_name-message"></div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-grp">
+                                         <label for="form_email" class="w-500 text-uppercase fa-xs mb-2">Email
+                                        *</label>
                                     <input id="form_email" type="email" name="email" placeholder="Your Email Id"
-                                        required="">
+                                        required="" class="border">
                                     <div class="error-message" id="form_email-message"></div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-grp">
+                                    <label for="form_subject" class="w-500 text-uppercase  fa-xs mb-2">Subject
+                                        *</label>
                                     <input id="form_subject" type="text" name="subject" placeholder="Your subject"
-                                        required="">
+                                        required="" class="border">
                                     <div class="error-message" id="form_subject-message"></div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-grp">
+                                         <label for="form_mobile" class="w-500 text-uppercase fa-xs mb-2">Mobile
+                                        *</label>
                                     <input id="form_mobile" type="text" name="mobile" placeholder="Your Mobile"
                                         required="" minlength="10" maxlength="10" inputmode="numeric"
                                         data-validation-regex-regex="^[6789]\d{9}$"
-                                        data-validation-regex-message="Enter valid mobile number">
+                                        data-validation-regex-message="Enter valid mobile number" class="border">
                                     <div class="error-message" id="form_mobile-message"></div>
                                 </div>
                             </div>
                         </div>
                         <div class="form-grp">
+                              <label for="form_message" class="w-500 text-uppercase fa-xs mb-2">Message
+                                *</label>
                             <textarea id="form_message" name="message" placeholder="Your message" style="height: 150px"
-                                required=""></textarea>
+                                required="" class="border"></textarea>
                             <div class="error-message" id="form_message-message"></div>
                         </div>
-                        <button class="btn" id="submit-btn">Send Message </button>
+                        <div class="col-lg-12 col-12 mt-3">
+
+                            <button class="btn w-100" id="submit-btn">Send Message </button>
+                        </div>
                         <?php echo form_close(); ?>
                         <p class="ajax-response mb-0"></p>
                     </div>
                 </div>
                 <div class="col-lg-5">
-                    <div class="contact__content">
-                        
+                    <div class="contact__content mb-0">
+
                         <div class="contact__info">
                             <ul class="list-wrap">
-								<li>
+                                <li>
                                     <div class="icon">
                                         <i class="flaticon-phone-call"></i>
                                     </div>
@@ -578,125 +593,118 @@
                                         <p class=""><?= COMPANY_ADDRESS ?></p>
                                     </div>
                                 </li>
-                                
+
                             </ul>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
     <!-- Contact Form End -->
-<section class="team-area pt-90 pb-90 bg-theme-1">
-    <div class="container">
-      <div class="services__details-list-two">
-        <div class="row justify-content-center">
-                <div class="col-lg-12">
-                    <div class="about__content-seven">
-                        <div class="section-title text-center mb-50 tg-heading-subheading animation-style3">
-                            <span class="sub-title">FAQ</span>
-                            <h2 class="title">Frequently Asked Questions</span>
-                            </h2>
-                             <p>Got questions? We’ve got answers. Here’s everything you need to know about applying for a loan with KreditWay.</p>   
+    <section class="team-area pt-90 pb-90 bg-theme-1 section-padding">
+        <div class="container">
+            <div class="services__details-list-two mt-0">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="about__content-seven">
+                            <div class="section-title text-center mb-50 tg-heading-subheading animation-style3">
+                                <span class="sub-title">FAQ</span>
+                                <h2 class="title">Frequently Asked Questions
+                                </h2>
+                                <p>Got questions? We’ve got answers. Here’s everything you need to know about applying
+                                    for a loan with KreditWay.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gutter-24 justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="block-faqs">
+                            <div class="accordion" id="accordionFAQ" style="visibility: visible;">
+                                <div class="accordion-item border">
+                                    <h5 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button text-heading-5 collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                         What documents are required to apply for a loan?
+                                        </button>
+                                    </h5>
+                                    <div class="accordion-collapse collapse show" id="collapseOne"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionFAQ" style="">
+                                        <div class="accordion-body">You typically need your PAN card, Aadhaar card, last 3 months' bank statements, and salary slips or ITR proofs.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item border">
+                                    <h5 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button text-heading-5 collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                   Is my personal and financial data secure?
+                                        </button>
+                                    </h5>
+                                    <div class="accordion-collapse collapse" id="collapseTwo"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ" style="">
+                                        <div class="accordion-body">
+                                            <p>Yes, absolutely. We use bank-grade 256-bit encryption protocols to protect your sensitive information and ensure your data remains strictly confidential. </p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item border">
+                                    <h5 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button text-heading-5 type=" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                      How long does loan disbursal take?
+                                        </button>
+                                    </h5>
+                                    <div class="accordion-collapse collapse" id="collapseThree"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionFAQ" style="">
+                                        <div class="accordion-body">Once your digital verification and approval are complete, funds are disbursed directly to your bank account within 24 hours.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item border">
+                                    <h5 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button text-heading-5 type=" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFour" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                        Is there any fee for checking my loan eligibility?
+                                        </button>
+                                    </h5>
+                                    <div class="accordion-collapse collapse" id="collapseFour"
+                                        aria-labelledby="headingFour" data-bs-parent="#accordionFAQ" style="">
+                                        <div class="accordion-body">
+                                            <p>No, checking your eligibility and using our EMI calculator is completely free with zero hidden upfront charges. </p>
+                                         
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item border">
+                                    <h5 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button text-heading-5 type=" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFive" aria-expanded="false"
+                                            aria-controls="collapseFive">
+                                        Can I prepay my loan early?
+                                        </button>
+                                    </h5>
+                                    <div class="accordion-collapse collapse" id="collapseFive"
+                                        aria-labelledby="headingFive" data-bs-parent="#accordionFAQ">
+                                        <div class="accordion-body">
+                                           Yes, prepayment options are available depending on the specific lending partner's policy and terms of agreement.
+                                        </div>
+                                    </div>
+                                </div>
+                             
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        <div class="row gutter-24 justify-content-center">
-          <div class="col-lg-8">
-            <div class="block-faqs">
-              <div class="accordion" id="accordionFAQ" style="visibility: visible;">
-                <div class="accordion-item">
-                  <h5 class="accordion-header" id="headingOne">
-                    <button class="accordion-button text-heading-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                      For what purposes can I use the personal loan?
-                    </button>
-                  </h5>
-                  <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ" style="">
-                    <div class="accordion-body">A personal loan can be used for any personal reason, like consolidating high-interest debts, paying unexpected expenses, funding a dream vacation, pursuing higher educations, renovating home, etc.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h5 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button text-heading-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      What documents are required to apply for a personal loan?
-                    </button>
-                  </h5>
-                  <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ" style="">
-                    <div class="accordion-body">
-                      <p>The documents that are required to apply for a personal loan are: </p>
-                      <ul>
-                        <li>PAN Card </li>
-                        <li>Aadhaar Card </li>
-                        <li>Address Proof - like rent agreement or utility bill </li>
-                        <li>Bank Statements- should reflect your monthly salary</li>
-                        <li>Income Proof - Form 16 or payslips </li>
-                      </ul>
-                      <p>Please note that a lender may ask for additional documents based on their policies and your profile.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h5 class="accordion-header" id="headingThree">
-                    <button class="accordion-button text-heading-5 type=" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      How much CIBIL is required to apply for a personal loan?
-                    </button>
-                  </h5>
-                  <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ" style="">
-                    <div class="accordion-body">A CIBIL score of 650 or more is considered ideal for applying for a personal loan. </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h5 class="accordion-header" id="headingFour">
-                    <button class="accordion-button text-heading-5 type=" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                      What are the eligibility criteria for applying a personal loan?
-                    </button>
-                  </h5>
-                  <div class="accordion-collapse collapse" id="collapseFour" aria-labelledby="headingFour" data-bs-parent="#accordionFAQ" style="">
-                    <div class="accordion-body">
-                      <p>The eligibility criteria for applying for a personal loan are the following: </p>
-                      <ul>
-                        <li>The applicant’s age should be more than 21 years.</li>
-                        <li>The Applicant should earn at least Rs.15,000/- per month. </li>
-                        <li>The job stability should be at least 1 year. </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h5 class="accordion-header" id="headingFive">
-                    <button class="accordion-button text-heading-5 type=" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                      Can I get tax benefits on a personal loan?
-                    </button>
-                  </h5>
-                  <div class="accordion-collapse collapse" id="collapseFive" aria-labelledby="headingFive" data-bs-parent="#accordionFAQ">
-                    <div class="accordion-body">
-                      Only when you utilize the funds for certain reasons, like investing in a business or renovating a home. For more details on tax benefits, contact your CA or tax advisor.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h5 class="accordion-header" id="headingSix">
-                    <button class="accordion-button text-heading-5 type=" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                      Is it possible to apply for a personal loan without visiting anywhere?
-                    </button>
-                  </h5>
-                  <div class="accordion-collapse collapse" id="collapseSix" aria-labelledby="headingSix" data-bs-parent="#accordionFAQ">
-                    <div class="accordion-body">
-                      You can apply for a personal loan with a 100% online process through our subscription.
-                      <a href="<?= base_url('onlineprocess/applynow') ?>" class="a-text">Apply Now</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 </main>
 <?php if ($msg[0]->option_value == 1 && $msg[1]->option_value != '') { ?>
 <div class="modal fade" id="welcomemsg" tabindex="-1" role="dialog" aria-labelledby="loginmodal" aria-hidden="true">
@@ -763,7 +771,7 @@ $(document).ready(() => {
                 beforeSend: function() {
                     $('#submit-btn').html(
                         "SUBMITTING... <span class='spinner-border spinner-border-sm ms-1' role='status' aria-hidden='true'></span>"
-                        );
+                    );
                     $('#submit-btn').attr('disabled', true);
                 },
                 success: function(response) {

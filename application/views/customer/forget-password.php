@@ -55,14 +55,14 @@
 
 <body>
 	<header class="tg-header__style-five transparent-header">
-		<div id="sticky-header" class="tg-header__area tg-header__area-five">
+		<div id="sticky-header" class="tg-header__area tg-header__area-five border-bottom">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
 						<div class="tgmenu__wrap">
 							<nav class="tgmenu__nav">
 								<div class="logo">
-									<a><img src="<?= base_url('assets/img/logo/logo.png'); ?>" alt="Logo"></a>
+									<a><img src="<?= base_url('assets/img/logo/logo.png'); ?>" alt="Logo"  width="180"></a>
 								</div>
 								<div class="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
 									<ul class="navigation">

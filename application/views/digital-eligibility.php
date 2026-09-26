@@ -5,239 +5,247 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-7 me-auto">
-                <div class="card landing-form-right mb-5 border-0" style="border-radius:25px;">
-                    <div class="card-body p-4">
-                        <div class="d-flex align-items-center staticts-left-card mb-4">
-                            <div
-                                class="icon staticts-loan-details staticts-loan-details-01 btnicon  pe-none bg-dark-orange">
-                                <i class="fa fa-suitcase text-light"></i>
-                            </div>
-                            <div class="ms-3">
-                                <h4 class="mb-0 mt-0 fs-2">
-                                    <span class="text-navy fs-2"><?php echo $userdetails['loanname']; ?>
-                                </h4>
-                                <p class="mb-0 card-content fs-14 fw-light">Get pre-approved offers instantly — just fill in your
-                                    details.
-                                </p>
-                            </div>
-                        </div>
-
-
-                        <?php echo form_open('onlineprocess/userApply', array('id'=>'submitForm1', 'class'=>'', 'novalidate'=>'novalidate')); ?>
-
-                        <div class="row gx-4">
-                            <input type="hidden" name="applyid" value="<?php echo $userdetails['applyid']; ?>"
-                                class="form-control" required>
-
-                            <input type="hidden" name="userid" value="<?php echo $userdetails['userid']; ?>"
-                                class="form-control" required>
-
-                            <input type="hidden" name="email" value="<?php echo $userdetails['email']; ?>"
-                                class="form-control" required>
-
-                            <input type="hidden" name="cardtype" value="<?php echo $userdetails['cardtype']; ?>"
-                                class="form-control" required>
-
-
-                            <div class="col-md-6 col-sm-6 col-12">
-                                <div class="form-group form-floating mb-3">
-                                    <label for="cibilscore"
-                                        class="position-static ps-0 text-uppercase fw-bold pt-0">CIBIL Score</label>
-                                    <select class="form-select" id="cibilscore" name="cibilscore" required
-                                        style="border: 1px solid #E2E8F0;">
-                                        <option value="">CIBIL Score *</option>
-                                        <option value="Below 650">Below 650</option>
-                                        <option value="650 - 700">650 - 700</option>
-                                        <option value="700 - 750">700 - 750</option>
-                                        <option value="750 - 800">750 - 800</option>
-                                        <option value="800 - 850">800 - 850</option>
-                                        <option value="850 - 900">850 - 900</option>
-                                    </select>
-                                    <div class="help-block font-small-3"></div>
+                    <div class=" landing-form-right mb-3 border rounded-4 bg-white shadow">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start staticts-left-card mb-4">
+                                <div>
+                                    <div
+                                        class="icon staticts-loan-details staticts-loan-details-01 btnicon  pe-none bg-dark-orange">
+                                        <i class="fa fa-suitcase text-light fs-3"></i>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="col-md-6 col-sm-6 col-12">
-                                <div class="form-group form-floating mb-3">
-                                    <label for="monincome"
-                                        class="position-static ps-0 text-uppercase fw-bold pt-0">Monthly Income
-                                        (₹)</label>
-                                    <input id="monincome" type="text" name="monincome" class="form-control pt-0 pb-0"
-                                        placeholder="Monthly Income *" required inputmode="numeric"
-                                        style="border: 1px solid #E2E8F0;">
-                                    <div class="help-block font-small-3"></div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-sm-6 col-12">
-                                <div class="form-group form-floating mb-3">
-                                    <label for="monemi" class="position-static ps-0 text-uppercase fw-bold pt-0">Current
-                                        Monthly EMI (₹)</label>
-                                    <input id="monemi" type="text" name="monemi" class="form-control pt-0 pb-0"
-                                        placeholder="Current Monthly EMI *" required inputmode="numeric"
-                                        style="border: 1px solid #E2E8F0;">
-                                    <div class="help-block font-small-3"></div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-sm-6 col-12">
-                                <div class="form-group form-floating mb-3">
-                                    <label for="loanpurpose"
-                                        class="position-static ps-0 text-uppercase fw-bold pt-0">Loan Purpose</label>
-                                    <select class="form-select" id="loanpurpose" name="loanpurpose" required
-                                        style="border: 1px solid #E2E8F0;">
-                                        <option selected value="">Select Loan Purpose *</option>
-                                        <?php if($userdetails['loantype'] == 2) { ?>
-                                        <option value="Business Expansion">Business Expansion</option>
-                                        <option value="Maintain Cash Flow">Maintain Cash Flow</option>
-                                        <option value="Supplier Payments">Supplier Payments</option>
-                                        <option value="Setup Manufacturing Unit">Setup Manufacturing Unit</option>
-                                        <option value="Hiring Budget">Hiring Budget</option>
-                                        <option value="Other">Other</option>
-                                        <?php } else { ?>
-                                        <option value="Personal Use">Personal Use</option>
-                                        <option value="Property Renovation">Property Renovation</option>
-                                        <option value="Marriage Purpose">Marriage Purpose</option>
-                                        <option value="Education Purpose">Education Purpose</option>
-                                        <option value="Medical Emergency">Medical Emergency</option>
-                                        <option value="Other">Other</option>
-                                        <?php } ?>
-                                    </select>
-                                    <div class="help-block font-small-3"></div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-sm-6 col-12">
-                                <div class="form-group form-floating mb-3">
-                                    <label for="city"
-                                        class="position-static ps-0 text-uppercase fw-bold pt-0">City</label>
-                                    <input id="city" type="text" name="city" class="form-control pt-0 pb-0"
-                                        placeholder="City *" required
-                                        style="background-color: #ffffff;border: 1px solid #E2E8F0;">
-
-                                    <div class="help-block font-small-3"></div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-sm-6 col-12">
-                                <div class="form-group form-floating mb-3">
-                                    <label for="state"
-                                        class="position-static ps-0 text-uppercase fw-bold pt-0">State</label>
-                                    <input id="state" type="text" name="state" class="form-control pt-0 pb-0"
-                                        placeholder="State *" required
-                                        style="background-color: #ffffff;border: 1px solid #E2E8F0;">
-
-                                    <div class="help-block font-small-3"></div>
+                                <div class="ms-3">
+                                    <h4 class="mb-0 mt-0 fs-2">
+                                        <span class="text-navy fs-2"><?php echo $userdetails['loanname']; ?>
+                                    </h4>
+                                    <p class="mb-0 card-content fs-14 fw-light">Get pre-approved offers instantly — just
+                                        fill in your
+                                        details.
+                                    </p>
                                 </div>
                             </div>
 
 
-                            <div class="col-lg-12">
-                                <div class="card otp-velidation-text rounded-4">
-                                    <div class="card-body p-3">
-                                        <div class="row align-items-center">
-                                            <div class="col-lg-7 col-md-6 col-sm-6 col-12">
-                                                <div class="d-flex align-items-center mb-md-0 mb-3">
-                                                    <img src="<?= base_url('assets/img/new-image/score.png') ?>"
-                                                        class="img-fluid" alt="" />
-                                                    <div>
-                                                        <p class="mb-0 fw-light fs-14">Soft check only — won't impact
-                                                            your credit
-                                                            score. </p>
+                            <?php echo form_open('onlineprocess/userApply', array('id'=>'submitForm1', 'class'=>'', 'novalidate'=>'novalidate')); ?>
+
+                            <div class="row gx-4">
+                                <input type="hidden" name="applyid" value="<?php echo $userdetails['applyid']; ?>"
+                                    class="form-control" required>
+
+                                <input type="hidden" name="userid" value="<?php echo $userdetails['userid']; ?>"
+                                    class="form-control" required>
+
+                                <input type="hidden" name="email" value="<?php echo $userdetails['email']; ?>"
+                                    class="form-control" required>
+
+                                <input type="hidden" name="cardtype" value="<?php echo $userdetails['cardtype']; ?>"
+                                    class="form-control" required>
+
+
+                                <div class="col-md-6 col-sm-6 col-12">
+                                    <div class="form-group form-floating mb-3">
+                                        <label for="cibilscore"
+                                            class="position-static ps-0 text-uppercase fw-bold pt-0 pb-0">CIBIL
+                                            Score</label>
+                                        <select class="form-select pt-1 rounded-4" id="cibilscore" name="cibilscore"
+                                            required style="border: 1px solid #E2E8F0;">
+                                            <option value="">CIBIL Score *</option>
+                                            <option value="Below 650">Below 650</option>
+                                            <option value="650 - 700">650 - 700</option>
+                                            <option value="700 - 750">700 - 750</option>
+                                            <option value="750 - 800">750 - 800</option>
+                                            <option value="800 - 850">800 - 850</option>
+                                            <option value="850 - 900">850 - 900</option>
+                                        </select>
+                                        <div class="help-block font-small-3"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6 col-12">
+                                    <div class="form-group form-floating mb-3">
+                                        <label for="monincome"
+                                            class="position-static ps-0 text-uppercase fw-bold pt-0 pb-0">Monthly Income
+                                            (₹)</label>
+                                        <input id="monincome" type="text" name="monincome"
+                                            class="form-control pt-0 pb-0 rounded-4" placeholder="Monthly Income *"
+                                            required inputmode="numeric" style="border: 1px solid #E2E8F0;">
+                                        <div class="help-block font-small-3"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6 col-12">
+                                    <div class="form-group form-floating mb-3">
+                                        <label for="monemi"
+                                            class="position-static ps-0 text-uppercase fw-bold pt-0 pb-0">Current
+                                            Monthly EMI (₹)</label>
+                                        <input id="monemi" type="text" name="monemi"
+                                            class="form-control pt-0 pb-0 rounded-4" placeholder="Current Monthly EMI *"
+                                            required inputmode="numeric" style="border: 1px solid #E2E8F0;">
+                                        <div class="help-block font-small-3"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6 col-12">
+                                    <div class="form-group form-floating mb-3">
+                                        <label for="loanpurpose"
+                                            class="position-static ps-0 text-uppercase fw-bold pt-0 pb-0">Loan
+                                            Purpose</label>
+                                        <select class="form-select pt-1 rounded-4" id="loanpurpose" name="loanpurpose"
+                                            required style="border: 1px solid #E2E8F0;">
+                                            <option selected value="">Select Loan Purpose *</option>
+                                            <?php if($userdetails['loantype'] == 2) { ?>
+                                            <option value="Business Expansion">Business Expansion</option>
+                                            <option value="Maintain Cash Flow">Maintain Cash Flow</option>
+                                            <option value="Supplier Payments">Supplier Payments</option>
+                                            <option value="Setup Manufacturing Unit">Setup Manufacturing Unit</option>
+                                            <option value="Hiring Budget">Hiring Budget</option>
+                                            <option value="Other">Other</option>
+                                            <?php } else { ?>
+                                            <option value="Personal Use">Personal Use</option>
+                                            <option value="Property Renovation">Property Renovation</option>
+                                            <option value="Marriage Purpose">Marriage Purpose</option>
+                                            <option value="Education Purpose">Education Purpose</option>
+                                            <option value="Medical Emergency">Medical Emergency</option>
+                                            <option value="Other">Other</option>
+                                            <?php } ?>
+                                        </select>
+                                        <div class="help-block font-small-3"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6 col-12">
+                                    <div class="form-group form-floating mb-3">
+                                        <label for="city"
+                                            class="position-static ps-0 text-uppercase fw-bold pt-0 pb-0">City</label>
+                                        <input id="city" type="text" name="city"
+                                            class="form-control pt-0 pb-0 rounded-4" placeholder="City *" required
+                                            style="background-color: #ffffff;border: 1px solid #E2E8F0;">
+
+                                        <div class="help-block font-small-3"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6 col-12">
+                                    <div class="form-group form-floating mb-3">
+                                        <label for="state"
+                                            class="position-static ps-0 text-uppercase fw-bold pt-0 pb-0">State</label>
+                                        <input id="state" type="text" name="state"
+                                            class="form-control pt-0 pb-0 rounded-4" placeholder="State *" required
+                                            style="background-color: #ffffff;border: 1px solid #E2E8F0;">
+
+                                        <div class="help-block font-small-3"></div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-12">
+                                    <div class="card otp-velidation-text rounded-4 bg-light mt-2">
+                                        <div class="card-body p-3">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                                                    <div class="d-flex align-items-center mb-lg-0 mb-3">
+                                                        <i class="fas fa-bullseye me-2 text-orange"></i>
+                                                        <div>
+                                                            <p class="mb-0 fw-light fa-xs">Soft check only — won't
+                                                                impact
+                                                                your credit
+                                                                score. </p>
+                                                        </div>
                                                     </div>
+                                                </div>
+
+                                                <div class="col-lg-5 col-md-12 col-sm-12 col-12 text-end">
+
+                                                    <button type="submit" id="form-submit1"
+                                                        class="btn btn-dark-orange btn-send text-uppercase w-100">Check
+                                                        Your
+                                                        Eligibility <i class="fas fa-arrow-right ms-2"></i></button>
                                                 </div>
                                             </div>
 
-                                            <div class="col-lg-5 col-md-6 col-sm-6 col-12 text-end">
-
-                                                <button type="submit" id="form-submit1"
-                                                    class="btn btn-dark-orange btn-send text-uppercase w-100">Check Your
-                                                    Eligibility <img
-                                                        src="<?= base_url('assets/img/new-image/right-arrow.png') ?>"
-                                                        class="svg-inject ms-2" alt="" /></button>
-                                            </div>
                                         </div>
 
                                     </div>
-
                                 </div>
+
+
                             </div>
-
-
+                            <?php echo form_close(); ?>
                         </div>
-                        <?php echo form_close(); ?>
+                        <!--/.card-body -->
                     </div>
-                    <!--/.card-body -->
+                    <!--/.card -->
                 </div>
-                <!--/.card -->
-            </div>
-            <div class="col-lg-4 col-md-5  mb-lg-0 mb-5">
-                <div class="card card-left landing-form-right shadow-none">
-                    <div class="card-body">
-                        <span class="text-uppercase fw-bold sub-title mb-3 d-block">Desired Loan Amount</span>
-                        <div class="range__value text-start mb-4 border-bottom">
-                            <span class="fs-40 bg-light ps-0 text-navy">₹<?= formatePriceIndia($userdetails['loanamount']) ?></span>
-                            <p class="fs-12 lh-normal mb-3">Tenure: up to 60 months · ROI from 11%*</p>
-                        </div>
-                        <h6 class="text-uppercase fw-bold text-navy">Customer details</h6>
-                        <div class="table-responsive">
-                            <table class="table table-borderless align-middle user-details-table mb-0">
-                                <tbody>
-                                    <tr>
-                                        <td class="icon-col ps-0 pt-0 pb-3">
-                                            <div class="icon-col-image">
-                                                <i class="fa fa-user"></i>
-                                            </div>
-                                        </td>
-                                        <td class="pt-0 pb-3 text-left">
-                                            <small class="text-uppercase d-block">Name</small>
-                                            <strong><?php echo $userdetails['fullname']; ?></strong>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="icon-col ps-0 pt-0 pb-3">
-                                            <div class="icon-col-image">
-                                                <i class="fa fa-phone"></i>
-                                            </div>
-                                        </td>
-                                        <td class="pt-0 pb-3 text-left">
-                                            <small class="text-uppercase d-block">Mobile</small>
-                                            <strong><?php echo $userdetails['mobile']; ?></strong>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="icon-col ps-0 pt-0 pb-3">
-                                            <div class="icon-col-image">
-                                                <i class="fa fa-envelope"></i>
-                                            </div>
-                                        </td>
-                                        <td class="pt-0 pb-3 text-left">
-                                            <small class="text-uppercase d-block">Email</small>
-                                            <strong><?php echo $userdetails['email']; ?></strong>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="icon-col ps-0 pt-0 pb-3">
-                                            <div class="icon-col-image">
-                                               <i class="fa fa-file"></i>
-                                            </div>
-                                        </td>
-                                        <td class="pt-0 pb-3 text-left">
-                                            <small class="text-uppercase d-block">Loan Type</small>
-                                            <strong><?php echo $userdetails['loanname']; ?></strong>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="card otp-velidation-text-wrap rounded-4 bg-light-success">
-                            <div class="card-body py-3 px-3 ">
-                                <div class="d-flex align-items-start">
-                                    <img src="<?= base_url('assets/img/new-image/otp-img.png') ?>" class="img-fluid"
-                                        alt="" />
-                                    <div>
-                                        <p class="mb-0 fw-light ms-2">Your data is 256-bit encrypted and never shared
-                                            without your consent.</p>
+                <div class="col-lg-4 col-md-5">
+                    <div class="landing-form-right border rounded-4 bg-white shadow mb-0">
+                        <div class="card-body p-4">
+                            <span class="text-uppercase fw-bold sub-title mb-0 d-block">Desired Loan Amount</span>
+                            <div class="range__value text-start mb-3 border-bottom">
+                                <span
+                                    class="fs-40 bg-light ps-0 text-navy">₹<?= formatePriceIndia($userdetails['loanamount']) ?></span>
+                                <p class="fs-12 lh-normal mb-3">Tenure: up to 60 months · ROI from 11%*</p>
+                            </div>
+                            <h6 class="text-uppercase fw-bold text-navy">Customer details</h6>
+                            <div class="table-responsive overflow-hidden">
+                                <table class="table table-borderless align-middle user-details-table mb-0">
+                                    <tbody>
+                                        <tr>
+                                            <td class="icon-col ps-0 pt-0 pb-3">
+                                                <div class="icon-col-image">
+                                                    <i class="fa fa-user"></i>
+                                                </div>
+                                            </td>
+                                            <td class="pt-0 pb-3 text-left">
+                                                <small class="text-uppercase d-block">Name</small>
+                                                <strong><?php echo $userdetails['fullname']; ?></strong>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="icon-col ps-0 pt-0 pb-3">
+                                                <div class="icon-col-image">
+                                                    <i class="fa fa-phone"></i>
+                                                </div>
+                                            </td>
+                                            <td class="pt-0 pb-3 text-left">
+                                                <small class="text-uppercase d-block">Mobile</small>
+                                                <strong><?php echo $userdetails['mobile']; ?></strong>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="icon-col ps-0 pt-0 pb-3">
+                                                <div class="icon-col-image">
+                                                    <i class="fa fa-envelope"></i>
+                                                </div>
+                                            </td>
+                                            <td class="pt-0 pb-3 text-left">
+                                                <small class="text-uppercase d-block">Email</small>
+                                                <strong><?php echo $userdetails['email']; ?></strong>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="icon-col ps-0 pt-0 pb-3">
+                                                <div class="icon-col-image">
+                                                    <i class="fa fa-file"></i>
+                                                </div>
+                                            </td>
+                                            <td class="pt-0 pb-3 text-left">
+                                                <small class="text-uppercase d-block">Loan Type</small>
+                                                <strong><?php echo $userdetails['loanname']; ?></strong>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="card otp-velidation-text-wrap rounded-4 bg-light-success">
+                                <div class="card-body py-3 px-3 ">
+                                    <div class="d-flex align-items-start">
+                                        <i class="fas fa-shield-alt text-success mt-1"></i>
+                                        <div>
+                                            <p class="mb-0 fw-light ms-2 text-success fa-xs">Your data is 256-bit
+                                                encrypted and never
+                                                shared
+                                                without your consent.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -245,10 +253,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-            </div>
-            
-        </div>
         </div>
     </section>
 </main>

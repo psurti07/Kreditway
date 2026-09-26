@@ -9,7 +9,7 @@ $this->load->view('includes/header-apply.php');
 			<div class="row">
 				<div class="col-lg-12 mb-5">
 					<div class="heading2 text-center">
-						<h2 class="title mb-3">Purchase Plan To View Your
+						<h2 class="title mb-3 text-navy">Purchase Plan To View Your
 							Pre-Approved Loan Offers</h2>
 						<small class="heading-top aos-init offer-subtitle">
 							Instant Pre-Approval | Multiple NBFCs Offers | 100% Paperless Process
@@ -17,7 +17,7 @@ $this->load->view('includes/header-apply.php');
 					</div>
 				</div>
 			</div>
-			<div class="row align-items-center offer-card">
+			<div class="row align-items-center offer-card py-0">
 				<div class="col-lg-6 col-md-6 col-12">
 					<div class="box-form-quote">
 						<div class="container">
@@ -102,12 +102,12 @@ $this->load->view('includes/header-apply.php');
 	<!-- banner-area-end -->
 
 	<!-- nbfc partners start -->
-	<div class="nbfc-space">
+	<div class="nbfc-space mt-0">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
 					<div class="heading2 text-center mb-4">
-						<h2 class="title">Our Top NBFC Partners</h2>
+						<h2 class="title text-navy">Our Top NBFC Partners</h2>
 					</div>
 
 					<div class="swiper-container brand-active">
@@ -129,10 +129,10 @@ $this->load->view('includes/header-apply.php');
 
 	<section class="brand__area-five">
 		<div class="container">
-			<div class="row mt-3">
+			<div class="row">
 				<div class="col-lg-12 col-md-12 col-12 mb-5">
 					<div class="heading2 text-center">
-						<h2 class="title">Great Perks of Personal Subscription Plan</h2>
+						<h2 class="title text-navy">Great Perks of Personal Subscription Plan</h2>
 						<small class="heading-top aos-init offer-subtitle">"Our customer-centric services set us apart."</small>
 					</div>
 				</div>

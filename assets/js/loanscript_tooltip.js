@@ -22,7 +22,7 @@ class Slider {
 
 	generateBackground(value) {
 		let percentage = (value - this.options.min) / (this.options.max - this.options.min) * 100
-		return `background: linear-gradient(to right, #FF5722, #FF5722 ${percentage}%, #f1f1f1 ${percentage}%)`
+		return `background: linear-gradient(to right, #FB710F, #FF5722 ${percentage}%, #f1f1f1 ${percentage}%)`
 	}
 
 	updateSlider() {
