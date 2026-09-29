@@ -294,6 +294,7 @@
                                                         <div class="ms-2">
                                                             <h5 class="mb-0 fs-6 lh-xs text-navy fw-bold">Salaried
                                                             </h5>
+                                                            <p class="fs-6 mb-0">Earn a monthly salary</p>
 
                                                         </div>
                                                     </div>
@@ -324,6 +325,7 @@
                                                                 Self-Emp.
                                                             </h5>
 
+                                                            <p class="fs-6 mb-0">Run your own business</p>
                                                         </div>
                                                     </div>
                                                 </div>

@@ -9,10 +9,12 @@
                 <div class="col-lg-6">
                     <div class="banner__content-four">
                         <div class="d-flex gap-2 mb-2 flex-wrap">
-                        <span class="sub-title sub-title-wrap fa-xs rounded-pill px-2 py-1">8+ NBFC Partners</span>
-                        <span class="sub-title sub-title-wrap fa-xs rounded-pill px-2 py-1">100% Digital Process</span>
-                        <span class="sub-title sub-title-wrap fa-xs rounded-pill px-2 py-1">Loan approval in 24-48 hrs</span>
-</div>
+                            <span class="sub-title sub-title-wrap fa-xs rounded-pill px-2 py-1">8+ NBFC Partners</span>
+                            <span class="sub-title sub-title-wrap fa-xs rounded-pill px-2 py-1">100% Digital
+                                Process</span>
+                            <span class="sub-title sub-title-wrap fa-xs rounded-pill px-2 py-1">Loan approval in 24-48
+                                hrs</span>
+                        </div>
                         <h1 class="title">Empowering Your Goals with Smart <span>Financial Solutions</span></h1>
                         <p class="">Loan approval and disbursement help you reach your financial goals. Get instant
                             loans at competitive rates with minimal documentation.
@@ -64,7 +66,7 @@
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="services__item-five text-start h-100">
-                                       <div class="services__icon-five rounded-3 bg-soft-pink p-2">
+                            <div class="services__icon-five rounded-3 bg-soft-pink p-2">
                                 <i class="flaticon-light-bulb fs-4"></i>
 
                             </div>
@@ -78,7 +80,7 @@
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="services__item-five text-start h-100">
-                                      <div class="services__icon-five rounded-3 bg-soft-pink p-2">
+                            <div class="services__icon-five rounded-3 bg-soft-pink p-2">
                                 <i class="flaticon-startup fs-4"></i>
 
                             </div>
@@ -107,7 +109,8 @@
     <!-- services-area-end -->
 
     <!-- about-area order-lg-2-->
-    <section class="about__area-eight banner__bg-four bg-theme-1 section-padding" id="company" style="padding: 100px 0;">
+    <section class="about__area-eight banner__bg-four bg-theme-1 section-padding" id="company"
+        style="padding: 100px 0;">
         <div class="container">
             <div class="row align-items-center justify-content-center ">
                 <div class="col-lg-5 col-md-9  r-order ">
@@ -159,12 +162,12 @@
                 <div class="col-lg-7 col-md-12 col-12">
                     <div class="choose__content-five">
                         <div class="section-title mb-30 tg-heading-subheading animation-style3">
-                            <span class="sub-title">Grow Smart</span>
-                            <h2 class="title">Grow Your Finance the Smart Way
+                            <span class="sub-title">Grow Your Business Smartly</span>
+                            <h2 class="title">Manage Your Finances the Smart Way
                             </h2>
                         </div>
-                        <p>Unleash the hidden power of your personal loan ornaments. KreditWay offers easy pathways to acquire
-                            low-interest credit leveraging your collateral personal loan securely with instant evaluation.
+                        <p>Unlock the potential of your assets. KreditWay provides simple options to obtain low-interest
+                            loans by leveraging your collateral securely with quick assessments.
                         </p>
                         <div class="about__content-inner-five gap-12 mb-3">
                             <div class="about__list-box">
@@ -200,20 +203,19 @@
                                         </div>
                                         <div class="services__content-five text-left pl-20">
 
-                                            <p class="text-light mb-0">Monthly Interest Rates</p>
-                                            <h3 class="text-light" style="font-size: 50px; color: #FB710F !important">
-                                                ₹12.5% <span
-                                                    style="font-size: 18px; color:#fff !important">onwards</span></h3>
+                                            <p class="text-light mb-0">Monthly Loan Interest Rates</p>
+                                            <h3 class="text-light" style="font-size: 40px; color: #FB710F !important">
+                                                Starting at ₹0.89% </h3>
                                         </div>
                                         <hr>
-                                        <div class="about__content-inner-five gap-12 pl-20">
+                                        <div class="about__content-inner-five gap-12 pl-20 mb-0">
                                             <div class="about__list-box">
                                                 <ul class="list-wrap">
                                                     <li class="text-light"><i class="flaticon-arrow-button"></i>100%
-                                                        Secure Insured Storage
+                                                        Secure Insured Storage for Your Assets
                                                     </li>
-                                                    <li class="text-light"><i
-                                                            class="flaticon-arrow-button"></i>Disbursal within 3 Hours
+                                                    <li class="text-light"><i class="flaticon-arrow-button"></i>Funds
+                                                        Disbursed Within 3 Hours
                                                     </li>
                                                 </ul>
                                             </div>
@@ -250,7 +252,7 @@
             </div>
             <div class="services__item-wrap-two">
                 <div class="row justify-content-center g-3">
-                    <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="services__item-five1 h-100">
                             <div class="services__icon-five w-100 mb-0" style="line-height: 1;">
                                 <span>01</span>
@@ -264,11 +266,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="services__item-five1 h-100">
                             <div class="services__icon-five w-100 mb-0" style="line-height: 1;">
                                 <span>02</span>
-                                <img src="<?= base_url('assets/img/images/Vector.png'); ?>" alt="" class="img-fluid"
+                                <img src="<?= base_url('assets/img/images/step-2.png'); ?>" alt="" class="img-fluid"
                                     style="float: right;">
                             </div>
                             <div class="services__content-five mt-3">
@@ -279,7 +281,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="services__item-five1 h-100">
                             <div class="services__icon-five w-100 mb-0" style="line-height: 1;">
                                 <span>03</span>
@@ -294,7 +296,35 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="services__item-five1 h-100">
+                            <div class="services__icon-five w-100 mb-0" style="line-height: 1;">
+                                <span>04</span>
+                                <img src="<?= base_url('assets/img/images/Frame_3.png'); ?>" alt="" class="img-fluid"
+                                    style="float: right;">
+                            </div>
+                            <div class="services__content-five mt-3">
+                                <h2 class="title"><a>Get Money (3 hrs)
+                                    </a></h2>
+                                <p>Quick verification and instant disbursal direct to bank vault.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="services__item-five1 h-100">
+                            <div class="services__icon-five w-100 mb-0" style="line-height: 1;">
+                                <span>05</span>
+                                <img src="<?= base_url('assets/img/images/university.png'); ?>" alt="" class="img-fluid"
+                                    style="float: right;">
+                            </div>
+                            <div class="services__content-five mt-3">
+                                <h2 class="title"><a>Get Money (3 hrs)
+                                    </a></h2>
+                                <p>Quick verification and instant disbursal direct to bank vault.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="services__item-five1 h-100">
                             <div class="services__icon-five w-100 mb-0" style="line-height: 1;">
                                 <span>04</span>
@@ -507,7 +537,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-grp">
-                                           <label for="firstname" class="w-500 text-uppercase fa-xs mb-2">Full
+                                    <label for="firstname" class="w-500 text-uppercase fa-xs mb-2">Full
                                         Name *</label>
                                     <input id="form_name" type="text" name="name" placeholder="Your Name" required=""
                                         data-validation-regex-regex="^[a-zA-Z ]*$" class="border">
@@ -516,7 +546,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-grp">
-                                         <label for="form_email" class="w-500 text-uppercase fa-xs mb-2">Email
+                                    <label for="form_email" class="w-500 text-uppercase fa-xs mb-2">Email
                                         *</label>
                                     <input id="form_email" type="email" name="email" placeholder="Your Email Id"
                                         required="" class="border">
@@ -534,7 +564,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-grp">
-                                         <label for="form_mobile" class="w-500 text-uppercase fa-xs mb-2">Mobile
+                                    <label for="form_mobile" class="w-500 text-uppercase fa-xs mb-2">Mobile
                                         *</label>
                                     <input id="form_mobile" type="text" name="mobile" placeholder="Your Mobile"
                                         required="" minlength="10" maxlength="10" inputmode="numeric"
@@ -545,7 +575,7 @@
                             </div>
                         </div>
                         <div class="form-grp">
-                              <label for="form_message" class="w-500 text-uppercase fa-xs mb-2">Message
+                            <label for="form_message" class="w-500 text-uppercase fa-xs mb-2">Message
                                 *</label>
                             <textarea id="form_message" name="message" placeholder="Your message" style="height: 150px"
                                 required="" class="border"></textarea>
@@ -628,12 +658,13 @@
                                         <button class="accordion-button text-heading-5 collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseOne"
                                             aria-expanded="false" aria-controls="collapseOne">
-                                         What documents are required to apply for a loan?
+                                            What documents are required to apply for a loan?
                                         </button>
                                     </h5>
                                     <div class="accordion-collapse collapse show" id="collapseOne"
                                         aria-labelledby="headingOne" data-bs-parent="#accordionFAQ" style="">
-                                        <div class="accordion-body">You typically need your PAN card, Aadhaar card, last 3 months' bank statements, and salary slips or ITR proofs.
+                                        <div class="accordion-body">You typically need your PAN card, Aadhaar card, last
+                                            3 months' bank statements, and salary slips or ITR proofs.
                                         </div>
                                     </div>
                                 </div>
@@ -642,14 +673,16 @@
                                         <button class="accordion-button text-heading-5 collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                             aria-expanded="false" aria-controls="collapseTwo">
-                                   Is my personal and financial data secure?
+                                            Is my personal and financial data secure?
                                         </button>
                                     </h5>
                                     <div class="accordion-collapse collapse" id="collapseTwo"
                                         aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ" style="">
                                         <div class="accordion-body">
-                                            <p>Yes, absolutely. We use bank-grade 256-bit encryption protocols to protect your sensitive information and ensure your data remains strictly confidential. </p>
-                                            
+                                            <p>Yes, absolutely. We use bank-grade 256-bit encryption protocols to
+                                                protect your sensitive information and ensure your data remains strictly
+                                                confidential. </p>
+
                                         </div>
                                     </div>
                                 </div>
@@ -658,12 +691,14 @@
                                         <button class="accordion-button text-heading-5 type=" data-bs-toggle="collapse"
                                             data-bs-target="#collapseThree" aria-expanded="false"
                                             aria-controls="collapseThree">
-                                      How long does loan disbursal take?
+                                            How long does loan disbursal take?
                                         </button>
                                     </h5>
                                     <div class="accordion-collapse collapse" id="collapseThree"
                                         aria-labelledby="headingThree" data-bs-parent="#accordionFAQ" style="">
-                                        <div class="accordion-body">Once your digital verification and approval are complete, funds are disbursed directly to your bank account within 24 hours.</div>
+                                        <div class="accordion-body">Once your digital verification and approval are
+                                            complete, funds are disbursed directly to your bank account within 24 hours.
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item border">
@@ -671,14 +706,15 @@
                                         <button class="accordion-button text-heading-5 type=" data-bs-toggle="collapse"
                                             data-bs-target="#collapseFour" aria-expanded="false"
                                             aria-controls="collapseThree">
-                                        Is there any fee for checking my loan eligibility?
+                                            Is there any fee for checking my loan eligibility?
                                         </button>
                                     </h5>
                                     <div class="accordion-collapse collapse" id="collapseFour"
                                         aria-labelledby="headingFour" data-bs-parent="#accordionFAQ" style="">
                                         <div class="accordion-body">
-                                            <p>No, checking your eligibility and using our EMI calculator is completely free with zero hidden upfront charges. </p>
-                                         
+                                            <p>No, checking your eligibility and using our EMI calculator is completely
+                                                free with zero hidden upfront charges. </p>
+
                                         </div>
                                     </div>
                                 </div>
@@ -687,17 +723,18 @@
                                         <button class="accordion-button text-heading-5 type=" data-bs-toggle="collapse"
                                             data-bs-target="#collapseFive" aria-expanded="false"
                                             aria-controls="collapseFive">
-                                        Can I prepay my loan early?
+                                            Can I prepay my loan early?
                                         </button>
                                     </h5>
                                     <div class="accordion-collapse collapse" id="collapseFive"
                                         aria-labelledby="headingFive" data-bs-parent="#accordionFAQ">
                                         <div class="accordion-body">
-                                           Yes, prepayment options are available depending on the specific lending partner's policy and terms of agreement.
+                                            Yes, prepayment options are available depending on the specific lending
+                                            partner's policy and terms of agreement.
                                         </div>
                                     </div>
                                 </div>
-                             
+
                             </div>
                         </div>
                     </div>
