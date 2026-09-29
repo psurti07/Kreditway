@@ -1,0 +1,86 @@
+/* Loan amount slider */
+.range__slider {
+	width: 100%;
+}
+
+.range__value {
+	width: auto;
+	font-size: 1rem;
+	padding-top: 10px;
+}
+
+.range__value span {
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #018837;
+}
+
+.range__emi {
+	width: auto;
+	font-size: 0.8rem;
+}
+
+.range__emi span {
+	font-size: 1rem;
+	font-weight: 700;
+	color: #018837;
+}
+
+.range__slider [type="range"] {
+	width: 100%;
+	-webkit-appearance: none;
+	height: 8px;
+	border-radius: 6px;
+	background: #f1f1f1;
+	outline: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* custom thumb */
+.range__slider [type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #f0f8ff;
+	border: #469bc7 3px solid;
+	cursor: pointer;
+	-webkit-transition: background 0.15s ease-in-out;
+	transition: background 0.15s ease-in-out;
+}
+
+.range__slider [type="range"]::-webkit-slider-thumb:hover {
+	background: #1f2320;
+}
+
+.range__slider [type="range"]::-moz-range-thumb {
+	width: 20px;
+	height: 20px;
+	border: 0;
+	border-radius: 50%;
+	background: #1f2320;
+	border: #1f2320 5px solid;
+	cursor: pointer;
+	-webkit-transition: background 0.15s ease-in-out;
+	transition: background 0.15s ease-in-out;
+}
+
+/* Loan amount slider */
+
+.offer-img {
+	position: absolute !important;
+	top: -0.6rem;
+	left: -0.6rem;
+	width: 130px;
+}
+
+.blink_me {
+	animation: blinker 1.5s step-start infinite;
+}
+
+.btn-block {
+	width: 100%;
+	justify-content: center;
+}

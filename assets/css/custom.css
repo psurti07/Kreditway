@@ -1,0 +1,201 @@
+.journey_area-seven:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 500px;
+	background-image: url("../img/services/lending-page-1-desk.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+	z-index: -1;
+}
+
+@media (max-width: 767.98px) {
+	.journey_area-seven:before {
+		background-image: url("../img/services/lending-page-1-mobile.png");
+		margin-top: 70px;
+		background-size: 100%;
+		min-height: calc(100vh - 500px);
+	}
+}
+
+.journey_area-seven {
+	position: relative;
+}
+
+/* Loan amount slider */
+
+/* custom thumb */
+.range__slider [type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #f0f8ff;
+	border: #FB710F 3px solid;
+	cursor: pointer;
+	-webkit-transition: background 0.15s ease-in-out;
+	transition: background 0.15s ease-in-out;
+}
+
+.range__slider [type="range"]::-webkit-slider-thumb:hover {
+	background: #10eb9d;
+}
+
+.range__slider [type="range"]::-moz-range-thumb {
+	width: 20px;
+	height: 20px;
+	border: 0;
+	border-radius: 50%;
+	background: #f0f8ff;
+	border: #FB710F 5px solid;
+	cursor: pointer;
+	-webkit-transition: background 0.15s ease-in-out;
+	transition: background 0.15s ease-in-out;
+}
+
+.range__tooltip {
+	position: absolute;
+	top: -40px;
+	/* Move tooltip slightly above */
+	transform: translateX(0);
+	background: #f0f8ff;
+
+	color: white;
+	padding: 5px 10px;
+	border-radius: 6px;
+	font-size: 14px;
+	font-weight: bold;
+	white-space: nowrap;
+	z-index: 2;
+	pointer-events: none;
+	/* transition: left 0.2s ease; */
+	max-width: 90vw;
+	/* prevent overflow on tiny screens */
+}
+
+.range__slider {
+	position: relative;
+	width: 100%;
+	height: 30px;
+}
+
+.range__tooltip::after {
+	content: "";
+	position: absolute;
+	bottom: -6px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-width: 6px 6px 0 6px;
+	border-style: solid;
+	border-color: #1c5296 transparent transparent transparent;
+}
+
+@media (max-width: 400px) {
+	.range__tooltip {
+		font-size: 12px;
+		padding: 4px 6px;
+		top: -35px;
+	}
+}
+
+.digi_range__slider input[type="range"]::-webkit-slider-thumb:hover {
+	background: #FB710F !important;
+}
+
+/* Webkit Browsers (Chrome, Safari) */
+.digi_range__slider input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #f0f8ff;
+	border: #FB710F 5px solid;
+	cursor: pointer;
+	transition: background 0.15s ease-in-out;
+	margin-top: -1px;
+	/* Optional tweak for alignment */
+}
+
+.digi_range__slider input[type="range"]::-webkit-slider-thumb:hover {
+	background: #FB710F;
+}
+
+/* Firefox */
+.digi_range__slider input[type="range"]::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #f0f8ff;
+	border: #FB710F 5px solid;
+	/* same as tooltip */
+
+	cursor: pointer;
+	transition: background 0.15s ease-in-out;
+}
+
+/* For Edge */
+.digi_range__slider input[type="range"]::-ms-thumb {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #f0f8ff;
+	border: #FB710F 5px solid;
+	cursor: pointer;
+}
+
+/* Loan amount slider */
+
+.sub-title.sub-title-wrap {
+	background-color: #FFF1E6;
+	border: 1px solid #FE7E03;
+	color: #FE7E03;
+}
+
+@media screen and (max-width:991px) and (min-width:768px) {
+
+	.subscription-section h4.offer-price {
+		font-size: 23px !important;
+	}
+}
+
+@media screen and (max-width:425px) {
+	.otp-velidation-form .input-field input {
+		height: 45px !important;
+		width: 45px !important;
+		border-radius: 10px !important;
+	}
+
+	.subscription-section h4.offer-price {
+		font-size: 17px !important;
+	}
+}
+
+
+
+.subscription-section .counter-box .icon-wrap {
+	width: 40px;
+	height: 40px;
+	margin: auto;
+}
+
+.bg-light-success {
+	background-color: #F0FDF4 !important;
+}
+
+.bg-soft-pink {
+	background-color: #FFE7D7 !important;
+}
+
+.text-orange {
+	color: #FB710F;
+}
+
+.text-navy {
+	color: #0A1A3A;
+}
