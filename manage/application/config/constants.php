@@ -90,13 +90,13 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 
 // Project details
 define('PROJECT_NAME', 'Kreditway');
-define('COMPANY_NAME', '#');
-define('COMPANY_EMAIL', 'info@kreditwayom');
-define('COMPANY_MOBILE', '#');
+define('COMPANY_NAME', 'Kreditway Consulting LLP');
+define('COMPANY_EMAIL', 'info@kreditway.com');
+define('COMPANY_MOBILE', '9974499388');
 define('COMPANY_CIN', '#');
-define('COMPANY_GST', '#');
-define('COMPANY_SITE', 'https://kreditway');
-define('COMPANY_ADDRESS', '#');
+define('COMPANY_GST', '24ABGFK1852R1ZV');
+define('COMPANY_SITE', 'https://kreditway.com');
+define('COMPANY_ADDRESS', 'First Floor, House No. 912, Baxi Faliyu, B/S Kansa Nagar, Katargam, Surat, Gujarat, India - 395004');
 define('COMPANY_TIMING', '10 AM to 5 PM (Monday to Saturday)');
 
 define('CU_PAYOUT_RATIO', '0.40');
@@ -117,12 +117,12 @@ define('PG_STAR_OFFER', '#'); // 9
 
 //Social media
 define('SM_GOOGLE', '#');
-define('SM_FACEBOOK', '#');
+define('SM_FACEBOOK', 'https://www.facebook.com/hindutalpadakoli.r/');
 define('SM_INSTAGRAM', '#');
-define('SM_TWITTER', '#');
+define('SM_TWITTER', 'https://x.com/kreditway');
 define('SM_LINKEDIN', '#');
-define('SM_PINTEREST', '#');
-define('SM_YOUTUBE','#');
+define('SM_PINTEREST', 'https://in.pinterest.com/kreditway/');
+define('SM_YOUTUBE', '#');
 
 // Email SMTP details
 define('SMTP_HOST', 'mail.kreditway.com');
@@ -159,10 +159,10 @@ define('GEOLOC_API_KEY', '#');
 // Facebook
 define('ACCESS_TOKEN', '#');
 
-define('COMPANY_CODE', 'RCRDT2913');
+define('COMPANY_CODE', '#');
 define('LOCAL_IP', '190.92.174.183');
 define('MASTER_API_KEY', 'K21rR3dxVEQwalk2K2lpcEIyQ3pQbkk4ZXRIRjdjS1FZVmdiQmRVNGFlYz0=');
 
-define('DATA_LOCK', 'YES'); // display datalock in remarketing page
+define('DATA_LOCK', 'NO'); // display datalock in remarketing page
 define('DAYS_LOCK', '#'); // display datalock in remarketing page
 define('DATE_LOCK', '2025-06-04'); // display datalock in remarketing page

@@ -180,11 +180,11 @@ Class Site_Info_Model extends CI_Model {
 
 		if($data['email'] != '' && $careerid != '') {
 			// Send email
-			$subject1 = "Welcome to RupayCredit";
+			$subject1 = "Welcome to Kreditway";
 			$message1 = "<p>Hello ".$data['firstname']." ".$data['lastname'].",</p>"; 
 			$message1 .= "<p>We're elated that you showed interest in working with our company. Our HR Team will be in touch soon.</p>";
 			$message1 .= "<p>In case you've any queries/doubts, please write to us at hr@kreditway.com</p>";
-			$message1 .= "<p>Thanks & Regards,<br/>RupayCredit</p>";
+			$message1 .= "<p>Thanks & Regards,<br/>Kreditway</p>";
 
 			$this->load->model('Site_General_Model');
 			$content1 = $this->Site_General_Model->hremailtemplate($message1);

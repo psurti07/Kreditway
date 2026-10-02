@@ -3,14 +3,9 @@
 		<div class="footer-lending">
 			<div class="container">
 				<div class="row align-items-center">
-					<div class="col-lg-6">
+					<div class="col-12">
 						<div class="copyright-text-two">
-							<p>CIN NO: <?= COMPANY_CIN; ?></p>
-						</div>
-					</div>
-					<div class="col-lg-6">
-						<div class="copyright-text-two">
-							<p class="footer-text-right"><?= date('Y'); ?> © <?= COMPANY_NAME; ?> All Right Reserved</p>
+							<p class="text-center"><?= date('Y'); ?> © <?= COMPANY_NAME; ?>. All Right Reserved</p>
 						</div>
 					</div>
 				</div>

@@ -188,7 +188,7 @@ class Infopage extends CI_Controller
             $this->load->model('Site_Info_Model');
             $res = $this->Site_Info_Model->updatedndstatus($mobileno, $reason);
             if ($res == true) {
-                echo json_encode(array("success" => true, "message" => "You have successfully unsubscribed to get messages from Rupay Credit. Thank you", "mobileno" => $mobileno, 'dnd'));
+                echo json_encode(array("success" => true, "message" => "You have successfully unsubscribed to get messages from Kreditway. Thank you", "mobileno" => $mobileno, 'dnd'));
             } else {
 
                 echo json_encode(array("success" => false, "message" => "Opps! Something went wrong.", "mobileno" => ""));
@@ -197,7 +197,6 @@ class Infopage extends CI_Controller
             echo json_encode(array("success" => false, "message" => "OTP is invalid.", "mobileno" => ""));
         }
     }
-
 
     public function testdata()
     {
@@ -211,7 +210,7 @@ class Infopage extends CI_Controller
             'order_amount' => '999.00'
         );
 
-        $subject = "Welcome to Rupay Credit";
+        $subject = "Welcome to Kreditway";
 
         $this->load->model('Site_General_Model');
         $content = $this->Site_General_Model->customerwelcomeemailtemplate($maildata);

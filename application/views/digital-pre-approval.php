@@ -356,11 +356,7 @@ $eligibilityamtindia = formatePriceIndia($eligibilityamt);
         </div>
         <div class="col-lg-10 m-auto">
             <div class="text-center">
-                <p class="p-t-10"><small>Disclaimer - The above data is tentative and purely on the information provided
-                        by
-                        you. Final EMI, loan sanction, loan approval, and loan amount depend on customer profile and
-                        NBFCs
-                        criteria and rules & regulations.</small></p>
+                <p class="p-t-10 mb-0"><small>Disclaimer - The above data is tentative and purely on the information provided by you. Final EMI, loan sanction, loan approval, and loan amount depend on customer profile and NBFCs criteria and rules & regulations.</small></p>
             </div>
         </div>
 

@@ -12,7 +12,7 @@
 								<div class="mb-25">
 									<a><img src="<?= base_url('assets/img/logo/w_logo.png');?>" alt="" width="185"></a>
 								</div>
-								<p class="mb-40">Presenting Rupay Credit – the simplest and most effective way to get top-tier financial services from industry experts.
+								<p class="mb-40">Presenting Kreditway – the simplest and most effective way to get top-tier financial services from industry experts.
 								</p>
 							</div>
 
@@ -115,11 +115,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="copyright-text-two">
-							<!-- <p>Copyright © <a href="index.html">Apexa</a> | All Right Reserved</p> -->
-							<p><small>
-									<?= date('Y') ?> ©
-									<?= COMPANY_NAME; ?> All Rights Reserved.
-								</small></p>
+							<p><small><?= date('Y') ?> © <?= COMPANY_NAME; ?>. All Rights Reserved.</small></p>
 						</div>
 					</div>
 				</div>

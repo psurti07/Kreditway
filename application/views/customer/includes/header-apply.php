@@ -16,7 +16,7 @@
 	<title><?php if (isset($meta->title)) {
 				echo $meta->title;
 			} else {
-				echo "Apply for Instant Personal Loan Online approvals | Rupay Credit";
+				echo "Apply for Instant Personal Loan Online approvals | Kreditway";
 			} ?></title>
 	<meta name="description" content="<?php if (isset($meta->descriptions)) {
 											echo $meta->descriptions;
@@ -25,10 +25,10 @@
 										echo $meta->keywords;
 									} ?>" />
 
-	<meta property="og:title" content="Rupay credit: Your Trusted Source for Quick and Easy Financing">
+	<meta property="og:title" content="Kreditway: Your Trusted Source for Quick and Easy Financing">
 	<meta property="og:site_name" content="Kreditway">
 	<meta property="og:url" content="<?php echo site_url(); ?>">
-	<meta property="og:description" content="Rupay credit Expert Financial Consultation company provides fast and easy financing solutions to individuals and businesses in need of financial assistance.">
+	<meta property="og:description" content="Kreditway Expert Financial Consultation company provides fast and easy financing solutions to individuals and businesses in need of financial assistance.">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="<?php echo base_url('assets/img/logo/logo.png'); ?>">
 	<meta property="og:locale" content="en_IN">
@@ -40,7 +40,7 @@
 	<meta name="author" content="vw-team">
 
 	<!--=====Fav icon=======-->
-	<link rel="shortcut icon" href="<?= base_url('assets/img/logo/rupeycredit_favicon.png') ?>" type="image/x-icon" />
+	<link rel="shortcut icon" href="<?= base_url('assets/img/logo/kreditway_favicon.png') ?>" type="image/x-icon" />
 	<link rel="icon" href="<?= base_url('assets/') ?>img/logo/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" sizes="152x152" href="<?= base_url('assets/') ?>img/logo/apple-touch-icon-152x152.png">
 	<link rel="apple-touch-icon" sizes="120x120" href="<?= base_url('assets/') ?>img/logo/apple-touch-icon-120x120.png">

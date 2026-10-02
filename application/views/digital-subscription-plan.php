@@ -559,7 +559,7 @@ $amtpay = $productdata['payamount'];
                                         <img src="<?= base_url('assets/img/home8/star-grey.svg');?>" />
                                     </div>
                                     <div class="card-comment">
-                                        <p>“ Great!! The online process of applying for a loan with Rupay Credit is very
+                                        <p>“ Great!! The online process of applying for a loan with Kreditway is very
                                             easy and trouble-free. I faced no issues in my process and got the loan in
                                             no time. Thank you very much for your support, folks. I definitely recommend
                                             it!!
@@ -601,7 +601,7 @@ $amtpay = $productdata['payamount'];
                                     </div>
                                     <div class="card-comment">
                                         <p>“ Throughout the process, I was given step-by-step instructions to ensure
-                                            that everything went smoothly. I am very pleased with Rupay Credit and would
+                                            that everything went smoothly. I am very pleased with Kreditway and would
                                             gladly recommend it to my friends and family if they need a loan.
                                             ”</p>
                                     </div>
@@ -621,7 +621,7 @@ $amtpay = $productdata['payamount'];
                                         <img src="<?= base_url('assets/img/home8/star-grey.svg');?>" />
                                     </div>
                                     <div class="card-comment">
-                                        <p>“ I had an amazing experience with Rupay Credit. I would like to thank the
+                                        <p>“ I had an amazing experience with Kreditway. I would like to thank the
                                             entire team. They are very professional, explained everything clearly, and
                                             handled my loan process like a pro. From the beginning to disbursal,
                                             everything went very smoothly.

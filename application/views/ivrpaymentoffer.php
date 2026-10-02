@@ -89,7 +89,7 @@ $this->load->view('includes/header-apply.php');
 					<div class="form-grp">
 						<label>
 							<small>
-								By submitting the form &amp; proceeding, you agree to Rupay Credit's <a href="<?php echo site_url('terms-conditions'); ?>" class="text-color" target="_blank" class="primary-color font-14">Terms of Service </a>and <a href="<?php echo site_url('privacy-policy'); ?>" target="_blank" class="primary-color font-14 text-color"> Privacy Policy </a>of our Company
+								By submitting the form &amp; proceeding, you agree to Kreditway's <a href="<?php echo site_url('terms-conditions'); ?>" class="text-color" target="_blank" class="primary-color font-14">Terms of Service </a>and <a href="<?php echo site_url('privacy-policy'); ?>" target="_blank" class="primary-color font-14 text-color"> Privacy Policy </a>of our Company
 							</small>
 						</label>
 					</div>

@@ -44,7 +44,7 @@
                   </h5>
                   <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ" style="">
                     <div class="accordion-body">
-                      <p>The documents that are required to apply for a personal loan are: </p>
+                      The documents that are required to apply for a personal loan are:
                       <ul>
                         <li>PAN Card </li>
                         <li>Aadhaar Card </li>
@@ -52,7 +52,7 @@
                         <li>Bank Statements- should reflect your monthly salary</li>
                         <li>Income Proof - Form 16 or payslips </li>
                       </ul>
-                      <p>Please note that a lender may ask for additional documents based on their policies and your profile.</p>
+                      Please note that a lender may ask for additional documents based on their policies and your profile.
                     </div>
                   </div>
                 </div>
@@ -74,7 +74,7 @@
                   </h5>
                   <div class="accordion-collapse collapse" id="collapseFour" aria-labelledby="headingFour" data-bs-parent="#accordionFAQ" style="">
                     <div class="accordion-body">
-                      <p>The eligibility criteria for applying for a personal loan are the following: </p>
+                      The eligibility criteria for applying for a personal loan are the following:
                       <ul>
                         <li>The applicant’s age should be more than 21 years.</li>
                         <li>The Applicant should earn at least Rs.15,000/- per month. </li>

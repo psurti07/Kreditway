@@ -5,8 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport"
-		content="width=device-width, height=device-height, initial-scale=1, user-scalable=0, user-scalable=no, user-scalable=0" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=0, user-scalable=no, user-scalable=0" />
 	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 	<meta http-equiv="Pragma" content="no-cache" />
 	<meta http-equiv="Expires" content="0" />
@@ -16,7 +15,7 @@
 	<title><?php if (isset($meta->title)) {
 		echo $meta->title;
 	} else {
-		echo "Apply for Instant Personal Loan Online approvals | Rupay Credit";
+		echo "Apply for Instant Personal Loan Online approvals | Kreditway";
 	} ?></title>
 	<meta name="description" content="<?php if (isset($meta->descriptions)) {
 		echo $meta->descriptions;
@@ -25,21 +24,18 @@
 		echo $meta->keywords;
 	} ?>" />
 
-	<meta property="og:title" content="RupayCredit - Quick Digital Loans for Instant Financial Solutions">
+	<meta property="og:title" content="Kreditway - Quick Digital Loans for Instant Financial Solutions">
 	<meta property="og:site_name" content="Kreditway">
 	<meta property="og:url" content="<?php echo site_url(); ?>">
-	<meta property="og:description"
-		content="Access instant personal loans with RupayCredit. Enjoy quick approvals and easy online applications for your financial needs.">
+	<meta property="og:description" content="Access instant personal loans with Kreditway. Enjoy quick approvals and easy online applications for your financial needs.">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="<?php echo base_url('assets/img/logo/logo.png'); ?>">
 	<meta property="og:locale" content="en_IN">
 
 	<meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="RupayCredit - Quick Digital Loans for Instant Financial Solutions">
-    <meta name="twitter:description" content="Apply for instant personal loans with RupayCredit. Enjoy hassle-free approvals and seamless online processes.">
+    <meta name="twitter:title" content="Kreditway - Quick Digital Loans for Instant Financial Solutions">
+    <meta name="twitter:description" content="Apply for instant personal loans with Kreditway. Enjoy hassle-free approvals and seamless online processes.">
     <meta name="twitter:image" content="https://kreditway.com/assets/img/logo/logo.png">
-
-	<script type="text/javascript">     (function(c,l,a,r,i,t,y){         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);     })(window, document, "clarity", "script", "rfpq02sai7"); </script>
 	<link rel="canonical" href="<?php echo base_url(uri_string()); ?>" />
 	<meta name="robots" content="index, follow" />
 	<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -48,7 +44,7 @@
 
 
 	<!--=====Fav icon=======-->
-	<link rel="shortcut icon" href="<?= base_url('assets/img/logo/rupeycredit_favicon.png') ?>" type="image/x-icon" />
+	<link rel="shortcut icon" href="<?= base_url('assets/img/logo/kreditway_favicon.png') ?>" type="image/x-icon" />
 	<link rel="icon" href="<?= base_url('assets/') ?>img/logo/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" sizes="152x152" href="<?= base_url('assets/') ?>img/logo/apple-touch-icon-152x152.png">
 	<link rel="apple-touch-icon" sizes="120x120" href="<?= base_url('assets/') ?>img/logo/apple-touch-icon-120x120.png">
@@ -111,165 +107,30 @@
 				src="https://www.facebook.com/tr?id=<?php echo $fbpixel; ?>&ev=PageView&noscript=1" /></noscript>
 	<?php } ?>
 	<!-- End Facebook Domain + Pixel Code -->
-	<!-- Taboola Pixel Code -->
-	<script type='text/javascript'>
-		window._tfa = window._tfa || [];
-		window._tfa.push({ notify: 'event', name: 'page_view', id: 1756190 });
-		!function (t, f, a, x) {
-			if (!document.getElementById(x)) {
-				t.async = 1; t.src = a; t.id = x; f.parentNode.insertBefore(t, f);
-			}
-		}(document.createElement('script'),
-			document.getElementsByTagName('script')[0],
-			'//cdn.taboola.com/libtrc/unip/1756190/tfa.js',
-			'tb_tfa_script');
-	</script>
-	<!-- End of Taboola Pixel Code -->
-
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16731328369"></script>
-	<script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-16731328369'); </script>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-P3EHBQNKB5"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-		gtag('config', 'G-P3EHBQNKB5');
-	</script>
-
-	<!-- Google Tag Manager -->
-	<script>(function (w, d, s, l, i) {
-			w[l] = w[l] || []; w[l].push({
-				'gtm.start':
-					new Date().getTime(), event: 'gtm.js'
-			}); var f = d.getElementsByTagName(s)[0],
-				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-		})(window, document, 'script', 'dataLayer', 'GTM-5W6F8DZ7');</script>
-	<!-- End Google Tag Manager -->
-	<script type="onlineprocess/ld+json">
-{
-  "@context": "http://schema.org",
-  "@graph": [
-    {
-      "@type": "LocalBusiness",
-      "name": "RupayCredit",
-      "image": "https://kreditway.com/assets/img/logo/logo.png",
-      "telephone": "+91-7314599786",
-      "email": "info@kreditway.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "2nd Floor, Plot 28, Parvati Nagar Soc, Bapa Sitaram Ck, Katargam",
-        "addressLocality": "Surat",
-        "addressRegion": "Gujarat",
-        "postalCode": "395004",
-        "addressCountry": "IN"
-      },
-      "url": "https://kreditway.com"
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://kreditway.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Apply Now",
-          "item": "https://kreditway.com/onlineprocess/applynow"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "FAQs",
-          "item": "https://kreditway.com/faqs"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Raise a Request",
-          "item": "https://kreditway.com/support/request"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Customer Login",
-          "item": "https://kreditway.com/customer"
-        }
-      ]
-    },
-    {
-      "@type": "Organization",
-      "name": "RupayCredit",
-      "url": "https://kreditway.com",
-      "logo": "https://kreditway.com/assets/img/logo/logo.png",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+91-7314599786",
-        "contactType": "Customer Service",
-        "areaServed": "IN",
-        "availableLanguage": "en"
-      },
-      "sameAs": [
-        "https://www.facebook.com/people/Kreditwaycom/61558079536672/",
-        "https://x.com/rupaycredi36563",
-        "https://www.instagram.com/kreditways/?hl=en",
-        "https://www.linkedin.com/in/rupay-credit-339214312/",
-        "https://www.youtube.com/channel/UCdkrDBAk7oOxBk6hRkDesNQ",
-        "https://in.pinterest.com/kreditwayofficial/"
-      ]
-    },
-    {
-      "@type": "WebSite",
-      "url": "https://kreditway.com",
-      "name": "RupayCredit",
-      "description": "RupayCredit offers hassle-free personal loans with instant approvals and simple online application processes. Get financial aid when you need it most!",
-      "publisher": {
-        "@type": "Organization",
-        "name": "RupayCredit",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://kreditwayom/assets/img/logo/logo.png"
-        }
-      }
-    }
-  ]
-}
-</script>
-<script id="messenger-widget-b" src="https://cdn.express-chat.com/website-bot.js" defer>6961e8b4516fb9ad5a7435fa,6961e60f04ad4cd6c8b1f8fb,agent</script>
 </head>
 
 <body>
 	<!-- Mgid Sensor -->
-<script type="text/javascript">
-    (function() {
-        var d = document, w = window;
-        w.MgSensorData = w.MgSensorData || [];
-        w.MgSensorData.push({
-            cid:901011,
-            project: "a.mgid.com"
-        });
-        var l = "a.mgid.com";
-        var n = d.getElementsByTagName("script")[0];
-        var s = d.createElement("script");
-        s.type = "text/javascript";
-        s.async = true;
-        var dt = !Date.now?new Date().valueOf():Date.now();
-        s.src = "https://" + l + "/mgsensor.js?d=" + dt;
-        n.parentNode.insertBefore(s, n);
-    })();
-</script>
-<!-- /Mgid Sensor -->
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5W6F8DZ7" height="0" width="0"
-			style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-
+	<script type="text/javascript">
+		(function() {
+			var d = document, w = window;
+			w.MgSensorData = w.MgSensorData || [];
+			w.MgSensorData.push({
+				cid:901011,
+				project: "a.mgid.com"
+			});
+			var l = "a.mgid.com";
+			var n = d.getElementsByTagName("script")[0];
+			var s = d.createElement("script");
+			s.type = "text/javascript";
+			s.async = true;
+			var dt = !Date.now?new Date().valueOf():Date.now();
+			s.src = "https://" + l + "/mgsensor.js?d=" + dt;
+			n.parentNode.insertBefore(s, n);
+		})();
+	</script>
+	<!-- /Mgid Sensor -->
+	
 	<button class="scroll__top scroll-to-target" data-target="html">
 		<i class="fas fa-angle-up"></i>
 	</button>

@@ -393,7 +393,7 @@
                             source, directly or indirectly.
                         </p>
 
-                        <p class="mb-0"><strong>Pre-application NOTE: </strong>Users are advised to read our terms and
+                        <p class="mb-0"><strong>Pre-application Note: </strong>Users are advised to read our terms and
                             conditions
                             and policies before proceeding/applying/registration.
                         </p>

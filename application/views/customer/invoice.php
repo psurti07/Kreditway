@@ -21,8 +21,8 @@
 				<tbody>
 					<tr>
 						<td style="vertical-align:bottom;word-wrap:break-word;float:left;width:50%;text-align:left;">
-							<b style="font-size:14pt;">Kreditway.com</b><br>
-							<b>Rupay Credit</b><br/>
+							<b style="font-size:14pt;">Kreditway Consulting LLP</b><br>
+							<b>Kreditway</b><br/>
 							<div>
 								<span style="white-space: pre-wrap;" id="tmp_org_address"><?= COMPANY_ADDRESS?><br/>Mo.: <?= COMPANY_MOBILE ?><br/>Email: <?= COMPANY_EMAIL?><br/>CIN No.: <?=COMPANY_CIN?><br/>GST No.: <?= COMPANY_GST?></span>
 							</div>

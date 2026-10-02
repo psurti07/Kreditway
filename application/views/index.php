@@ -186,7 +186,7 @@
 
                         </div>
                         <div class="section-title mb-30 tg-heading-subheading animation-style3">
-                            <a href="<?= base_url('onlineprocess/applynow') ?>" class="btn">APPLY FOR GOLD LOAN</a>
+                            <a href="<?= base_url('onlineprocess/applynow') ?>" class="btn">APPLY FOR PERSONAL LOAN</a>
                         </div>
                     </div>
                 </div>
@@ -434,7 +434,7 @@
                                         <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
                                     </div>
                                     <div class="card-comment">
-                                        <p>“ Great!! The online process of applying for a loan with Rupay Credit is very
+                                        <p>“ Great!! The online process of applying for a loan with Kreditway is very
                                             easy and trouble-free. I faced no issues in my process and got the loan in
                                             no time. Thank you very much for your support, folks. I definitely recommend
                                             it!!
@@ -476,7 +476,7 @@
                                     </div>
                                     <div class="card-comment">
                                         <p>“ Throughout the process, I was given step-by-step instructions to ensure
-                                            that everything went smoothly. I am very pleased with Rupay Credit and would
+                                            that everything went smoothly. I am very pleased with Kreditway and would
                                             gladly recommend it to my friends and family if they need a loan.
                                             ”</p>
                                     </div>
@@ -496,7 +496,7 @@
                                         <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
                                     </div>
                                     <div class="card-comment">
-                                        <p>“ I had an amazing experience with Rupay Credit. I would like to thank the
+                                        <p>“ I had an amazing experience with Kreditway. I would like to thank the
                                             entire team. They are very professional, explained everything clearly, and
                                             handled my loan process like a pro. From the beginning to disbursal,
                                             everything went very smoothly.
@@ -679,10 +679,9 @@
                                     <div class="accordion-collapse collapse" id="collapseTwo"
                                         aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ" style="">
                                         <div class="accordion-body">
-                                            <p>Yes, absolutely. We use bank-grade 256-bit encryption protocols to
+                                            Yes, absolutely. We use bank-grade 256-bit encryption protocols to
                                                 protect your sensitive information and ensure your data remains strictly
-                                                confidential. </p>
-
+                                                confidential.
                                         </div>
                                     </div>
                                 </div>
@@ -712,9 +711,8 @@
                                     <div class="accordion-collapse collapse" id="collapseFour"
                                         aria-labelledby="headingFour" data-bs-parent="#accordionFAQ" style="">
                                         <div class="accordion-body">
-                                            <p>No, checking your eligibility and using our EMI calculator is completely
-                                                free with zero hidden upfront charges. </p>
-
+                                            No, checking your eligibility and using our EMI calculator is completely
+                                                free with zero hidden upfront charges.
                                         </div>
                                     </div>
                                 </div>

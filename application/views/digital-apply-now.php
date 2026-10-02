@@ -200,7 +200,7 @@
                                 <span> <img src="<?= base_url('assets/img/images/Iconcircle.png') ?>" class="me-1"
                                         alt="" /></spna>
                                     <h3 class="mb-0 text-center text-navy fw-bold mb-4">Verify your mobile</h3>
-                                    <h6 class="fw-light mb-4">We've sent a 6-digit OTP to <strong class="text-navy">
+                                    <h6 class="fw-light mb-4">We've sent a 4-digit OTP to <strong class="text-navy">
                                             <?php echo $userdetails['mobile']; ?> </strong>
                                     </h6>
                                     <div class="form-group form-floating mb-4">
@@ -575,7 +575,7 @@
                                             <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
                                         </div>
                                         <div class="card-comment">
-                                            <p>“ Great!! The online process of applying for a loan with Rupay Credit is
+                                            <p>“ Great!! The online process of applying for a loan with Kreditway is
                                                 very
                                                 easy and trouble-free. I faced no issues in my process and got the loan
                                                 in
@@ -621,7 +621,7 @@
                                         </div>
                                         <div class="card-comment">
                                             <p>“ Throughout the process, I was given step-by-step instructions to ensure
-                                                that everything went smoothly. I am very pleased with Rupay Credit and
+                                                that everything went smoothly. I am very pleased with Kreditway and
                                                 would
                                                 gladly recommend it to my friends and family if they need a loan.
                                                 ”</p>
@@ -642,7 +642,7 @@
                                             <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
                                         </div>
                                         <div class="card-comment">
-                                            <p>“ I had an amazing experience with Rupay Credit. I would like to thank
+                                            <p>“ I had an amazing experience with Kreditway. I would like to thank
                                                 the
                                                 entire team. They are very professional, explained everything clearly,
                                                 and
@@ -668,12 +668,12 @@
                     <p class="mb-0 text-white"><strong>Disclaimer: </strong><?php echo COMPANY_NAME; ?> inot a lender or financial institution. We do not provide loans or make credit decisions. All loan approvals, interest rates, fees, and disbursal are handled by third-party lenders/NBFCs. We do not guarantee loan approval, disbursal, or specific loan terms. The amount paid is only for the service charge. We are not lenders and do not guarantee any loan approval. Loan approval, disbursement/sanction is entirely dependent on NBFC criteria.</p>
 
                     <p class="mb-0 text-white"><strong>Important Note: </strong>We ask our customers to make payments ONLY on our website
-                        <a class="text-dark" href="<?php echo COMPANY_SITE; ?>">kreditway.com</a> and NOT through any
+                        <a class="text-light" href="<?php echo COMPANY_SITE; ?>">kreditway.com</a> and NOT through any
                         other
                         source, directly or indirectly.
                     </p>
 
-                    <p class="mb-0 text-white"><strong>Pre-application NOTE: </strong>Users are advised to read our terms and conditions and policies before proceeding/applying/registration.
+                    <p class="mb-0 text-white"><strong>Pre-application Note: </strong>Users are advised to read our terms and conditions and policies before proceeding/applying/registration.
                     </p>
 
                     <p class="mb-0 text-white"><strong>Registered Office Address : </strong><?php echo COMPANY_ADDRESS; ?></p>

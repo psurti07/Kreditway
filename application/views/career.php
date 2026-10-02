@@ -71,7 +71,7 @@
 														<td colspan="4">
 															<strong>
 																Unfortunately, we currently have no openings. </br>
-																Please send your updated CV to: <a href='mailto:info@kreditwayom'>info@kreditwayom</a>. We will contact you if your qualifications match any of our future needs.
+																Please send your updated CV to: <a href='mailto:info@kreditway.com'>info@kreditway.com</a>. We will contact you if your qualifications match any of our future needs.
 															</strong>
 														</td>
 													</tr>

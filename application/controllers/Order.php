@@ -318,20 +318,6 @@ class Order extends CI_Controller
 					);
 					$this->load->helper('interakt');
 					$restrack2 = event_track($data3);
-
-					/*$data3 = array(
-						'apiKey' => AISENSY_KEY,
-						'campaignName' => $wpcampaignname,
-						'destination' => '+91' . $userdata->mobile,
-						'media' => array(
-							'url' => 'https://whatsapp-media-library.s3.ap-south-1.amazonaws.com/IMAGE/65c1e3a57fc9d24aed6fbe28/836110_ccps.jpeg',
-							'filename' => 'cc_ps.jpeg'
-						),
-						'userName' => $userdata->fullname,
-						'templateParams' => array('$Name'),
-						'tags' => array('Payment Successful')
-					);
-					$restrack3 = aisensy_track($data3);*/
 					return redirect("https://resp.kreditwayom/order/orderStatus/true");
 					// $this->load->view('payment-response', ['meta' => $meta, 'responsedata' => $data]);
 				} else {
@@ -340,39 +326,6 @@ class Order extends CI_Controller
 					// $this->load->view('payment-response', ['meta' => $meta, 'responsedata' => $data]);
 				}
 			} else if ($status == "false" && $applyid != "") {
-				if ($applyid > 0) {
-
-					/*$data3 = array(
-						'apiKey' => AISENSY_KEY,
-						'campaignName' => '19april_fail',
-						'destination' => '+91' . $userdata->mobile,
-						'media' => array(
-							'url' => 'https://whatsapp-media-library.s3.ap-south-1.amazonaws.com/IMAGE/65c1e3a57fc9d24aed6fbe28/2137918_ccfail.jpeg',
-							'filename' => 'cc_fail.jpeg'
-						),
-						'userName' => $userdata->fullname,
-						'templateParams' => array('$Name'),
-						'tags' => array('Payment Failed')
-					);
-					$restrack3 = aisensy_track($data3);*/
-					$data4 = array(
-						"fullPhoneNumber" => '+91' . $userdata->mobile,
-						"callbackData" => "some text here",
-						"type" => "Template",
-						"template" => array(
-							"name" => "nov12_fail",
-							"languageCode" => "en",
-							"headerValues" => array(
-								"https://interaktprodmediastorage.blob.core.windows.net/mediaprodstoragecontainer/6534968c-65a6-4b9b-b95e-73c81f147888/message_template_media/22wf5aj007Wn/rupeycredit_fail.jpg?se=2029-11-06T12%3A05%3A17Z&sp=rt&sv=2019-12-12&sr=b&sig=8k1xyvd7%2B8zP2/zxGsXUGT3lexnE%2BdOSXCIeVDauacA%3D"
-							),
-							"bodyValues" => array(
-								$userdata->fullname
-							),
-						)
-	
-					);
-					$restrack4 = interakt_track($data4);
-				}
 				return redirect("https://resp.kreditway.com/order/orderStatus/false");
 
 				//$this->load->view('payment-response', ['meta' => $meta, 'responsedata' => $data]);

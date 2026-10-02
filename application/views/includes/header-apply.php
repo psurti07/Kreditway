@@ -17,7 +17,7 @@
 		<?php if (isset($meta->title)) {
 			echo $meta->title;
 		} else {
-			echo "Apply for Instant Personal Loan Online approvals | Rupay Credit";
+			echo "Apply for Instant Personal Loan Online approvals | Kreditway";
 		} ?>
 	</title>
 	<meta name="description" content="<?php if (isset($meta->descriptions)) {
@@ -27,15 +27,14 @@
 		echo $meta->keywords;
 	} ?>" />
 
-	<meta property="og:title" content="Apply for a Personal Loan Online - RupayCredit">
+	<meta property="og:title" content="Apply for a Personal Loan Online - Kreditway">
 	<meta property="og:site_name" content="Kreditway">
 	<meta property="og:url" content="<?php echo site_url(); ?>">
 	<meta property="og:description"
-		content="Apply online for personal loans with RupayCredit. Enjoy instant approvals, simple terms, and a hassle-free loan process. Start your application today!">
+		content="Apply online for personal loans with Kreditway. Enjoy instant approvals, simple terms, and a hassle-free loan process. Start your application today!">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="<?php echo base_url('assets/img/logo/logo.png'); ?>">
 	<meta property="og:locale" content="en_IN">
-	<script type="text/javascript">     (function(c,l,a,r,i,t,y){         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);     })(window, document, "clarity", "script", "rfpq02sai7"); </script>
 	<link rel="canonical" href="<?php echo base_url(uri_string()); ?>" />
 	<meta name="robots" content="index, follow" />
 	<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -43,7 +42,7 @@
 	<meta name="author" content="vw-team">
 
 	<!--=====Fav icon=======-->
-	<link rel="shortcut icon" href="<?= base_url('assets/img/logo/rupeycredit_favicon.png') ?>" type="image/x-icon" />
+	<link rel="shortcut icon" href="<?= base_url('assets/img/logo/kreditway_favicon.png') ?>" type="image/x-icon" />
 	<link rel="icon" href="<?= base_url('assets/') ?>img/logo/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" sizes="152x152" href="<?= base_url('assets/') ?>img/logo/apple-touch-icon-152x152.png">
 	<link rel="apple-touch-icon" sizes="120x120" href="<?= base_url('assets/') ?>img/logo/apple-touch-icon-120x120.png">
@@ -103,101 +102,6 @@
 				src="https://www.facebook.com/tr?id=<?php echo $fbpixel; ?>&ev=PageView&noscript=1" /></noscript>
 	<?php } ?>
 	<!-- End Facebook Domain + Pixel Code -->
-
-	<script type="onlineprocess/ld+json">
-{
-  "@context": "http://schema.org",
-  "@graph": [
-    {
-      "@type": "LocalBusiness",
-      "name": "RupayCredit",
-      "image": "https://kreditway/assets/img/logo/logo.png",
-      "telephone": "+91-7314599786",
-      "email": "info@kreditway
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "2nd Floor, Plot 28, Parvati Nagar Soc, Bapa Sitaram Ck, Katargam",
-        "addressLocality": "Surat",
-        "addressRegion": "Gujarat",
-        "postalCode": "395004",
-        "addressCountry": "IN"
-      },
-      "url": "https://kreditway
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://kreditway.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Apply Now",
-          "item": "https://kreditway/onlineprocess/applynow"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "FAQs",
-          "item": "https://kreditway/faqs"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Raise a Request",
-          "item": "https://kreditway.com/support/request"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Customer Login",
-          "item": "https://kreditway.com/customer"
-        }
-      ]
-    },
-    {
-      "@type": "Organization",
-      "name": "RupayCredit",
-      "url": "https://kreditway.com",
-      "logo": "https://kreditway.com/assets/img/logo/logo.png",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+91-7314599786",
-        "contactType": "Customer Service",
-        "areaServed": "IN",
-        "availableLanguage": "en"
-      },
-      "sameAs": [
-        "https://www.facebook.com/people/Kreditwaycom/61558079536672/",
-        "https://x.com/rupaycredi36563",
-        "https://www.instagram.com/kreditways/?hl=en",
-        "https://www.linkedin.com/in/rupay-credit-339214312/",
-        "https://www.youtube.com/channel/UCdkrDBAk7oOxBk6hRkDesNQ",
-        "https://in.pinterest.com/kreditwayofficial/"
-      ]
-    },
-    {
-      "@type": "WebSite",
-      "url": "https://kreditway.com",
-      "name": "RupayCredit",
-      "description": "RupayCredit offers hassle-free personal loans with instant approvals and simple online application processes. Get financial aid when you need it most!",
-      "publisher": {
-        "@type": "Organization",
-        "name": "RupayCredit",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://kreditway.com/assets/img/logo/logo.png"
-        }
-      }
-    }
-  ]
-}
-</script>
-
 </head>
 
 <body>

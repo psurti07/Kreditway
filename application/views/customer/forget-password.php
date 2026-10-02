@@ -13,7 +13,7 @@
 	<title><?php if (isset($meta->title)) {
 				echo $meta->title;
 			} else {
-				echo "Apply for Instant Personal Loan Online approvals | Rupay Credit";
+				echo "Apply for Instant Personal Loan Online approvals | Kreditway";
 			} ?></title>
 	<meta name="description" content="<?php if (isset($meta->descriptions)) { echo $meta->descriptions; } ?>" />
 	<meta name="keywords" content="<?php if (isset($meta->keywords)) { echo $meta->keywords; } ?>" />
@@ -32,7 +32,7 @@
 	<meta name="author" content="vw-team">
 
 	<!--=====Fav icon=======-->
-	<link rel="shortcut icon" href="<?= base_url('assets/img/logo/rupeycredit_favicon.png') ?>" type="image/x-icon" />
+	<link rel="shortcut icon" href="<?= base_url('assets/img/logo/kreditway_favicon.png') ?>" type="image/x-icon" />
 	<link rel="icon" href="<?= base_url('assets/') ?>img/logo/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" sizes="152x152" href="<?= base_url('assets/') ?>img/logo/apple-touch-icon-152x152.png">
 	<link rel="apple-touch-icon" sizes="120x120" href="<?= base_url('assets/') ?>img/logo/apple-touch-icon-120x120.png">
@@ -132,15 +132,9 @@
 			<div class="footer-lending">
 				<div class="container">
 					<div class="row align-items-center">
-						<div class="col-lg-6">
+						<div class="col-12">
 							<div class="copyright-text-two">
-								<p class="font-12">CIN NO: <?= COMPANY_CIN; ?></p>
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="copyright-text-two">
-								<p class="footer-text-right font-12"><?= date('Y'); ?> © <?= COMPANY_NAME; ?> All Right
-									Reserved</p>
+								<p class="text-center"><?= date('Y'); ?> © <?= COMPANY_NAME; ?>. All Right Reserved</p>
 							</div>
 						</div>
 					</div>

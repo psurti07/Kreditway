@@ -45,7 +45,7 @@ Class Site_Support_Model extends CI_Model {
 
 			$message = '<p>Hello,</p>';
 			$message .= '<p>Your request ticket has been raised in our system with the Ticket Id: '.$ticketno.'– which is OPEN. We will contact you within 24-48 hours to discuss further.</p>';
-			$message .= '<p>Thanks & Regards,<br/>Support Team,<br/>Rupay Credit</p>';
+			$message .= '<p>Thanks & Regards,<br/>Support Team,<br/>Kreditway</p>';
 
 			$this->load->model('Site_General_Model');
 			$content = $this->Site_General_Model->simpleemailtemplate($message);
