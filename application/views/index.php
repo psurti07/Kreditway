@@ -9,15 +9,12 @@
                 <div class="col-lg-6">
                     <div class="banner__content-four">
                         <div class="d-flex gap-2 mb-2 flex-wrap">
-                            <span class="sub-title sub-title-wrap fa-xs rounded-pill px-2 py-1">8+ NBFC Partners</span>
-                            <span class="sub-title sub-title-wrap fa-xs rounded-pill px-2 py-1">100% Digital
-                                Process</span>
-                            <span class="sub-title sub-title-wrap fa-xs rounded-pill px-2 py-1">Loan approval in 24-48
-                                hrs</span>
+                            <span class="sub-title sub-title-wrap fa-xs rounded-pill px-2 py-1">Find a Loan Option</span>
+                            <span class="sub-title sub-title-wrap fa-xs rounded-pill px-2 py-1">That Fits Your Needs</span>
+                            
                         </div>
                         <h1 class="title">Empowering Your Goals with Smart <span>Financial Solutions</span></h1>
-                        <p class="">Loan approval and disbursement help you reach your financial goals. Get instant
-                            loans at competitive rates with minimal documentation.
+                        <p class="">KreditWay helps you explore loan offers from participating NBFC partners through a simple digital journey.
                         </p>
                         <a href="<?= base_url('onlineprocess/applynow') ?>" class="btn">Get Consultation Now</a>
                     </div>
@@ -41,7 +38,7 @@
                         <div class="section-title text-center mb-50 tg-heading-subheading animation-style3">
                             <span class="sub-title">The Advantage</span>
                             <h2 class="title">
-                                Why KreditWay — The Difference We Bring
+                                Why KreditWay – A Simpler Way to Explore Loan Options
                             </h2>
 
                         </div>
@@ -58,9 +55,9 @@
 
                             </div>
                             <div class="services__content-five">
-                                <h2 class="title"><a>Leading Technology
+                                <h2 class="title"><a>Smart Digital Platform
                                     </a></h2>
-                                <p>Connecting borrowers seamlessly with a sophisticated AI matching engine.</p>
+                                <p>Explore available loan options through a simple and user-friendly digital platform.</p>
                             </div>
                         </div>
                     </div>
@@ -71,9 +68,9 @@
 
                             </div>
                             <div class="services__content-five">
-                                <h2 class="title"><a>100% Digital Process
+                                <h2 class="title"><a>Convenient Online Process
                                     </a></h2>
-                                <p>Our entire cycle from onboarding to match selection takes place online, paper-free.
+                                <p>Complete key application steps online and submit the required information digitally.
                                 </p>
                             </div>
                         </div>
@@ -85,9 +82,9 @@
 
                             </div>
                             <div class="services__content-five">
-                                <h2 class="title"><a>Self-Apply System
+                                <h2 class="title"><a>Self-Apply Option
                                     </a></h2>
-                                <p>Submit coordinates and documents on our portal directly without tedious middleware.
+                                <p>Submit your basic details and required documents directly through our online platform.
                                 </p>
                             </div>
                         </div>
@@ -122,25 +119,20 @@
                 <div class="col-lg-7">
                     <div class="about__content-seven">
                         <div class="section-title mb-25 pl-20">
-                            <span class="sub-title">Financial Guidance</span>
-                            <h2 class="title wow">Helping You Choose the Right Financial Product
+                            <span class="sub-title">SMART FINANCIAL GUIDANCE</span>
+                            <h2 class="title wow">Helping You Explore Suitable Financial Options
                             </h2>
                         </div>
-                        <p class="pl-20">Choosing the perfect financial route can be overwhelming with hundreds of
-                            lenders in the market. KreditWay serves as your premium navigator, matching your credit
-                            profile and goals to select NBFC offerings that yield high approval chances and competitive
-                            interest rates.
+                        <p class="pl-20">KreditWay provides a convenient digital platform to explore available loan options from participating lending partners. Available options may vary based on eligibility criteria, documentation, and lender policies.
 
                         </p>
 
                         <div class="about__content-inner-five gap-12 pl-20 mb-4">
                             <div class="about__list-box">
                                 <ul class="list-wrap">
-                                    <li><i class="flaticon-arrow-button"></i>Tailored Loan
-                                        Comparison across certified NBFCs
+                                    <li><i class="flaticon-arrow-button"></i>Explore Multiple Lending Partner Options
                                     </li>
-                                    <li><i class="flaticon-arrow-button"></i>100% digital
-                                        matching with zero impact on credit scores
+                                    <li><i class="flaticon-arrow-button"></i>Simple Digital Application Assistance
                                     </li>
                                 </ul>
                             </div>
@@ -162,24 +154,20 @@
                 <div class="col-lg-7 col-md-12 col-12">
                     <div class="choose__content-five">
                         <div class="section-title mb-30 tg-heading-subheading animation-style3">
-                            <span class="sub-title">Grow Your Business Smartly</span>
-                            <h2 class="title">Manage Your Finances the Smart Way
+                            <span class="sub-title">GROW SMART</span>
+                            <h2 class="title">Personal Loan, Made Simple
                             </h2>
                         </div>
-                        <p>Unlock the potential of your assets. KreditWay provides simple options to obtain low-interest
-                            loans by leveraging your collateral securely with quick assessments.
+                        <p>Explore personal loan options with a quick and convenient application process.
                         </p>
                         <div class="about__content-inner-five gap-12 mb-3">
                             <div class="about__list-box">
                                 <ul class="list-wrap">
-                                    <li style="color: #1B2B5E;"><i class="flaticon-arrow-button"></i>Rates starting as
-                                        low as 0.89% per month
+                                    <li style="color: #1B2B5E;"><i class="flaticon-arrow-button"></i>Simple Application Process
                                     </li>
-                                    <li style="color: #1B2B5E;"><i class="flaticon-arrow-button"></i>High per-gram
-                                        valuation with minimal processing fee
+                                    <li style="color: #1B2B5E;"><i class="flaticon-arrow-button"></i>Flexible Repayment Options
                                     </li>
-                                    <li style="color: #1B2B5E;"><i class="flaticon-arrow-button"></i>Insured storage &
-                                        safety protocols at top NBFC vault doors
+                                    <li style="color: #1B2B5E;"><i class="flaticon-arrow-button"></i>Eligibility-Based Offers
                                     </li>
                                 </ul>
                             </div>
@@ -242,8 +230,8 @@
                 <div class="col-lg-10">
                     <div class="about__content-seven">
                         <div class="section-title text-center mb-50 tg-heading-subheading animation-style3">
-                            <span class="sub-title">Seamless Process</span>
-                            <h2 class="title">Don't Worry!! — Apply Now in 4 Easy Steps
+                            <span class="sub-title">SEAMLESS PROCESS</span>
+                            <h2 class="title">Apply in 6 Simple Steps
                             </h2>
 
                         </div>
@@ -350,8 +338,8 @@
                 <div class="col-lg-10">
                     <div class="about__content-seven">
                         <div class="section-title text-center mb-50 tg-heading-subheading animation-style3">
-                            <span class="sub-title">Instant Estimate</span>
-                            <h2 class="title">Know Your EMI in Seconds
+                            <span class="sub-title">Calculate Your EMI</span>
+                            <h2 class="title">Make Smarter Financial Decisions
                             </h2>
 
                         </div>
@@ -407,8 +395,8 @@
                 <div class="col-lg-10">
                     <div class="about__content-seven">
                         <div class="section-title text-center mb-50 tg-heading-subheading animation-style3">
-                            <span class="sub-title">Testimonials</span>
-                            <h2 class="title">Hear from Our Customers</h2>
+                            <span class="sub-title">CUSTOMER STORIES</span>
+                            <h2 class="title">What Our Customers Say</h2>
                         </div>
 
                     </div>
@@ -424,7 +412,7 @@
                                         <img src="assets/img/home8/author.png" alt="" />
                                     </div> -->
                                 <div class="card-info">
-                                    <p class="card-position mb-0">Bhavesh Solanki
+                                    <p class="card-position mb-0">Devansh Patel
                                     </p>
                                     <div class="rates-review">
                                         <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
@@ -434,11 +422,7 @@
                                         <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
                                     </div>
                                     <div class="card-comment">
-                                        <p>“ Great!! The online process of applying for a loan with Kreditway is very
-                                            easy and trouble-free. I faced no issues in my process and got the loan in
-                                            no time. Thank you very much for your support, folks. I definitely recommend
-                                            it!!
-                                            ”</p>
+                                        <p>“The application process was simple and easy to understand. I was able to complete the required steps without confusion.”</p>
                                     </div>
                                 </div>
                             </div>
@@ -446,7 +430,7 @@
                         <div class="swiper-slide">
                             <div class="card-testimonials">
                                 <div class="card-info">
-                                    <p class="card-position mb-0">Karthika Manikandan</p>
+                                    <p class="card-position mb-0">Ishita Menon</p>
                                     <div class="rates-review">
                                         <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
@@ -455,10 +439,7 @@
                                         <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
                                     </div>
                                     <div class="card-comment">
-                                        <p>“ Everything was so timely. The team members are very polite and helpful. The
-                                            way they handled my process is commendable. I strongly recommend it to
-                                            everyone who is looking for a loan without facing any issues.
-                                            ”</p>
+                                        <p>“I liked how straightforward the process was. The instructions helped me submit my details smoothly.”</p>
                                     </div>
                                 </div>
                             </div>
@@ -466,7 +447,7 @@
                         <div class="swiper-slide">
                             <div class="card-testimonials">
                                 <div class="card-info">
-                                    <p class="card-position mb-0">Manish Pandey</p>
+                                    <p class="card-position mb-0">Harsh Vardhan</p>
                                     <div class="rates-review">
                                         <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
                                         <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
@@ -475,10 +456,7 @@
                                         <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
                                     </div>
                                     <div class="card-comment">
-                                        <p>“ Throughout the process, I was given step-by-step instructions to ensure
-                                            that everything went smoothly. I am very pleased with Kreditway and would
-                                            gladly recommend it to my friends and family if they need a loan.
-                                            ”</p>
+                                        <p>“The platform made it easy to explore available loan options and understand the application requirements.”</p>
                                     </div>
                                 </div>
                             </div>
@@ -486,7 +464,7 @@
                         <div class="swiper-slide">
                             <div class="card-testimonials">
                                 <div class="card-info">
-                                    <p class="card-position mb-0">Vikram Singh
+                                    <p class="card-position mb-0">Priya Nair
                                     </p>
                                     <div class="rates-review">
                                         <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
@@ -496,12 +474,115 @@
                                         <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
                                     </div>
                                     <div class="card-comment">
-                                        <p>“ I had an amazing experience with Kreditway. I would like to thank the
-                                            entire team. They are very professional, explained everything clearly, and
-                                            handled my loan process like a pro. From the beginning to disbursal,
-                                            everything went very smoothly.
-
-                                            ”</p>
+                                        <p>“My experience was convenient. The process was digital and the steps were clearly explained.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-testimonials">
+                                <div class="card-info">
+                                    <p class="card-position mb-0">Kunal Desai
+                                    </p>
+                                    <div class="rates-review">
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
+                                    </div>
+                                    <div class="card-comment">
+                                        <p>“I received useful guidance regarding documentation and the overall application process.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-testimonials">
+                                <div class="card-info">
+                                    <p class="card-position mb-0">Sneha Joshi
+                                    </p>
+                                    <div class="rates-review">
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
+                                    </div>
+                                    <div class="card-comment">
+                                        <p>“The website was easy to use, and I could check relevant loan information before proceeding.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-testimonials">
+                                <div class="card-info">
+                                    <p class="card-position mb-0">Arjun Malhotra
+                                    </p>
+                                    <div class="rates-review">
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
+                                    </div>
+                                    <div class="card-comment">
+                                        <p>“The application journey felt organised and simple. I appreciated the clear information provided at each step.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-testimonials">
+                                <div class="card-info">
+                                    <p class="card-position mb-0">Tanvi Bhatia
+                                    </p>
+                                    <div class="rates-review">
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
+                                    </div>
+                                    <div class="card-comment">
+                                        <p>“It was convenient to submit my application online and understand the available options.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-testimonials">
+                                <div class="card-info">
+                                    <p class="card-position mb-0">Rahul Bansal
+                                    </p>
+                                    <div class="rates-review">
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
+                                    </div>
+                                    <div class="card-comment">
+                                        <p>“The process was user-friendly, and the information helped me make a more informed decision.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-testimonials">
+                                <div class="card-info">
+                                    <p class="card-position mb-0">Aarohi Chawla
+                                    </p>
+                                    <div class="rates-review">
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
+                                    </div>
+                                    <div class="card-comment">
+                                        <p>“I had a smooth experience while exploring personal loan options. The steps were simple and clearly presented.”</p>
                                     </div>
                                 </div>
                             </div>
@@ -658,13 +739,12 @@
                                         <button class="accordion-button text-heading-5 collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseOne"
                                             aria-expanded="false" aria-controls="collapseOne">
-                                            What documents are required to apply for a loan?
+                                           What can I use a personal loan for?
                                         </button>
                                     </h5>
                                     <div class="accordion-collapse collapse show" id="collapseOne"
                                         aria-labelledby="headingOne" data-bs-parent="#accordionFAQ" style="">
-                                        <div class="accordion-body">You typically need your PAN card, Aadhaar card, last
-                                            3 months' bank statements, and salary slips or ITR proofs.
+                                        <div class="accordion-body">A personal loan can be used to meet almost any personal financial need, including medical expenses, education, home improvements, and debt consolidation.
                                         </div>
                                     </div>
                                 </div>
@@ -673,15 +753,25 @@
                                         <button class="accordion-button text-heading-5 collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                             aria-expanded="false" aria-controls="collapseTwo">
-                                            Is my personal and financial data secure?
+                                            What are the personal loan eligibility requirements?
                                         </button>
                                     </h5>
                                     <div class="accordion-collapse collapse" id="collapseTwo"
                                         aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ" style="">
                                         <div class="accordion-body">
-                                            Yes, absolutely. We use bank-grade 256-bit encryption protocols to
-                                                protect your sensitive information and ensure your data remains strictly
-                                                confidential.
+                                            The eligibility criteria for a personal loan are:
+                                                <h6>For Salaried Professionals: </h6>
+                                                <ul>
+                                                    <li>Minimum Age: 21 Years</li>
+                                                    <li>Minimum Salary: Rs.15,000 Per Month (Should reflect in bank statement)</li>
+                                                    <li>Minimum Job Stability: 1 Year </li>
+                                                </ul>
+                                                <h6>For Self-Employed: </h6>
+                                                <ul>
+                                                    <li>Minimum Age: 21 Years</li>
+                                                    <li>Income Tax Return Of Minimum 1 Year </li>
+                                                    <li>1 Year Business Stability </li>
+                                                </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -690,13 +780,32 @@
                                         <button class="accordion-button text-heading-5 type=" data-bs-toggle="collapse"
                                             data-bs-target="#collapseThree" aria-expanded="false"
                                             aria-controls="collapseThree">
-                                            How long does loan disbursal take?
+                                            Which documents are required to apply for a personal loan?
                                         </button>
                                     </h5>
                                     <div class="accordion-collapse collapse" id="collapseThree"
                                         aria-labelledby="headingThree" data-bs-parent="#accordionFAQ" style="">
-                                        <div class="accordion-body">Once your digital verification and approval are
-                                            complete, funds are disbursed directly to your bank account within 24 hours.
+                                        <div class="accordion-body">The following documents are required to apply for a personal loan.
+                                            <h6>For Salaried: </h6>
+                                            <ul>
+                                                <li>Aadhaar Card</li>
+                                                <li>PAN Card</li>
+                                                <li>Residence Proof: Rent agreement or Utility bills</li>
+                                                <li>Bank Statement</li>
+                                                <li>Income Proof: Salary Slips or Form 16</li>
+                                            </ul>
+                                            <h6>For Self-Employed: </h6>
+                                            <ul>
+                                                <li>Aadhaar Card</li>
+                                                <li>PAN Card</li>
+                                                <li>Residence Proof: Rent agreement or Utility bills</li>
+                                                <li>Bank Statement</li>
+                                                <li>Balance Sheet</li>
+                                                <li>Income Computation</li>
+                                                <li>Service Tax Registration, License, Registration Certificate</li>
+                                                <li>Income Tax Return</li>
+                                            </ul>
+                                            <p>Based on your profile and the guidelines, the lender may request additional documents.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -705,14 +814,13 @@
                                         <button class="accordion-button text-heading-5 type=" data-bs-toggle="collapse"
                                             data-bs-target="#collapseFour" aria-expanded="false"
                                             aria-controls="collapseThree">
-                                            Is there any fee for checking my loan eligibility?
+                                            Does credit score affect personal loan approval?
                                         </button>
                                     </h5>
                                     <div class="accordion-collapse collapse" id="collapseFour"
                                         aria-labelledby="headingFour" data-bs-parent="#accordionFAQ" style="">
                                         <div class="accordion-body">
-                                            No, checking your eligibility and using our EMI calculator is completely
-                                                free with zero hidden upfront charges.
+                                            Yes, your credit score is a critical factor in the loan application process. It is one of the most important factors that lenders use to assess your creditworthiness.
                                         </div>
                                     </div>
                                 </div>
@@ -721,14 +829,43 @@
                                         <button class="accordion-button text-heading-5 type=" data-bs-toggle="collapse"
                                             data-bs-target="#collapseFive" aria-expanded="false"
                                             aria-controls="collapseFive">
-                                            Can I prepay my loan early?
+                                            How can I improve my chances of getting approved for a personal loan?
                                         </button>
                                     </h5>
                                     <div class="accordion-collapse collapse" id="collapseFive"
                                         aria-labelledby="headingFive" data-bs-parent="#accordionFAQ">
                                         <div class="accordion-body">
-                                            Yes, prepayment options are available depending on the specific lending
-                                            partner's policy and terms of agreement.
+                                            To improve your chances, keep your credit score high, earn a consistent income, and provide accurate documentation during the application process.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item border">
+                                    <h5 class="accordion-header" id="headingSix">
+                                        <button class="accordion-button text-heading-6 type=" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSix" aria-expanded="false"
+                                            aria-controls="collapseSix">
+                                            Is there any tax benefit to personal loans?
+                                        </button>
+                                    </h5>
+                                    <div class="accordion-collapse collapse" id="collapseSix"
+                                        aria-labelledby="headingSix" data-bs-parent="#accordionFAQ">
+                                        <div class="accordion-body">
+                                            No, personal loans do not offer any direct tax benefits. However, if you use a personal loan to invest in your business, renovate your home, or fund your education, you may be able to deduct the interest payments. For more information, please contact your CA or tax advisor.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item border">
+                                    <h5 class="accordion-header" id="headingSeven">
+                                        <button class="accordion-button text-heading-7 type=" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSeven" aria-expanded="false"
+                                            aria-controls="collapseSeven">
+                                            In addition to credit scores, what other factors do lenders consider when approving personal loans?
+                                        </button>
+                                    </h5>
+                                    <div class="accordion-collapse collapse" id="collapseSeven"
+                                        aria-labelledby="headingSeven" data-bs-parent="#accordionFAQ">
+                                        <div class="accordion-body">
+                                            In addition to the credit score, lenders take into account the applicant's age, income, and job stability. 
                                         </div>
                                     </div>
                                 </div>

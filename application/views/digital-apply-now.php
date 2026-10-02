@@ -12,23 +12,22 @@
                             style="">
                             <img src="<?= base_url('assets/img/new-image/register.png') ?>" class="svg-inject me-1"
                                 alt="" />
-                            8+ NBFC Partners
+                            Multiple Lending Partners
                         </span>
                         <span
                             class="text-dark rounded-pill text-main-top-main text-wrap text-start border pill-box mb-lg-0 mb-2">
                             <img src="<?= base_url('assets/img/new-image/register.png') ?>" class="svg-inject me-1"
                                 alt="" />
-                            100% Digital Process
+                            Digital Application Process
                         </span>
                         <span
                             class="text-dark rounded-pill text-main-top-main text-wrap text-start border pill-box mb-lg-0 mb-2">
                             <img src="<?= base_url('assets/img/new-image/register.png') ?>" class="svg-inject me-1"
                                 alt="" />
-                            Loan approval in 24-48 hrs
+                            Eligibility-Based Options
                         </span>
-                        <h1 class="title">Empowering Your Goals with Smart <span>Financial Solutions</span></h1>
-                        <p class="">Loan approval and disbursement help you reach your financial goals. Get instant
-                            loans at competitive rates with minimal documentation.
+                        <h1 class="title">Smart Financial Solutions for <span>Your Needs</span></h1>
+                        <p class="">Explore personal loan options with a simple digital application process and clear guidance at every step.
                         </p>
                   
                         <div class="brand-area p-0 border-bottom-0">
@@ -87,9 +86,9 @@
                 <div class="col-lg-6 col-md-6 order-md-2 order-2">
                     <?php if ($processstep == 'step1'): ?>
                     <div class="contact__form-wrap p-4 ms-0 bg-white">
-                        <p class="text-uppercase fw-bold text-center mb-2 sub-title-lending">Start Your Loan</p>
-                        <h3 class="title mb-3 text-center">Get Instant Credit up to <span class="text-color">₹10
-                                Lakhs </span> in minutes</h2>
+                        <p class="text-uppercase fw-bold text-center mb-2 sub-title-lending">START YOUR LOAN</p>
+                        <h3 class="title mb-3 text-center">Explore Personal Loan Options up to <span class="text-color">₹10
+                                Lakhs </span></h2>
 
                             <?= form_open('', array('id' => 'submitForm1', 'class' => 'text-start ', 'novalidate' => 'novalidate')); ?>
                             <div class="form-group my-4" style="">
@@ -544,113 +543,200 @@
     </section>
     <!-- services-area-end -->
 
-    <section class="testimonials__area-home8 section-padding" id="testimonials">
+   <section class="testimonials__area-home8 bg-theme-1 section-padding" id="testimonials">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-10 m-auto">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
                     <div class="about__content-seven">
                         <div class="section-title text-center mb-50 tg-heading-subheading animation-style3">
-                            <span class="sub-title">Testimonials</span>
-                            <h2 class="title">Hear from Our Customers</h2>
+                            <span class="sub-title">CUSTOMER STORIES</span>
+                            <h2 class="title">What Our Customers Say</h2>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
-                <div class="box-slide-testimonials">
-                    <div class="swiper-container testiminials-active-2">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="card-testimonials bg-theme-1">
-                                    <!-- <div class="card-image">
+
+            </div>
+            <div class="box-slide-testimonials">
+                <div class="swiper-container testiminials-active-2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card-testimonials">
+                                <!-- <div class="card-image">
                                         <img src="assets/img/home8/author.png" alt="" />
                                     </div> -->
-                                    <div class="card-info">
-                                        <p class="card-position mb-0">Bhavesh Solanki
-                                        </p>
-                                        <div class="rates-review">
-                                            <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
-                                            <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
-                                            <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
-                                            <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
-                                            <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
-                                        </div>
-                                        <div class="card-comment">
-                                            <p>“ Great!! The online process of applying for a loan with Kreditway is
-                                                very
-                                                easy and trouble-free. I faced no issues in my process and got the loan
-                                                in
-                                                no time. Thank you very much for your support, folks. I definitely
-                                                recommend
-                                                it!!
-                                                ”</p>
-                                        </div>
+                                <div class="card-info">
+                                    <p class="card-position mb-0">Devansh Patel
+                                    </p>
+                                    <div class="rates-review">
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
+                                    </div>
+                                    <div class="card-comment">
+                                        <p>“The application process was simple and easy to understand. I was able to complete the required steps without confusion.”</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="card-testimonials bg-theme-1">
-                                    <div class="card-info">
-                                        <p class="card-position mb-0">Karthika Manikandan</p>
-                                        <div class="rates-review">
-                                            <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
-                                            <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
-                                            <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
-                                            <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
-                                            <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
-                                        </div>
-                                        <div class="card-comment">
-                                            <p>“ Everything was so timely. The team members are very polite and helpful.
-                                                The
-                                                way they handled my process is commendable. I strongly recommend it to
-                                                everyone who is looking for a loan without facing any issues.
-                                                ”</p>
-                                        </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-testimonials">
+                                <div class="card-info">
+                                    <p class="card-position mb-0">Ishita Menon</p>
+                                    <div class="rates-review">
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
+                                    </div>
+                                    <div class="card-comment">
+                                        <p>“I liked how straightforward the process was. The instructions helped me submit my details smoothly.”</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="card-testimonials bg-theme-1">
-                                    <div class="card-info">
-                                        <p class="card-position mb-0">Manish Pandey</p>
-                                        <div class="rates-review">
-                                            <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
-                                            <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
-                                            <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
-                                            <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
-                                            <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
-                                        </div>
-                                        <div class="card-comment">
-                                            <p>“ Throughout the process, I was given step-by-step instructions to ensure
-                                                that everything went smoothly. I am very pleased with Kreditway and
-                                                would
-                                                gladly recommend it to my friends and family if they need a loan.
-                                                ”</p>
-                                        </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-testimonials">
+                                <div class="card-info">
+                                    <p class="card-position mb-0">Harsh Vardhan</p>
+                                    <div class="rates-review">
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
+                                    </div>
+                                    <div class="card-comment">
+                                        <p>“The platform made it easy to explore available loan options and understand the application requirements.”</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="card-testimonials bg-theme-1">
-                                    <div class="card-info">
-                                        <p class="card-position mb-0">Vikram Singh
-                                        </p>
-                                        <div class="rates-review">
-                                            <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
-                                            <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
-                                            <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
-                                            <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
-                                            <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
-                                        </div>
-                                        <div class="card-comment">
-                                            <p>“ I had an amazing experience with Kreditway. I would like to thank
-                                                the
-                                                entire team. They are very professional, explained everything clearly,
-                                                and
-                                                handled my loan process like a pro. From the beginning to disbursal,
-                                                everything went very smoothly.
-
-                                                ”</p>
-                                        </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-testimonials">
+                                <div class="card-info">
+                                    <p class="card-position mb-0">Priya Nair
+                                    </p>
+                                    <div class="rates-review">
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
+                                    </div>
+                                    <div class="card-comment">
+                                        <p>“My experience was convenient. The process was digital and the steps were clearly explained.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-testimonials">
+                                <div class="card-info">
+                                    <p class="card-position mb-0">Kunal Desai
+                                    </p>
+                                    <div class="rates-review">
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
+                                    </div>
+                                    <div class="card-comment">
+                                        <p>“I received useful guidance regarding documentation and the overall application process.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-testimonials">
+                                <div class="card-info">
+                                    <p class="card-position mb-0">Sneha Joshi
+                                    </p>
+                                    <div class="rates-review">
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
+                                    </div>
+                                    <div class="card-comment">
+                                        <p>“The website was easy to use, and I could check relevant loan information before proceeding.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-testimonials">
+                                <div class="card-info">
+                                    <p class="card-position mb-0">Arjun Malhotra
+                                    </p>
+                                    <div class="rates-review">
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
+                                    </div>
+                                    <div class="card-comment">
+                                        <p>“The application journey felt organised and simple. I appreciated the clear information provided at each step.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-testimonials">
+                                <div class="card-info">
+                                    <p class="card-position mb-0">Tanvi Bhatia
+                                    </p>
+                                    <div class="rates-review">
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
+                                    </div>
+                                    <div class="card-comment">
+                                        <p>“It was convenient to submit my application online and understand the available options.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-testimonials">
+                                <div class="card-info">
+                                    <p class="card-position mb-0">Rahul Bansal
+                                    </p>
+                                    <div class="rates-review">
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
+                                    </div>
+                                    <div class="card-comment">
+                                        <p>“The process was user-friendly, and the information helped me make a more informed decision.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-testimonials">
+                                <div class="card-info">
+                                    <p class="card-position mb-0">Aarohi Chawla
+                                    </p>
+                                    <div class="rates-review">
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star.svg'); ?>" />
+                                        <img src="<?= base_url('assets/img/home8/star-grey.svg'); ?>" />
+                                    </div>
+                                    <div class="card-comment">
+                                        <p>“I had a smooth experience while exploring personal loan options. The steps were simple and clearly presented.”</p>
                                     </div>
                                 </div>
                             </div>
@@ -658,6 +744,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
     <!-- testimonial end    -->
  
@@ -665,12 +752,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 p-0">
-                    <p class="mb-0 text-white"><strong>Disclaimer: </strong><?php echo COMPANY_NAME; ?> inot a lender or financial institution. We do not provide loans or make credit decisions. All loan approvals, interest rates, fees, and disbursal are handled by third-party lenders/NBFCs. We do not guarantee loan approval, disbursal, or specific loan terms. The amount paid is only for the service charge. We are not lenders and do not guarantee any loan approval. Loan approval, disbursement/sanction is entirely dependent on NBFC criteria.</p>
+                    <p class="mb-0 text-white"><strong>Disclaimer: </strong><?php echo COMPANY_NAME; ?> is not a lender or financial institution. We do not provide loans or make credit decisions. All loan approvals, interest rates, fees, and disbursal are handled by third-party lenders/NBFCs. We do not guarantee loan approval, disbursal, or specific loan terms. The amount paid is only for the service charge. We are not lenders and do not guarantee any loan approval. Loan approval, disbursement/sanction is entirely dependent on NBFC criteria.</p>
 
                     <p class="mb-0 text-white"><strong>Important Note: </strong>We ask our customers to make payments ONLY on our website
-                        <a class="text-light" href="<?php echo COMPANY_SITE; ?>">kreditway.com</a> and NOT through any
-                        other
-                        source, directly or indirectly.
+                        <a class="text-light" href="<?php echo COMPANY_SITE; ?>">kreditway.com</a> and NOT through any other source, directly or indirectly.
                     </p>
 
                     <p class="mb-0 text-white"><strong>Pre-application Note: </strong>Users are advised to read our terms and conditions and policies before proceeding/applying/registration.
