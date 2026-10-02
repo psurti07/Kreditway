@@ -260,9 +260,9 @@
                                     style="float: right;">
                             </div>
                             <div class="services__content-five  mt-3">
-                                <h2 class="title"><a>Fill basic details
+                                <h2 class="title"><a>Submit Basic Details
                                     </a></h2>
-                                <p>Share basic identity parameters and desired loan criteria securely.</p>
+                                <p>Enter your mobile number and the basic information required to begin.</p>
                             </div>
                         </div>
                     </div>
@@ -274,9 +274,9 @@
                                     style="float: right;">
                             </div>
                             <div class="services__content-five mt-3">
-                                <h2 class="title"><a>Select Loan Amount
+                                <h2 class="title"><a>Review Loan Options
                                     </a></h2>
-                                <p>Choose optimal amounts and tenure settings designed to match.
+                                <p>Explore available loan options and applicable eligibility requirements from participating lending partners.
                                 </p>
                             </div>
                         </div>
@@ -289,9 +289,9 @@
                                     style="float: right;">
                             </div>
                             <div class="services__content-five mt-3">
-                                <h2 class="title"><a>Submit & Compare
+                                <h2 class="title"><a>Choose a Support Plan
                                     </a></h2>
-                                <p>Let our algorithm select custom rates from verified partners.
+                                <p>Select a suitable application-assistance plan based on the support you need.
                                 </p>
                             </div>
                         </div>
@@ -304,9 +304,9 @@
                                     style="float: right;">
                             </div>
                             <div class="services__content-five mt-3">
-                                <h2 class="title"><a>Get Money (3 hrs)
+                                <h2 class="title"><a>Provide Documents
                                     </a></h2>
-                                <p>Quick verification and instant disbursal direct to bank vault.</p>
+                                <p>Submit the required documents with guidance from our support team.</p>
                             </div>
                         </div>
                     </div>
@@ -318,23 +318,23 @@
                                     style="float: right;">
                             </div>
                             <div class="services__content-five mt-3">
-                                <h2 class="title"><a>Get Money (3 hrs)
+                                <h2 class="title"><a>Complete Verification
                                     </a></h2>
-                                <p>Quick verification and instant disbursal direct to bank vault.</p>
+                                <p>Application information and documents are reviewed according to the respective lending partner’s requirements.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="services__item-five1 h-100">
                             <div class="services__icon-five w-100 mb-0" style="line-height: 1;">
-                                <span>04</span>
+                                <span>06</span>
                                 <img src="<?= base_url('assets/img/images/Frame_3.png'); ?>" alt="" class="img-fluid"
                                     style="float: right;">
                             </div>
                             <div class="services__content-five mt-3">
-                                <h2 class="title"><a>Get Money (3 hrs)
+                                <h2 class="title"><a>Receive Lender Decision
                                     </a></h2>
-                                <p>Quick verification and instant disbursal direct to bank vault.</p>
+                                <p>The respective NBFC or lending partner determines approval, loan amount, interest rate, tenure and disbursement according to its policies.</p>
                             </div>
                         </div>
                     </div>
