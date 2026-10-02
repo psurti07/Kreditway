@@ -49,24 +49,12 @@
                                     </div>
                                 </div>
 
-
-
-                                <!-- 
-                                <a href="<?php echo site_url('customer/login'); ?>" class="btn">
-                                    &nbsp;Upload Document</a> -->
-
-                                <a href="<?php echo site_url('customer/login'); ?>"
+                                <a href="<?php echo site_url('customer'); ?>"
                                     class="btn btn-orange m-t-10 text-uppercase me-3 mb-lg-0 mb-3"><i
                                         class="fas fa-cloud-upload-alt">
                                     </i>
                                     &nbsp;Login Now</a>
 
-                                <a href="<?php echo site_url('customer'); ?>"
-                                    class="btn btn-light m-t-10 text-uppercase"><i class="fas fa-home"> </i>
-                                    &nbsp;Customer Login</a>
-                                <div class="mt-4">
-                                    <a href="#">Start a new application <i class="fas fa-arrow-right ms-2"></i></a>
-                                </div>
 
                             </div>
                         </div>

@@ -19,7 +19,7 @@ $this->load->view('includes/header-apply.php');
             </div>
             <div class="row align-items-center offer-card">
                 <div class="col-lg-6 col-md-6 col-12 mb-lg-0 mb-3">
-                    <div class="box-form-quote">
+                    <div class="box-form-quote testimonial__form lending-design mb-0 border-offer bg-white shadow p-4">
                         <div class="container">
                             <div class="lending-design mb-0">
                                 <h2 class="title">Standard Subscription Plan</h2>

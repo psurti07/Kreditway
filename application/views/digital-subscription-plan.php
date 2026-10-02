@@ -406,7 +406,7 @@ $amtpay = $productdata['payamount'];
         </div>
     </section> -->
     <!-- banner-area-end -->
-
+<!--
     <?php
 		$banks = [
 			[
@@ -517,7 +517,7 @@ $amtpay = $productdata['payamount'];
 
         </div>
     </section>
-
+-->
     <!-- testimonial start -->
     <section class="testimonials__area-home8 mb-85 d-none">
         <div class="container">
