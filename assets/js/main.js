@@ -177,19 +177,19 @@ var slider = new Swiper('.brand-active', {
     loop: true,
     breakpoints: {
         '1200': {
-            slidesPerView: 2,
+            slidesPerView: 5,
         },
         '992': {
-            slidesPerView: 2,
+            slidesPerView: 4,
         },
         '768': {
-            slidesPerView: 2,
+            slidesPerView: 4,
         },
         '576': {
-            slidesPerView: 1,
+            slidesPerView: 3,
         },
         '0': {
-            slidesPerView: 1,
+            slidesPerView: 3,
         },
     },
 });

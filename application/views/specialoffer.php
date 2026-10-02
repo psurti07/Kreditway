@@ -18,7 +18,7 @@ $this->load->view('includes/header-apply.php');
 				</div>
 			</div>
 			<div class="row align-items-center offer-card py-0">
-				<div class="col-lg-6 col-md-6 col-12">
+				<div class="col-lg-6 col-md-6 col-12 mb-lg-0 mb-3">
 					<div class="box-form-quote">
 						<div class="container">
 							<div class="lending-design mb-0">
@@ -61,7 +61,7 @@ $this->load->view('includes/header-apply.php');
 				</div>
 
 				<div class="col-lg-6 col-md-6 col-12">
-					<div class="testimonial__form lending-design mb-0 border-offer">
+					<div class="testimonial__form lending-design mb-0 border-offer bg-white shadow">
 						<?php
 						if ($this->session->flashdata('danger')): ?>
 							<div id="flash-message" class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -127,7 +127,7 @@ $this->load->view('includes/header-apply.php');
 	</div>
 	<!-- nbfc partners end -->
 
-	<section class="brand__area-five">
+	<section class="brand__area-five bg-theme-1">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-12 mb-5">
