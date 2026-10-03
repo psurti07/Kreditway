@@ -32,7 +32,7 @@
                   
                         <div class="brand-area p-0 border-bottom-0">
                             <div class="container">
-                                <div class="swiper-container brand-active">
+                                <div class="swiper-container brand-active-01">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <div class="brand-item">

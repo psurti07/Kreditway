@@ -5520,7 +5520,7 @@
     -ms-transition: all 0.3s ease-out 0s;
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
-    min-height: 228px;
+    /* min-height: 228px; */
   }
 
 
@@ -11129,8 +11129,8 @@
   }
 
   .features__icon-two {
-    width: 40px;
-    height: 40px;
+    /* width: 40px;
+    height: 40px; */
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;

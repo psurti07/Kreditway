@@ -406,7 +406,7 @@ $amtpay = $productdata['payamount'];
         </div>
     </section> -->
     <!-- banner-area-end -->
-<!--
+
     <?php
 		$banks = [
 			[
@@ -484,10 +484,10 @@ $amtpay = $productdata['payamount'];
                         <div class="swiper-wrapper">
                             <?php foreach ($banks as $bank) { ?>
                             <div class="swiper-slide">
-                                <div class="features__item-two kg-feature_icon-two p-4">
+                                <div class="features__item-two kg-feature_icon-two p-4 services__item-five justify-content-between my-4">
                                     <div class="features__icon-two bg-white">
                                         <img src="<?php echo base_url('assets/img/banks/'.$bank['img']); ?>"
-                                            alt="<?php echo $bank['alt']; ?>" class="img-fluid">
+                                            alt="<?php echo $bank['alt']; ?>" class="img-fluid" width="100">
                                     </div>
                                     <div class="features__content-two">
                                         <h6>Loan Amount*</h6>
@@ -517,7 +517,7 @@ $amtpay = $productdata['payamount'];
 
         </div>
     </section>
--->
+
     <!-- testimonial start -->
     <section class="testimonials__area-home8 mb-85 d-none">
         <div class="container">

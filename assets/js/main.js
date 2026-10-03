@@ -168,6 +168,31 @@ var swiper4 = new Swiper(".slider_partners__active", {
 /*=============================================
 	=          brand active              =
 =============================================*/
+var slider = new Swiper('.brand-active-01', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    autoplay: {
+        delay: 6000,
+    },
+    loop: true,
+    breakpoints: {
+        '1200': {
+            slidesPerView: 2,
+        },
+        '992': {
+            slidesPerView: 2,
+        },
+        '768': {
+            slidesPerView: 2,
+        },
+        '576': {
+            slidesPerView: 2,
+        },
+        '0': {
+            slidesPerView: 1,
+        },
+    },
+});
 var slider = new Swiper('.brand-active', {
     slidesPerView: 1,
     spaceBetween: 0,
