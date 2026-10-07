@@ -20,35 +20,7 @@
                                     pre-approved offers.</p>
                                 <p>आपका भुगतान सफलतापूर्वक संसाधित हो गया है, अब आप अपने पूर्व-स्वीकृत (प्री-अप्रूव्ड)
                                     ऑफ़र देख सकते हैं।</p>
-
-
-                                <div class="row mb-4 mt-4">
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-12  mb-lg-0 mb-3">
-                                        <div
-                                            class="card-blog-wrapper border py-3 mb-sm-0 mb-3 bg-light card shadow-none h-100 rounded-4 justify-content-center">
-
-                                            <h6 class="mt-0 mb-1 text-uppercase fw-bold text-navy">Sanctioned</h6>
-                                            <p class="mb-0 fs-18 text-blue font-weight-bold">₹1,95,000</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 mb-lg-0 mb-3">
-                                        <div
-                                            class="card-blog-wrapper border py-3 mb-sm-0 mb-3 bg-light card shadow-none h-100 rounded-4 justify-content-center">
-
-                                            <h6 class="mt-0 mb-1 text-uppercase fw-bold text-navy">Tenure</h6>
-                                            <p class="mb-0 fs-18 text-blue  font-weight-bold">Up to 60 mo</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 mb-lg-0 mb-3">
-                                        <div
-                                            class="card-blog-wrapper border py-3 mb-sm-0 mb-3 bg-light card shadow-none h-100 rounded-4 justify-content-center">
-
-                                            <h6 class="mt-0 mb-1 text-uppercase fw-bold text-navy">Disbursal</h6>
-                                            <p class="mb-0 fs-18 text-blue  font-weight-bold">Within 48 hrs</p>
-                                        </div>
-                                    </div>
-                                </div>
-
+                                <hr />
                                 <a href="<?php echo site_url('customer'); ?>"
                                     class="btn btn-orange m-t-10 text-uppercase me-3 mb-lg-0 mb-3"><i
                                         class="fas fa-cloud-upload-alt">
@@ -77,35 +49,7 @@
                                     सहायता के लिए हमारी सहायता टीम से संपर्क करें।</p>
                                 <hr />
                                 <p class="mb-3">Common Reasons for Payment Failure:</p>
-                                <div class="row mb-4">
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 mb-lg-0 mb-3">
-                                        <div
-                                            class="card-blog-wrapper border py-3 mb-sm-0 mb-3 bg-light card shadow-none h-100 rounded-4 justify-content-center">
-
-                                            <h6 class="mt-0 mb-1 text-uppercase fw-bold text-navy">Card Issue</h6>
-                                            <p class="mb-0 text-blue font-weight-bold fa-sm">Insufficient funds or card
-                                                block</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 mb-lg-0 mb-3">
-                                        <div
-                                            class="card-blog-wrapper border py-3 mb-sm-0 mb-3 bg-light card shadow-none h-100 rounded-4 justify-content-center">
-
-                                            <h6 class="mt-0 mb-1 text-uppercase fw-bold text-navy">Network</h6>
-                                            <p class="mb-0 text-blue font-weight-bold fa-sm">Bank network timed out
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 mb-lg-0 mb-3">
-                                        <div
-                                            class="card-blog-wrapper border py-3 mb-sm-0 mb-3 bg-light card shadow-none h-100 rounded-4 justify-content-center">
-
-                                            <h6 class="mt-0 mb-1 text-uppercase fw-bold text-navy">Exceeded Limit</h6>
-                                            <p class="mb-0 text-blue font-weight-bold fa-sm">Daily transactional
-                                                limits reached</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                                 <a href="<?php echo site_url('bumperoffer'); ?>" class="btn text-white p-3">TRY ANOTHER
                                     PAYMENT METHOD</a>
                             </div>

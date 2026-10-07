@@ -496,7 +496,7 @@ class Onlineprocess extends CI_Controller
 
 		$data1 = array(
 			'update_date' => date('Y-m-d H:i:s'),
-			//'pincode' => $_REQUEST['pincode'],
+			'pincode' => $_REQUEST['pincode'],
 			'city' => $_REQUEST['city'],
 			'state' => $_REQUEST['state'],
 			'process_step' => 2

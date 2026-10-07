@@ -154,7 +154,7 @@ define('AISENSY_KEY', '#');
 define('UAT_MOBILE_NUMBERS', serialize(array('9408881214', '9904466599')));
 
 // Geoloc API Key
-define('GEOLOC_API_KEY', '#');
+define('GEOLOC_API_KEY', 'zoHYBG2lGMULIi7krUxjDQbgRxIVjazHxra77pj5');
 
 // Facebook
 define('ACCESS_TOKEN', '#');

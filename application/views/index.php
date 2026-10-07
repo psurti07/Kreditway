@@ -13,7 +13,7 @@
                             <span class="sub-title sub-title-wrap fa-xs rounded-pill px-2 py-1">That Fits Your Needs</span>
                             
                         </div>
-                        <h1 class="title">Empowering Your Goals with Smart <span>Financial Solutions</span></h1>
+                        <h1 class="title">Empowering Your Goals with Smart <span>Financial Consultation</span></h1>
                         <p class="">KreditWay helps you explore loan offers from participating NBFC partners through a simple digital journey.
                         </p>
                         <a href="<?= base_url('onlineprocess/applynow') ?>" class="btn">Get Consultation Now</a>
@@ -165,9 +165,9 @@
                                 <ul class="list-wrap">
                                     <li style="color: #1B2B5E;"><i class="flaticon-arrow-button"></i>Simple Application Process
                                     </li>
-                                    <li style="color: #1B2B5E;"><i class="flaticon-arrow-button"></i>Flexible Repayment Options
+                                    <li style="color: #1B2B5E;"><i class="flaticon-arrow-button"></i>On-Call Assistance
                                     </li>
-                                    <li style="color: #1B2B5E;"><i class="flaticon-arrow-button"></i>Eligibility-Based Offers
+                                    <li style="color: #1B2B5E;"><i class="flaticon-arrow-button"></i>Expert Loan Guidance
                                     </li>
                                 </ul>
                             </div>
@@ -191,19 +191,17 @@
                                         </div>
                                         <div class="services__content-five text-left pl-20">
 
-                                            <p class="text-light mb-0">Monthly Loan Interest Rates</p>
+                                            <p class="text-light mb-0">Explore Loan Options with Confidence</p>
                                             <h3 class="text-light" style="font-size: 40px; color: #FB710F !important">
-                                                Starting at ₹0.89% </h3>
+                                                Compare Available Options Based on Eligibility</h3>
                                         </div>
                                         <hr>
                                         <div class="about__content-inner-five gap-12 pl-20 mb-0">
                                             <div class="about__list-box">
                                                 <ul class="list-wrap">
-                                                    <li class="text-light"><i class="flaticon-arrow-button"></i>100%
-                                                        Secure Insured Storage for Your Assets
+                                                    <li class="text-light"><i class="flaticon-arrow-button"></i>Application Support
                                                     </li>
-                                                    <li class="text-light"><i class="flaticon-arrow-button"></i>Funds
-                                                        Disbursed Within 3 Hours
+                                                    <li class="text-light"><i class="flaticon-arrow-button"></i>Online Assistance
                                                     </li>
                                                 </ul>
                                             </div>
@@ -331,7 +329,7 @@
         </div>
     </section>
     <!-- services-area-end -->
-
+<!--
     <section id="privacy-page" class="section-padding">
         <div class="container">
             <div class="row justify-content-center">
@@ -348,7 +346,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <!-- EMI Calculator Widget START -->
+                    
                     <script src="https://emicalculator.net/widget/2.0/js/emicalc-loader.min.js" type="text/javascript">
                     </script>
                     <div id="ecww-widgetwrapper" style="min-width:250px;width:100%;">
@@ -356,12 +354,12 @@
                             style="position:relative;padding-top:0;padding-bottom:280px;height:0;overflow:hidden;">
                         </div>
                     </div>
-                    <!-- EMI Calculator Widget END -->
+                    
                 </div>
             </div>
         </div>
     </section>
-    <!--
+-->
     
     <section class="box-yellow-about" id="banks">
         <div class="container">

@@ -185,7 +185,7 @@ define('RCS_TEMPLATEID', '#');
 define('UAT_MOBILE_NUMBERS', serialize(array('9408881214', '9974499388')));
 
 // Geoloc API Key
-define('GEOLOC_API_KEY', '#');
+define('GEOLOC_API_KEY', 'zoHYBG2lGMULIi7krUxjDQbgRxIVjazHxra77pj5');
 
 // Remarketing Cycle Days Set
 define('LOCK_DAYS','-90 days');

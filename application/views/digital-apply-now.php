@@ -26,7 +26,7 @@
                                 alt="" />
                             Eligibility-Based Options
                         </span>
-                        <h1 class="title">Smart Financial Solutions for <span>Your Needs</span></h1>
+                        <h1 class="title">Smart Financial Consultation for <span>Your Needs</span></h1>
                         <p class="">Explore personal loan options with a simple digital application process and clear guidance at every step.
                         </p>
                   
@@ -381,6 +381,7 @@
         </div>
     </section>
     <!-- features-area -->
+     <!--
     <section class="features__area-two py-5">
         <div class="container">
             <div class="row justify-content-center">
@@ -465,7 +466,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
     <!-- features-area-end -->
 
     <section class="services-area banner__bg-four bg-theme-1 border-top section-padding">
