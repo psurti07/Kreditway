@@ -361,7 +361,7 @@
     </section>
 -->
     
-    <section class="box-yellow-about" id="banks">
+    <section class="pt-80" id="banks">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -372,7 +372,7 @@
                     <div class="swiper-container brand-active">
                         <div class="swiper-wrapper">
                             <?php foreach ($banklist as $row) { ?>
-                            <div class="swiper-slide border rounded-3">
+                            <div class="swiper-slide">
                                 <div class="brand-item">
                                     <img src="<?php echo base_url('assets/img/banks/' . $row->bank_image); ?>"
                                         alt="<?php echo $row->bank_name; ?>">
