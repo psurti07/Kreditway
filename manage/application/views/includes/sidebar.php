@@ -23,8 +23,8 @@
 							href="<?php echo site_url('dashboard/applicationstatistics'); ?>">Application</a></li>
 					<li id="1416"><a class="menu-item"
 							href="<?php echo site_url('dashboard/processstepdata'); ?>">Process Steps</a></li>
-					<li id="1417"><a class="menu-item"
-							href="<?php echo site_url('dashboard/remarketingstatistics'); ?>">Remarketing Users</a></li>
+					<!--<li id="1417"><a class="menu-item"
+							href="<?php echo site_url('dashboard/remarketingstatistics'); ?>">Remarketing Users</a></li>-->
 				</ul>
 			</li>
 
@@ -116,7 +116,7 @@
 				<ul class="menu-content">
 					<li id="1363"><a class="menu-item" href="<?php echo site_url('offer/festivaloffer'); ?>">Festival
 							Offer</a></li>
-					<li id="1351"><a class="menu-item" href="<?php echo site_url('offer/ivrpaymentoffer'); ?>">IVR
+					<li id="1366"><a class="menu-item" href="<?php echo site_url('offer/ivrpaymentoffer'); ?>">IVR
 					Payment Offer</a></li>
 					<li id="1364"><a class="menu-item" href="<?php echo site_url('offer/primeoffer'); ?>">Prime
 							Offer</a></li>
@@ -221,7 +221,7 @@
 				<!-- ================== NEW NAVIGATION HEADER ================== -->
 				<li class=" navigation-header"><span>PAYMENTS LOG</span></li>
 
-				<li id="166" class="nav-item">
+			<!--	<li id="166" class="nav-item">
 					<a href="<?php echo site_url('payment/phonepelog'); ?>"><i class="la la-inr"></i><span
 							class="menu-title">PhonePe Log</span></a>
 				</li>
@@ -234,10 +234,9 @@
 							class="menu-title">Razorpay Log</span></a>
 				</li>
 
-				<!--  <li id="168" class="nav-item">
+				 <li id="168" class="nav-item">
 				<a href="<?php echo site_url('payment/worldlinelog'); ?>"><i class="la la-inr"></i><span class="menu-title">Worldline Log</span></a>
-			</li> -->
-
+			</li> 
 			 <li id="169" class="nav-item">
 				<a href="<?php echo site_url('payment/zaakpaylog'); ?>"><i class="la la-inr"></i><span class="menu-title">Zaakpay Log</span></a>
 			</li>
@@ -254,7 +253,7 @@
 			</li>
 			<li id="174" class="nav-item">
 				<a href="<?php echo site_url('payment/easebuzzlog'); ?>"><i class="la la-inr"></i><span class="menu-title">Easebuzz Log</span></a>
-			</li>
+			</li>-->
 
 
 			<!-- ================== NEW NAVIGATION HEADER ================== -->

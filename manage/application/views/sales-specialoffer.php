@@ -3,7 +3,7 @@ include_once(APPPATH . 'views/includes/header.php');
 ?>
 <script type="text/javascript">
 	window.onload = function () {
-		document.getElementById("s").className += " active";
+		document.getElementById("151").className += " active";
 		document.getElementById("1511").className += " active";
 	}
 </script>

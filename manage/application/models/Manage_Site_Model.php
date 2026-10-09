@@ -32,25 +32,18 @@ class Manage_Site_Model extends CI_Model
 		$query = $this->db->select('ul.id,
 					(CASE WHEN ul.user_type = 1 THEN "Personal Loan" 
 		 			WHEN ul.user_type = 2 THEN "Business Loan" 
-		 			WHEN ul.user_type = 3 THEN "Channel Partner" 
 		 			ELSE ul.user_type END) AS usertype,(CASE WHEN ul.user_type in (1,2) THEN ur.fullname 
-		 			WHEN ul.user_type = 3 THEN CONCAT(cp.firstname," ",cp.lastname) 
 		 			ELSE ur.fullname END) AS fullname,(CASE WHEN ul.user_type IN (1,2) THEN ur.mobile 
-		 			WHEN ul.user_type = 3 THEN cp.mobileno 
 		 			ELSE ur.mobile END) AS mobile,(CASE WHEN ul.user_type IN (1,2) THEN ur.email 
-		 			WHEN ul.user_type = 3 THEN cp.emailid 
 		 			ELSE ur.email END) AS email,(CASE WHEN ul.user_type IN (1,2) THEN ur.city 
-		 			WHEN ul.user_type = 3 THEN cp.city 
 		 			ELSE ur.city END) AS city,(CASE WHEN ul.user_type IN (1,2) THEN ur.state 
-		 			WHEN ul.user_type = 3 THEN cp.state 
 		 			ELSE ur.state END) AS state
 					,ul.reason')
 			->join('user_registration  ur', 'ur.id=ul.user_id', 'left')
-			->join('channel_partner  cp', 'cp.id=ul.user_id', 'left')
 			->order_by('ul.rec_date desc')
 			->get('unsubscription_logs ul')
 			->result();
-
+		
 
 		return $query;
 	}
