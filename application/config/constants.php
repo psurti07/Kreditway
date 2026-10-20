@@ -151,8 +151,8 @@ define('RAZOR_KEY_SECRET', '#');
 
 // PayU details
 define('PAYU_MODE', 'PROD');
-define('PAYU_MERCHANT_KEY', '#');
-define('PAYU_SALT', '#');
+define('PAYU_MERCHANT_KEY', 'uo1z0E');
+define('PAYU_SALT', 'X79BACUu41jqKX3EdXGhlBlsVLVh3A78');
 
 // PAygic
 define('PAYGIC_MID', '#');

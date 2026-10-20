@@ -796,7 +796,7 @@ class Pay extends CI_Controller
 			$pgtype = $_POST["PG_TYPE"];
 			$salt = PAYU_SALT;
 
-			if (isset($additionalCharges)) {
+			if (isset($_POST["additionalCharges"]) && $_POST["additionalCharges"] != '') {
 				$retHashSeq = $additionalCharges . '|' . $salt . '|' . $status . '|||||||||||' . $email . '|' . $firstname . '|' . $productinfo . '|' . $amount . '|' . $txnid . '|' . $key;
 			} else {
 				$retHashSeq = $salt . '|' . $status . '|||||||||||' . $email . '|' . $firstname . '|' . $productinfo . '|' . $amount . '|' . $txnid . '|' . $key;

@@ -559,42 +559,6 @@ class Onlineprocess extends CI_Controller
 		);
 		$restrack2 = event_track($data3);
 
-		/*$data3 = array(
-			'apiKey' => AISENSY_KEY,
-			'campaignName' => $wpcampaignname,
-			'destination' => '+91' . $userdata->mobile,
-			'media' => array(
-				'url' => 'https://whatsapp-media-library.s3.ap-south-1.amazonaws.com/IMAGE/67d947f8ede26d0bf14ccfa1/7121877_rcget20may.jpg',
-				'filename' => 'rc_get_20may.jpg'
-			),
-			'userName' => $userdata->fullname,
-			'templateParams' => array('$Name', '$EligibleAmount'),
-			'tags' => array('Get Offer'),
-			'attributes' => array(
-				'EligibleAmount' => strval($eligibilityamt)
-			)
-		);
-		$restrack3 = aisensy_track($data3);
-
-		$intekt_get_offer_name = $this->Site_Info_Model->getsmsmessage('intekt_get_offer_name');
-		$data4 = array(
-			"fullPhoneNumber" => '+91'.$userdata->mobile,
-			"callbackData"=> "some text here",
-			"type"=> "Template",
-			"template"=> array(
-					"name"=> $intekt_get_offer_name,
-					"languageCode"=> "en",
-					"headerValues"=> array(
-						"https://interaktprodmediastorage.blob.core.windows.net/mediaprodstoragecontainer/e738c92e-2bf1-4f82-9fd5-ccf4ebc221bf/message_template_media/P1Gu3lQjk0Gv/rc_get.jpg?se=2030-10-25T06%3A55%3A50Z&sp=rt&sv=2019-12-12&sr=b&sig=WwPFPMXWdAxVZJFf90mCSIU4DtqaeoP7RGMkudCr4xk%3D"
-					),
-					"bodyValues"=> array(
-						$userdata->fullname, $eligibilityamt
-					),
-				)
-		
-		 );
-		$restrack4 = interakt_track($data4);*/
-
 		$key = stringCrypt($_REQUEST['applyid'], 'encrypt');
 		return redirect("onlineprocess/subscriptionorder/" . $key);
 		die;

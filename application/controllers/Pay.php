@@ -505,93 +505,114 @@ class Pay extends CI_Controller
 			'amount' => $grandamount,
 			'isCustomer' => 0,
 			'isActive' => 0,
-			'isDelete' => 0
+			'isDelete' => 0,
 		);
 
-		$this->load->model('Site_Onlineprocess_Model');
 		$userid = $this->Site_Onlineprocess_Model->cardofferorder($data);
 
-		$receiptid = number_format(microtime(true) * 1000, 0, '.', '');
+		$txnid = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
+		$udf1 = $udf2 = $udf3 = $udf4 = $udf5 = '';
+		$postData = array();
 
-		$orderdata = array(
-			'amount' => $grandamount * 100,
-			'currency' => 'INR',
-			'receipt' => $receiptid,
-			'notes' => array(
-				'key1' => $fullname,
-				'key2' => $mobileno
-			)
+		$hashstring = PAYU_MERCHANT_KEY . '|' . $txnid . '|' . $grandamount . '|' . $productdata->productname . '|' . $fullname . '|' . $emailid . '|' . $udf1 . '|' . $udf2 . '|' . $udf3 . '|' . $udf4 . '|' . $udf5 . '||||||' . PAYU_SALT;
+
+		$hash = hash('sha512', $hashstring);
+
+		$returnUrl = base_url('pay/bumperreturn');
+
+		if (PAYU_MODE == "PROD") {
+			$url = 'https://secure.payu.in/_payment';
+		} else {
+			$url = 'https://test.payu.in/_payment';
+		}
+
+		$postData = array(
+			'mkey' => PAYU_MERCHANT_KEY,
+			'tid' => $txnid,
+			'hash' => $hash,
+			'amount' => $grandamount,
+			'name' => $fullname,
+			'productinfo' => $productdata->productname,
+			'mailid' => $emailid,
+			'phoneno' => $mobileno,
+			'address' => '',
+			'action' => $url,
+			'returnUrl' => $returnUrl,
 		);
 
-		$this->load->helper('razorpay');
-		$orderres = generateorder($orderdata);
-		$successURL = base_url('pay/bumperreturn');
-		$failURL = base_url('bumperoffer');
-
-		$razorpaydata = array(
+		$payudata = array(
 			'rec_date' => date('Y-m-d H:i:s'),
 			'entryfor' => 6,
 			'userid' => $userid,
-			'orderid' => $orderres->id,
+			'orderid' => $txnid,
 			'orderamount' => $grandamount,
-			'ordernote' => $productdata->productname
+			'ordernote' => $productdata->productname,
 		);
 
-		$this->load->model('Site_Payment_Gateway_Model');
-		$razorpayentry = $this->Site_Payment_Gateway_Model->razorpayentry($razorpaydata);
+		$payuentry = $this->Site_Payment_Gateway_Model->payuentry($payudata);
 
-		$postData = array(
-			'applyid' => $userid,
-			'fullname' => $fullname,
-			'mobile' => $mobileno,
-			'email' => $emailid,
-			'orderamount' => $grandamount,
-			'orderid' => $orderres->id,
-			'description' => $productdata->productname,
-			'successURL' => $successURL,
-			'failURL' => $failURL
-		);
+		$userdata = $this->Site_Onlineprocess_Model->checkuser($mobileno);
+		if ($userdata) {
+			$data1 = array(
+				'update_date' => date('Y-m-d H:i:s'),
+			);
+			$response1 = $this->Site_Onlineprocess_Model->updateregistration($userdata->userid, $data1);
+		}
 
-		$this->load->view('razorpay-checkout', ['postData' => $postData]);
+		$this->load->view('payu-checkout', ['postData' => $postData]);
 		}
 	}
 
 	public function bumperreturn()
 	{
+		$this->load->model('Site_Onlineprocess_Model');
+		$this->load->model('Site_Payment_Gateway_Model');
 		$this->load->model('Site_Info_Model');
 		$meta = $this->Site_Info_Model->getmetakeywords('offer-page');
 
-		if (isset($_REQUEST['paymentid']) && $_REQUEST['paymentid'] != '') {
-			$this->load->model('Site_Payment_Gateway_Model');
-			$paymentdata = $this->Site_Payment_Gateway_Model->getrazorpayentry($_POST["orderid"]);
+		if (isset($_POST["status"]) && $_POST["status"] != "") {
+			$status = $_POST["status"];
+			$firstname = $_POST["firstname"];
+			$amount = $_POST["amount"];
+			$txnid = $_POST["txnid"];
+			$posted_hash = $_POST["hash"];
+			$key = $_POST["key"];
+			$productinfo = $_POST["productinfo"];
+			$email = $_POST["email"];
+			$additionalCharges = $_POST["additionalCharges"];
+			$mihpayid = $_POST["mihpayid"];
+			$pgtype = $_POST["PG_TYPE"];
+			$salt = PAYU_SALT;
 
-			$razorpaydata = array(
+			if (isset($_POST["additionalCharges"]) && $_POST["additionalCharges"] != '') {
+				$retHashSeq = $additionalCharges . '|' . $salt . '|' . $status . '|||||||||||' . $email . '|' . $firstname . '|' . $productinfo . '|' . $amount . '|' . $txnid . '|' . $key;
+			} else {
+				$retHashSeq = $salt . '|' . $status . '|||||||||||' . $email . '|' . $firstname . '|' . $productinfo . '|' . $amount . '|' . $txnid . '|' . $key;
+			}
+
+			
+			$paymentdata = $this->Site_Payment_Gateway_Model->getpayuentry($txnid);
+
+			$payudata = array(
 				'rec_date' => date('Y-m-d H:i:s'),
-				'referenceid' => $_REQUEST['paymentid'],
-				'txstatus' => 'Success'
+				'referenceid' => $mihpayid,
+				'txstatus' => $status,
+				'paymentmode' => $pgtype,
 			);
 
-			$response1 = $this->Site_Payment_Gateway_Model->updaterazorpayentry($paymentdata->id, $razorpaydata);
-
-			$this->load->model('Site_Onlineprocess_Model');
+			$response1 = $this->Site_Payment_Gateway_Model->updatepayuentry($paymentdata->id, $payudata);
 			$userdata = $this->Site_Onlineprocess_Model->checkcardofferdata($paymentdata->userid);
 
-			$amount = (isset($_REQUEST['orderamount'])) ? $_REQUEST['orderamount'] : 0;
-			$paymentid = (isset($_REQUEST['paymentid'])) ? $_REQUEST['paymentid'] : '';
-
-			$isentry = $this->Site_Onlineprocess_Model->checkcardofferentry($paymentid);
-
-			if ($isentry == 0) {
+			if ($status == 'success') {
 				$cardno = random_code(16);
-
 				$data = array(
 					'rec_date' => date('Y-m-d H:i:s'),
 					'card_number' => $cardno,
 					'registration_date' => date('Y-m-d'),
 					'expiry_date' => date('Y-m-d', strtotime('+6 months')),
 					'amount' => $amount,
-					'paymentid' => $paymentid,
-					'isActive' => 1
+					'paymentid' => $mihpayid,
+					'isActive' => 1,
 				);
 
 				$response = $this->Site_Onlineprocess_Model->updatecardofferorder($paymentdata->userid, $data);
@@ -599,11 +620,12 @@ class Pay extends CI_Controller
 				$sent = $this->Site_Onlineprocess_Model->sendPaymentGreetings($userdata->fullname, $userdata->mobile, $userdata->emailid);
 
 				$this->load->view('bumperoffer-response', ['meta' => $meta, 'status' => $response]);
+			} else if ($status == 'failure') {
+				$this->load->view('bumperoffer-response', ['meta' => $meta, 'status' => 'false']);
 			} else {
-				$this->load->view('bumperoffer-response', ['meta' => $meta, 'status' => 'true']);
+				$this->load->view('bumperoffer-response', ['meta' => $meta, 'status' => 'false']);
 			}
-		}
-		else {
+		} else {
 			$this->load->view('bumperoffer-response', ['meta' => $meta, 'status' => 'false']);
 		}
 	}

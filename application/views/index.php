@@ -174,7 +174,7 @@
 
                         </div>
                         <div class="section-title mb-30 tg-heading-subheading animation-style3">
-                            <a href="<?= base_url('onlineprocess/applynow') ?>" class="btn">APPLY FOR PERSONAL LOAN</a>
+                            <a href="<?= base_url('onlineprocess/applynow') ?>" class="btn">Get Consultation For Personal Loan</a>
                         </div>
                     </div>
                 </div>
