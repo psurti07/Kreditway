@@ -146,8 +146,8 @@ define('ZAAKPAY_MERCHANT_IDENTIFIER', '#');
 define('ZAAKPAY_SECRET_KEY', '#');
 
 // Razorpay details
-define('RAZOR_KEY_ID', '#');
-define('RAZOR_KEY_SECRET', '#');
+define('RAZOR_KEY_ID', 'rzp_live_Tq9uI5lDPKYPlT');
+define('RAZOR_KEY_SECRET', 'Mr8PHRwcA74cqHel0Da01AKJ');
 
 // PayU details
 define('PAYU_MODE', 'PROD');

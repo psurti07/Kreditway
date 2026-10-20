@@ -453,6 +453,35 @@ class Onlineprocess extends CI_Controller
 		}
 	}
 
+	public function geoLocation()
+    {
+		$this->load->helper('geoloc');
+		$pincode = $_REQUEST['pincode'];
+
+        if(strlen($pincode) != 6){
+            echo json_encode([
+                'status' => 'error',
+                'message' => 'Invalid pincode'
+            ]);
+            return;
+        }
+
+        $data = getGeolocation($pincode);
+
+        if(isset($data['error'])){
+            echo json_encode([
+                'status' => 'error',
+                'message' => $data['error']
+            ]);
+        } else {
+            echo json_encode([
+                'status'   => 'success',
+                'city' => $data['cityname'] ?? '',
+                'state'    => $data['statename'] ?? ''
+            ]);
+        }
+    }
+
 	public function userApply()
 	{
 		$data = array(
@@ -467,6 +496,7 @@ class Onlineprocess extends CI_Controller
 
 		$data1 = array(
 			'update_date' => date('Y-m-d H:i:s'),
+			'pincode' => $_REQUEST['pincode'],
 			'city' => $_REQUEST['city'],
 			'state' => $_REQUEST['state'],
 			'process_step' => 2
@@ -528,42 +558,6 @@ class Onlineprocess extends CI_Controller
 			)
 		);
 		$restrack2 = event_track($data3);
-
-		$data3 = array(
-			'apiKey' => AISENSY_KEY,
-			'campaignName' => $wpcampaignname,
-			'destination' => '+91' . $userdata->mobile,
-			'media' => array(
-				'url' => 'https://whatsapp-media-library.s3.ap-south-1.amazonaws.com/IMAGE/67d947f8ede26d0bf14ccfa1/7121877_rcget20may.jpg',
-				'filename' => 'rc_get_20may.jpg'
-			),
-			'userName' => $userdata->fullname,
-			'templateParams' => array('$Name', '$EligibleAmount'),
-			'tags' => array('Get Offer'),
-			'attributes' => array(
-				'EligibleAmount' => strval($eligibilityamt)
-			)
-		);
-		$restrack3 = aisensy_track($data3);
-
-		$intekt_get_offer_name = $this->Site_Info_Model->getsmsmessage('intekt_get_offer_name');
-		$data4 = array(
-			"fullPhoneNumber" => '+91'.$userdata->mobile,
-			"callbackData"=> "some text here",
-			"type"=> "Template",
-			"template"=> array(
-					"name"=> $intekt_get_offer_name,
-					"languageCode"=> "en",
-					"headerValues"=> array(
-						"https://interaktprodmediastorage.blob.core.windows.net/mediaprodstoragecontainer/e738c92e-2bf1-4f82-9fd5-ccf4ebc221bf/message_template_media/P1Gu3lQjk0Gv/rc_get.jpg?se=2030-10-25T06%3A55%3A50Z&sp=rt&sv=2019-12-12&sr=b&sig=WwPFPMXWdAxVZJFf90mCSIU4DtqaeoP7RGMkudCr4xk%3D"
-					),
-					"bodyValues"=> array(
-						$userdata->fullname, $eligibilityamt
-					),
-				)
-		
-		 );
-		$restrack4 = interakt_track($data4);
 
 		$key = stringCrypt($_REQUEST['applyid'], 'encrypt');
 		return redirect("onlineprocess/subscriptionorder/" . $key);
@@ -789,31 +783,15 @@ class Onlineprocess extends CI_Controller
 						$api_response = send_order_data(json_encode($remote_data));
 					}
 
-					$intkt_userwelcomename = $this->Site_Info_Model->getsmsmessage('intkt_userwelcomename');
-				$data_usr_pass = array(
-					"fullPhoneNumber" => '+91' . $userdata->mobile,
-					"callbackData" => "some text here",
-					"type" => "Template",
-					"template" => array(
-						"name" => $intkt_userwelcomename,
-						"languageCode" => "en",
-						"bodyValues" => array(
-							$userdata->mobile,
-							$password
-						),
-					)
-				);
-				$restrack4 = interakt_track($data_usr_pass);
-				
-				$maildata = array(
-					'fullname' => $userdata->fullname,
-					'mobile' => $userdata->mobile,
-					'email' => $userdata->email,
-					'password' => $password,
-					'order_number' => $invoiceno,
-					'order_date' => date('d-m-Y'),
-					'order_amount' => $grandtotal
-				);
+					$maildata = array(
+						'fullname' => $userdata->fullname,
+						'mobile' => $userdata->mobile,
+						'email' => $userdata->email,
+						'password' => $password,
+						'order_number' => $invoiceno,
+						'order_date' => date('d-m-Y'),
+						'order_amount' => $grandtotal
+					);
 					
 					$sent = $this->Site_Onlineprocess_Model->sendSuccessGreetings($maildata);
 					
