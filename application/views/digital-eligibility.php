@@ -117,7 +117,7 @@
                                     <div class="form-group form-floating ps-0 text-start">
                                         <label class="position-static ps-0 text-uppercase fw-bold pt-0 pb-0">pincode</label>
                                         <input type="text" name="pincode" id="pincode" maxlength="6" minlength="6"
-                                            inputmode="numeric" class="form-control mb-2 rounded-4" placeholder="Pincode*" required>
+                                            inputmode="numeric" class="form-control pt-0 pb-0 mb-2 rounded-4" placeholder="Pincode*" required>
                                         <div class="help-block font-small-3"></div>
                                         <p class="pincode error text-danger text-start"></p>
                                     </div>
@@ -126,7 +126,7 @@
                                 <div class="col-md-6 col-sm-6 col-12">
                                     <div class="form-group form-floating ps-0 text-start">
                                         <label class="position-static ps-0 text-uppercase fw-bold pt-0 pb-0">city</label>
-                                        <input type="text" name="city" id="city" class="form-control mb-2 rounded-4"
+                                        <input type="text" name="city" id="city" class="form-control mb-2 pt-0 pb-0 rounded-4"
                                             placeholder="City*" required>
                                         <div class="help-block font-small-3"></div>
                                     </div>
@@ -136,7 +136,7 @@
                                 <div class="col-md-6 col-sm-6 col-12">
                                     <div class="form-group form-floating ps-0 text-start">
                                         <label class="position-static ps-0 text-uppercase fw-bold pt-0 pb-0">state</label>
-                                        <input type="text" name="state" id="state" class="form-control mb-2 rounded-4"
+                                        <input type="text" name="state" id="state" class="form-control pt-0 pb-0 mb-2 rounded-4"
                                             placeholder="State*" required>
                                         <div class="help-block font-small-3"></div>
                                     </div>

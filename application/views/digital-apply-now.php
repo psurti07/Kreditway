@@ -146,7 +146,7 @@
                                                 href="<?php echo site_url('terms-conditions'); ?>" target="_blank">Terms
                                                 of Use</a> and <a class="text-dark"
                                                 href="<?php echo site_url('privacy-policy'); ?>" target="_blank">Privacy
-                                                Policy</a> of Kreditway.</small></label>
+                                                Policy</a> of CashFincare.</small></label>
                                     <div class="help-block font-small-3"></div>
                                 </div>
                             </div>
@@ -157,7 +157,7 @@
                                         class="custom-control-input mt-1" value="1" checked required>
                                     <label class="custom-control-label fa-sm" style="display:unset;"
                                         for="promotion"><small class="ms-2 d-inline-block">I agree to
-                                            receive promotional & informational communications from Kreditway
+                                            receive promotional & informational communications from CashFincare
                                             through Emails, calls
                                             or SMS,RCS Services.</small></label>
                                     <div class="help-block font-small-3"></div>
@@ -240,7 +240,7 @@
                         </div>
                         <hr class="my-3">
                         <div class="form-grp mb-0">
-                            <p class="mb-0 fa-xs text-center"><small>Kreditway will never call you for your OTP. If
+                            <p class="mb-0 fa-xs text-center"><small>CashFincare will never call you for your OTP. If
                                     you get OTP on a password —
                                     <span style="color:#FE7E03"> do not share it with anyone. </span></small></p>
                         </div>
@@ -477,7 +477,7 @@
                         <div class="section-title text-center mb-50 tg-heading-subheading animation-style3">
                             <span class="sub-title">The Advantage</span>
                             <h2 class="title">
-                                Why KreditWay — The Difference We Bring
+                                Why CashFincare— The Difference We Bring
                             </h2>
 
                         </div>
@@ -753,10 +753,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 p-0">
-                    <p class="mb-0 text-white"><strong>Disclaimer: </strong><?php echo COMPANY_NAME; ?> is not a lender or financial institution. We do not provide loans or make credit decisions. All loan approvals, interest rates, fees, and disbursal are handled by third-party lenders/NBFCs. We do not guarantee loan approval, disbursal, or specific loan terms. The amount paid is only for the service charge. We are not lenders and do not guarantee any loan approval. Loan approval, disbursement/sanction is entirely dependent on NBFC criteria.</p>
+                    <p class="mb-0 text-white"><strong>Disclaimer: </strong> <?php echo COMPANY_NAME; ?> is not a lender or financial institution. We do not provide loans or make credit decisions. All loan approvals, interest rates, fees, and disbursal are handled by third-party lenders/NBFCs. We do not guarantee loan approval, disbursal, or specific loan terms. The amount paid is only for the service charge. We are not lenders and do not guarantee any loan approval. Loan approval, disbursement/sanction is entirely dependent on NBFC criteria.</p>
 
                     <p class="mb-0 text-white"><strong>Important Note: </strong>We ask our customers to make payments ONLY on our website
-                        <a class="text-light" href="<?php echo COMPANY_SITE; ?>">kreditway.com</a> and NOT through any other source, directly or indirectly.
+                        <a class="text-light" href="<?php echo COMPANY_SITE; ?>">CashFincare.com</a> and NOT through any other source, directly or indirectly.
                     </p>
 
                     <p class="mb-0 text-white"><strong>Pre-application Note: </strong>Users are advised to read our terms and conditions and policies before proceeding/applying/registration.

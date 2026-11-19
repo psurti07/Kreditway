@@ -14,7 +14,7 @@
                             
                         </div>
                         <h1 class="title">Empowering Your Goals with Smart <span>Financial Consultation</span></h1>
-                        <p class="">KreditWay helps you explore loan offers from participating NBFC partners through a simple digital journey.
+                        <p class="">CashFincare helps you explore loan offers from participating NBFC partners through a simple digital journey.
                         </p>
                         <a href="<?= base_url('onlineprocess/applynow') ?>" class="btn">Get Consultation Now</a>
                     </div>
@@ -38,7 +38,7 @@
                         <div class="section-title text-center mb-50 tg-heading-subheading animation-style3">
                             <span class="sub-title">The Advantage</span>
                             <h2 class="title">
-                                Why KreditWay – A Simpler Way to Explore Loan Options
+                                Why CashFincare– A Simpler Way to Explore Loan Options
                             </h2>
 
                         </div>
@@ -123,7 +123,7 @@
                             <h2 class="title wow">Helping You Explore Suitable Financial Options
                             </h2>
                         </div>
-                        <p class="pl-20">KreditWay provides a convenient digital platform to explore available loan options from participating lending partners. Available options may vary based on eligibility criteria, documentation, and lender policies.
+                        <p class="pl-20">CashFincare provides a convenient digital platform to explore available loan options from participating lending partners. Available options may vary based on eligibility criteria, documentation, and lender policies.
 
                         </p>
 
@@ -153,7 +153,7 @@
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-7 col-md-12 col-12">
                     <div class="choose__content-five">
-                        <div class="section-title mb-30 tg-heading-subheading animation-style3">
+                        <div class="section-title mb-15 tg-heading-subheading animation-style3">
                             <span class="sub-title">GROW SMART</span>
                             <h2 class="title">Personal Loan, Made Simple
                             </h2>

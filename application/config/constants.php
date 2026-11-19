@@ -91,7 +91,7 @@ defined('EXIT__AUTO_MAX') or define('EXIT__AUTO_MAX', 125); // highest automatic
 
 // Project details
 define('PROJECT_NAME', 'Kreditway');
-define('COMPANY_NAME', 'Kreditway Consulting LLP');
+define('COMPANY_NAME', 'CashFincareConsulting LLP');
 define('COMPANY_EMAIL', 'info@kreditway.com');
 define('COMPANY_MOBILE', '+91-99794-31115');
 define('COMPANY_CIN', '#');

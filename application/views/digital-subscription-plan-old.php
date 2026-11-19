@@ -518,7 +518,7 @@ $amtpay = $productdata['payamount'];
 										<img src="<?= base_url('assets/img/home8/star-grey.svg');?>" />
 									</div>
 									<div class="card-comment">
-										<p>“ Great!! The online process of applying for a loan with Kreditway is very
+										<p>“ Great!! The online process of applying for a loan with CashFincareis very
 											easy and trouble-free. I faced no issues in my process and got the loan in
 											no time. Thank you very much for your support, folks. I definitely recommend
 											it!!
@@ -560,7 +560,7 @@ $amtpay = $productdata['payamount'];
 									</div>
 									<div class="card-comment">
 										<p>“ Throughout the process, I was given step-by-step instructions to ensure
-											that everything went smoothly. I am very pleased with Kreditway and would
+											that everything went smoothly. I am very pleased with CashFincareand would
 											gladly recommend it to my friends and family if they need a loan.
 											”</p>
 									</div>
