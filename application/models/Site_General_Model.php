@@ -41,7 +41,7 @@ class Site_General_Model extends CI_Model
 		);
 		$id = $this->db->insert('otpverification', $data);		
 
-		$message = "Hello, the CashFincareOTP for your mobile number registration is " . $otpcode . ". Kindly do not share it with anyone. Thanks, Kreditway";
+		$message = "Hello, the Kreditway OTP for your mobile number registration is " . $otpcode . ". Kindly do not share it with anyone. Thanks, Kreditway";
 
 		$smsresponse = sendotpSMSobb($mobile, $message);
 

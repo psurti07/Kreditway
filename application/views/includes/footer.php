@@ -12,7 +12,7 @@
 								<div class="mb-25">
 									<a><img src="<?= base_url('assets/img/logo/w_logo.png');?>" alt="" width="185"></a>
 								</div>
-								<p class="mb-40">Presenting CashFincare– the simplest and most effective way to get top-tier financial services from industry experts.
+								<p class="mb-40">Presenting Kreditway – the simplest and most effective way to get top-tier financial services from industry experts.
 								</p>
 							</div>
 

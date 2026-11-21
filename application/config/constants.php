@@ -91,9 +91,9 @@ defined('EXIT__AUTO_MAX') or define('EXIT__AUTO_MAX', 125); // highest automatic
 
 // Project details
 define('PROJECT_NAME', 'Kreditway');
-define('COMPANY_NAME', 'CashFincareConsulting LLP');
+define('COMPANY_NAME', 'Kreditway Consulting LLP');
 define('COMPANY_EMAIL', 'info@kreditway.com');
-define('COMPANY_MOBILE', '+91-99794-31115');
+define('COMPANY_MOBILE', '9974499388');
 define('COMPANY_CIN', '#');
 define('COMPANY_GST', '24ABGFK1852R1ZV');
 define('COMPANY_SITE', 'https://kreditway.com');
@@ -146,13 +146,13 @@ define('ZAAKPAY_MERCHANT_IDENTIFIER', '#');
 define('ZAAKPAY_SECRET_KEY', '#');
 
 // Razorpay details
-define('RAZOR_KEY_ID', 'rzp_live_Tq9uI5lDPKYPlT');
-define('RAZOR_KEY_SECRET', 'Mr8PHRwcA74cqHel0Da01AKJ');
+define('RAZOR_KEY_ID', '#');
+define('RAZOR_KEY_SECRET', '#');
 
 // PayU details
 define('PAYU_MODE', 'PROD');
-define('PAYU_MERCHANT_KEY', 'uo1z0E');
-define('PAYU_SALT', 'X79BACUu41jqKX3EdXGhlBlsVLVh3A78');
+define('PAYU_MERCHANT_KEY', '#');
+define('PAYU_SALT', '#');
 
 // PAygic
 define('PAYGIC_MID', '#');
@@ -185,7 +185,7 @@ define('RCS_TEMPLATEID', '#');
 define('UAT_MOBILE_NUMBERS', serialize(array('9408881214', '9974499388')));
 
 // Geoloc API Key
-define('GEOLOC_API_KEY', 'zoHYBG2lGMULIi7krUxjDQbgRxIVjazHxra77pj5');
+define('GEOLOC_API_KEY', '#');
 
 // Remarketing Cycle Days Set
 define('LOCK_DAYS','-90 days');

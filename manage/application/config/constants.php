@@ -90,7 +90,7 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 
 // Project details
 define('PROJECT_NAME', 'Kreditway');
-define('COMPANY_NAME', 'CashFincareConsulting LLP');
+define('COMPANY_NAME', 'Kreditway Consulting LLP');
 define('COMPANY_EMAIL', 'info@kreditway.com');
 define('COMPANY_MOBILE', '9974499388');
 define('COMPANY_CIN', '#');
@@ -154,7 +154,7 @@ define('AISENSY_KEY', '#');
 define('UAT_MOBILE_NUMBERS', serialize(array('9408881214', '9904466599')));
 
 // Geoloc API Key
-define('GEOLOC_API_KEY', 'zoHYBG2lGMULIi7krUxjDQbgRxIVjazHxra77pj5');
+define('GEOLOC_API_KEY', '#');
 
 // Facebook
 define('ACCESS_TOKEN', '#');

@@ -24,7 +24,7 @@
 		echo $meta->keywords;
 	} ?>" />
 
-	<meta property="og:title" content="CashFincare- Quick Digital Loans for Instant Financial Solutions">
+	<meta property="og:title" content="Kreditway - Quick Digital Loans for Instant Financial Solutions">
 	<meta property="og:site_name" content="Kreditway">
 	<meta property="og:url" content="<?php echo site_url(); ?>">
 	<meta property="og:description" content="Access instant personal loans with Kreditway. Enjoy quick approvals and easy online applications for your financial needs.">
@@ -33,7 +33,7 @@
 	<meta property="og:locale" content="en_IN">
 
 	<meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="CashFincare- Quick Digital Loans for Instant Financial Solutions">
+    <meta name="twitter:title" content="Kreditway - Quick Digital Loans for Instant Financial Solutions">
     <meta name="twitter:description" content="Apply for instant personal loans with Kreditway. Enjoy hassle-free approvals and seamless online processes.">
     <meta name="twitter:image" content="https://kreditway.com/assets/img/logo/logo.png">
 	<link rel="canonical" href="<?php echo base_url(uri_string()); ?>" />
@@ -145,7 +145,7 @@
 							<nav class="tgmenu__nav">
 								<div class="">
 									<a href="<?= site_url(); ?>"><img src="<?= base_url('assets/img/logo/logo.png'); ?>"
-											alt="Logo" width=""></a>
+											alt="Logo" width="180"></a>
 								</div>
 								<div class="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
 									<ul class="navigation">

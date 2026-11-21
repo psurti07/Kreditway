@@ -119,7 +119,7 @@
 						<div class="tgmenu__wrap">
 							<nav class="tgmenu__nav">
 								<div class="py-0 py-lg-2">
-									<a><img src="<?= base_url('assets/img/logo/logo.png'); ?>" alt="Logo" width=""></a>
+									<a><img src="<?= base_url('assets/img/logo/logo.png'); ?>" alt="Logo" width="180"></a>
 								</div>
 							</nav>
 						</div>

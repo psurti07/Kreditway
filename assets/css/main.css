@@ -51,10 +51,10 @@
     /* --tg-heading-color: #14176C; */
     --tg-heading-color: #1f2320;
     /* --tg-theme-primary: #F7A400; */
-    --tg-theme-primary: #f26322;
+    --tg-theme-primary: #FE7E03;
     /* --tg-theme-secondary: #191D88; */
     --tg-theme-secondary: #1f2320;
-    --tg-color-dar-blue: #0E104B;
+    --tg-color-dark-blue: #0E104B;
     --tg-color-yellow-light: #F8FAFC;
     --tg-color-yellow-light-2: #FFFBF3;
     --tg-color-yellow-light-3: #F5EACD;
@@ -2921,7 +2921,7 @@
     font-weight: 600;
     text-transform: capitalize;
     margin-bottom: 15px;
-    color: #f26322;
+    color: #FB710F;
 
   }
 

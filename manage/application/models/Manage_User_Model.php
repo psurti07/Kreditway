@@ -594,7 +594,7 @@ Class Manage_User_Model extends CI_Model {
 							->update('user_registration', $data); 
 
 			// Send SMS			
-			$message = "Hello ".$account->fullname." Your CashFincareaccount's new password is ".$password.". Do not share it with anyone. Thanks, Kreditway";
+			$message = "Hello ".$account->fullname." Your Kreditway account's new password is ".$password.". Do not share it with anyone. Thanks, Kreditway";
 			$smsresponse = sendtextSMSobb($account->mobile, $message);
 
 						

@@ -496,7 +496,7 @@ class Onlineprocess extends CI_Controller
 
 		$data1 = array(
 			'update_date' => date('Y-m-d H:i:s'),
-			'pincode' => $_REQUEST['pincode'],
+			//'pincode' => $_REQUEST['pincode'],
 			'city' => $_REQUEST['city'],
 			'state' => $_REQUEST['state'],
 			'process_step' => 2
@@ -559,6 +559,42 @@ class Onlineprocess extends CI_Controller
 		);
 		$restrack2 = event_track($data3);
 
+		/*$data3 = array(
+			'apiKey' => AISENSY_KEY,
+			'campaignName' => $wpcampaignname,
+			'destination' => '+91' . $userdata->mobile,
+			'media' => array(
+				'url' => 'https://whatsapp-media-library.s3.ap-south-1.amazonaws.com/IMAGE/67d947f8ede26d0bf14ccfa1/7121877_rcget20may.jpg',
+				'filename' => 'rc_get_20may.jpg'
+			),
+			'userName' => $userdata->fullname,
+			'templateParams' => array('$Name', '$EligibleAmount'),
+			'tags' => array('Get Offer'),
+			'attributes' => array(
+				'EligibleAmount' => strval($eligibilityamt)
+			)
+		);
+		$restrack3 = aisensy_track($data3);
+
+		$intekt_get_offer_name = $this->Site_Info_Model->getsmsmessage('intekt_get_offer_name');
+		$data4 = array(
+			"fullPhoneNumber" => '+91'.$userdata->mobile,
+			"callbackData"=> "some text here",
+			"type"=> "Template",
+			"template"=> array(
+					"name"=> $intekt_get_offer_name,
+					"languageCode"=> "en",
+					"headerValues"=> array(
+						"https://interaktprodmediastorage.blob.core.windows.net/mediaprodstoragecontainer/e738c92e-2bf1-4f82-9fd5-ccf4ebc221bf/message_template_media/P1Gu3lQjk0Gv/rc_get.jpg?se=2030-10-25T06%3A55%3A50Z&sp=rt&sv=2019-12-12&sr=b&sig=WwPFPMXWdAxVZJFf90mCSIU4DtqaeoP7RGMkudCr4xk%3D"
+					),
+					"bodyValues"=> array(
+						$userdata->fullname, $eligibilityamt
+					),
+				)
+		
+		 );
+		$restrack4 = interakt_track($data4);*/
+
 		$key = stringCrypt($_REQUEST['applyid'], 'encrypt');
 		return redirect("onlineprocess/subscriptionorder/" . $key);
 		die;
@@ -593,173 +629,154 @@ class Onlineprocess extends CI_Controller
 			}
 		}
 
-		$receiptid = number_format(microtime(true) * 1000, 0, '.', '');
+		$txnid = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
+		$udf1 = $udf2 = $udf3 = $udf4 = $udf5 = '';
+		$postData = array();
 
-		$orderdata = array(
-			'amount' => $grandamount * 100,
-			'currency' => 'INR',
-			'receipt' => $receiptid,
-			'notes' => array(
-				'key1' => $userdata->fullname,
-				'key2' => $userdata->mobile
-			)
+		$hashstring = PAYU_MERCHANT_KEY . '|' . $txnid . '|' . $grandamount . '|' . $productdata->productname . '|' . $userdata->fullname . '|' . $userdata->email . '|' . $udf1 . '|' . $udf2 . '|' . $udf3 . '|' . $udf4 . '|' . $udf5 . '||||||' . PAYU_SALT;
+
+		$hash = hash('sha512', $hashstring);
+
+		$returnUrl = base_url('onlineprocess/buycardDigital');
+
+		if (PAYU_MODE == "PROD") {
+			$url = 'https://secure.payu.in/_payment';
+		} else {
+			$url = 'https://test.payu.in/_payment';
+		}
+
+		$postData = array(
+			'mkey' => PAYU_MERCHANT_KEY,
+			'tid' => $txnid,
+			'hash' => $hash,
+			'amount' => $grandamount,
+			'name' => $userdata->fullname,
+			'productinfo' => $productdata->productname,
+			'mailid' => $userdata->email,
+			'phoneno' => $userdata->mobile,
+			'address' => '',
+			'action' => $url,
+			'returnUrl' => $returnUrl
 		);
 
-		$this->load->helper('razorpay');
-		$orderres = generateorder($orderdata);
-		$successURL = base_url('onlineprocess/buycardDigital');
-		//$failURL = base_url("onlineprocess/subscriptionorder/" . $key);
-		$failURL = base_url("onlineprocess/paymentResponse/false");
-
-		$razorpaydata = array(
+		$payudata = array(
 			'rec_date' => date('Y-m-d H:i:s'),
 			'entryfor' => $userdata->cardtype,
 			'userid' => $userdata->userid,
-			'orderid' => $orderres->id,
+			'orderid' => $txnid,
 			'orderamount' => $grandamount,
 			'ordernote' => $productdata->productname
 		);
 
 		$this->load->model('Site_Payment_Gateway_Model');
-		$razorpayentry = $this->Site_Payment_Gateway_Model->razorpayentry($razorpaydata);
+		$payuentry = $this->Site_Payment_Gateway_Model->payuentry($payudata);
 
-		$postData = array(
-			'applyid' => $_REQUEST['applyid'],
-			'fullname' => $userdata->fullname,
-			'mobile' => $userdata->mobile,
-			'email' => $userdata->email,
-			'orderamount' => $grandamount,
-			'orderid' => $orderres->id,
-			'description' => $productdata->productname,
-			'successURL' => $successURL,
-			'failURL' => $failURL
-		);
-
-		$this->load->view('razorpay-checkout', ['postData' => $postData]);
+		$this->load->view('payu-checkout', ['postData' => $postData]);
 	}
 
 	public function buycardDigital()
 	{
 		
 		$grandtotal = $netamount = $cgstamount = $sgstamount = $igstamount = 0;
-		
-		$this->load->model('Site_Info_Model');
-		$meta = $this->Site_Info_Model->getmetakeywords('personal-subscription-plan');
-		if (isset($_REQUEST['paymentid']) && $_REQUEST['paymentid'] != '') {
-			$this->load->model('Site_Payment_Gateway_Model');
-			$paymentdata = $this->Site_Payment_Gateway_Model->getrazorpayentry($_POST["orderid"]);
 
-			$razorpaydata = array(
+		if (isset($_POST["status"]) && $_POST["status"] != "") {
+			$status = $_POST["status"];
+			$firstname = $_POST["firstname"];
+			$amount = $_POST["amount"];
+			$txnid = $_POST["txnid"];
+			$posted_hash = $_POST["hash"];
+			$key = $_POST["key"];
+			$productinfo = $_POST["productinfo"];
+			$email = $_POST["email"];
+			$mihpayid = $_POST["mihpayid"];
+			$pgtype = $_POST["PG_TYPE"];
+			$salt = PAYU_SALT;
+
+			if (isset($_POST["additionalCharges"]) && $_POST["additionalCharges"] != '') {
+				$retHashSeq = $_POST["additionalCharges"] . '|' . $salt . '|' . $status . '|||||||||||' . $email . '|' . $firstname . '|' . $productinfo . '|' . $amount . '|' . $txnid . '|' . $key;
+			} else {
+				$retHashSeq = $salt . '|' . $status . '|||||||||||' . $email . '|' . $firstname . '|' . $productinfo . '|' . $amount . '|' . $txnid . '|' . $key;
+			}
+
+			$this->load->model('Site_Payment_Gateway_Model');
+			$paymentdata = $this->Site_Payment_Gateway_Model->getpayuentry($txnid);
+			$this->session->set_tempdata('applyid', $paymentdata->userid, 3600);
+
+			$payudata = array(
 				'rec_date' => date('Y-m-d H:i:s'),
-				'referenceid' => $_REQUEST['paymentid'],
-				'txstatus' => 'Success'
+				'referenceid' => $mihpayid,
+				'txstatus' => $status,
+				'paymentmode' => $pgtype
 			);
 
-			$response1 = $this->Site_Payment_Gateway_Model->updaterazorpayentry($paymentdata->id, $razorpaydata);
-
+			$response1 = $this->Site_Payment_Gateway_Model->updatepayuentry($paymentdata->id, $payudata);
+			
 			$this->load->model('Site_Onlineprocess_Model');
 			$userdata = $this->Site_Onlineprocess_Model->checkuserregdata($paymentdata->userid);
-			$this->session->set_tempdata('applyid', $_REQUEST['applyid']);
 
-			$cardno = random_code(16);
-			$amount = (isset($_REQUEST['orderamount'])) ? $_REQUEST['orderamount'] : 0;
-			$paymentid = (isset($_REQUEST['paymentid'])) ? $_REQUEST['paymentid'] : '';
+			if ($status == 'success') {
+				$isentry = $this->Site_Onlineprocess_Model->checksubscriptionentry($mihpayid);
 
-			$isentry = $this->Site_Onlineprocess_Model->checksubscriptionentry($paymentid);
+				if ($isentry == 0) {
+					$cardno = random_code(16);
 
-			if ($isentry == 0) {
-				$data = array(
-					'rec_date' => date('Y-m-d H:i:s'),
-					'userid' => $userdata->userid,
-					'registration_date' => date('Y-m-d'),
-					'expiry_date' => date('Y-m-d', strtotime('+6 months')),
-					'card_number' => $cardno,
-					'amount' => $amount,
-					'paymentid' => $paymentid,
-					'isActive' => 1,
-					'isDelete' => 0
-				);
-				$memberid = $this->Site_Onlineprocess_Model->subscriptionorder($data);
-
-				$password = random_code(6);
-				$passwordkey = stringCrypt($password, 'encrypt');
-				$refcode = strtolower(substr(str_replace(" ", "", $userdata->fullname), 0, 3));
-				$refcode .= substr($userdata->mobile, -4);
-
-				$data2 = array(
-					'rec_date' => date('Y-m-d H:i:s'),
-					'update_date' => date('Y-m-d H:i:s'),
-					'password' => $passwordkey,
-					'refcode' => $refcode,
-					'process_step' => 4,
-					'isUser' => 2
-				);
-				$response2 = $this->Site_Onlineprocess_Model->updateregistration($userdata->userid, $data2);
-
-				$data3 = array(
-					'rec_date' => date('Y-m-d H:i:s'),
-					'status' => 1,
-					'isDelete' => 0
-				);
-				$response3 = $this->Site_Onlineprocess_Model->updateapplication($userdata->id, $data3);
-
-				$this->load->model('Site_Info_Model');
-				$invoiceno = $this->Site_Info_Model->getinvoiceno();
-
-				if ($userdata->cardtype == 12) {
-					$productslug = "business-subscription-plan";
-					$invfor = 2;
-					$invprefix = "BL_";
-				} else {
-					$productslug = "personal-subscription-plan";
-					$invfor = 1;
-					$invprefix = "PL_";
-				}
-
-				$productdata = $this->Site_Info_Model->getproductdetails($productslug);
-				$netamount = ($productdata->inOffer == 1) ? $productdata->offeramount : $productdata->amount;
-
-				if ($userdata->state == 'Gujarat') {
-					$cgstamount = $netamount * 0.09;
-					$sgstamount = $netamount * 0.09;
-				} else {
-					$igstamount = $netamount * 0.18;
-				}
-
-				$grandtotal = $netamount + $cgstamount + $sgstamount + $igstamount;
-
-				$invdata3 = array(
-					'rec_date' => date('Y-m-d H:i:s'),
-					'userid' => $userdata->userid,
-					'cardid' => $memberid,
-					'inv_for' => $invfor,
-					'inv_prefix' => $invprefix,
-					'inv_number' => $invoiceno,
-					'inv_date' => date('Y-m-d'),
-					'inv_price' => $netamount,
-					'inv_cgst' => $cgstamount,
-					'inv_sgst' => $sgstamount,
-					'inv_igst' => $igstamount,
-					'inv_grandtotal' => $grandtotal,
-					'isDelete' => 0
-				);
-
-				$exists_mobile = in_array($userdata->mobile, unserialize(UAT_MOBILE_NUMBERS), true);
-				if (!$exists_mobile) {
-					$responseinvoice = $this->Site_Onlineprocess_Model->generateinvoice($invdata3, $invoiceno);
-				}
-
-				if (!$exists_mobile) {
-					$remote_data = array(
-						'company_code' => COMPANY_CODE,
-						'company_local_ip' => LOCAL_IP,
-						'product_code' => 'subscription', 
-						'customer_name' => $userdata->fullname,
-						'customer_email' => $userdata->email,
-						'customer_mobile' => $userdata->mobile,
-						'userid' => $userdata->userid,
-						'card_number' => $cardno,
+					$mbrdata = array(
 						'rec_date' => date('Y-m-d H:i:s'),
+						'userid' => $userdata->userid,
+						'registration_date' => date('Y-m-d'),
+						'expiry_date' => date('Y-m-d', strtotime('+6 months')),
+						'card_number' => $cardno,
+						'amount' => $amount,
+						'paymentid' => $mihpayid,
+						'isActive' => 1,
+						'isDelete' => 0
+					);
+					$memberid = $this->Site_Onlineprocess_Model->subscriptionorder($mbrdata);
+
+					$password = random_code(6);
+					$passwordkey = stringCrypt($password, 'encrypt');
+					$refcode = strtolower(substr(str_replace(" ", "", $userdata->fullname), 0, 3));
+					$refcode .= substr($userdata->mobile, -4);
+
+					$data2 = array(
+						'rec_date' => date('Y-m-d H:i:s'),
+						'update_date' => date('Y-m-d H:i:s'),
+						'password' => $passwordkey,
+						'refcode' => $refcode,
+						'process_step' => 4,
+						'isUser' => 2
+					);
+					$response2 = $this->Site_Onlineprocess_Model->updateregistration($userdata->userid, $data2);
+
+					$this->load->model('Site_Info_Model');
+					$invoiceno = $this->Site_Info_Model->getinvoiceno();
+
+					if ($userdata->cardtype == 12) {
+						$productslug = "business-subscription-plan";
+						$invfor = 2;
+						$invprefix = "BL_";
+					} else {
+						$productslug = "personal-subscription-plan";
+						$invfor = 1;
+						$invprefix = "PL_";
+					}
+
+					$productdata = $this->Site_Info_Model->getproductdetails($productslug);
+					$netamount = ($productdata->inOffer == 1) ? $productdata->offeramount : $productdata->amount;
+
+					if ($userdata->state == 'Gujarat') {
+						$cgstamount = $netamount * 0.09;
+						$sgstamount = $netamount * 0.09;
+					} else {
+						$igstamount = $netamount * 0.18;
+					}
+
+					$grandtotal = $netamount + $cgstamount + $sgstamount + $igstamount;
+
+					$data3 = array(
+						'rec_date' => date('Y-m-d H:i:s'),
+						'userid' => $userdata->userid,
+						'cardid' => $memberid,
 						'inv_for' => $invfor,
 						'inv_prefix' => $invprefix,
 						'inv_number' => $invoiceno,
@@ -769,35 +786,61 @@ class Onlineprocess extends CI_Controller
 						'inv_sgst' => $sgstamount,
 						'inv_igst' => $igstamount,
 						'inv_grandtotal' => $grandtotal,
+						'isDelete' => 0
 					);
 
-					$api_response = send_order_data(json_encode($remote_data));
+					$exists_mobile = in_array($userdata->mobile, unserialize(UAT_MOBILE_NUMBERS), true);
+					if (!$exists_mobile) {
+						$responseinvoice = $this->Site_Onlineprocess_Model->generateinvoice($data3, $invoiceno);
+					}
+
+					if (!$exists_mobile) {
+						$remote_data = array(
+							'company_code' => COMPANY_CODE,
+							'company_local_ip' => LOCAL_IP,
+							'product_code' => 'subscription', 
+							'customer_name' => $userdata->fullname,
+							'customer_email' => $userdata->email,
+							'customer_mobile' => $userdata->mobile,
+							'userid' => $userdata->userid,
+							'card_number' => $cardno,
+							'rec_date' => date('Y-m-d H:i:s'),
+							'inv_for' => $invfor,
+							'inv_prefix' => $invprefix,
+							'inv_number' => $invoiceno,
+							'inv_date' => date('Y-m-d'),
+							'inv_price' => $netamount,
+							'inv_cgst' => $cgstamount,
+							'inv_sgst' => $sgstamount,
+							'inv_igst' => $igstamount,
+							'inv_grandtotal' => $grandtotal,
+						);
+
+						$api_response = send_order_data(json_encode($remote_data));
+					}
+
+					$maildata = array(
+						'fullname' => $userdata->fullname,
+						'mobile' => $userdata->mobile,
+						'email' => $userdata->email,
+						'password' => $password,
+						'order_number' => $invoiceno,
+						'order_date' => date('d-m-Y'),
+						'order_amount' => $grandtotal
+					);
+					
+					$sent = $this->Site_Onlineprocess_Model->sendSuccessGreetings($maildata);
+					
+
+					return redirect("onlineprocess/paymentResponse/" . $response2);
+				} else {
+					return redirect("onlineprocess/paymentResponse/false");
 				}
-	
-				$maildata = array(
-					'fullname' => $userdata->fullname,
-					'mobile' => $userdata->mobile,
-					'email' => $userdata->email,
-					'password' => $password,
-					'order_number' => $invoiceno,
-					'order_date' => date('d-m-Y'),
-					'order_amount' => $grandtotal
-				);
-
-				$sent = $this->Site_Onlineprocess_Model->sendSuccessGreetings($maildata);
-
-				//return redirect("https://site.kreditway/order/paymentResponse/" . $response2);
-
-				return redirect("onlineprocess/paymentResponse/" . $response2);
-				die;
+			} else if ($status == 'failure') {
+				return redirect("onlineprocess/paymentResponse/false");
 			} else {
-				//return redirect("https://site.kreditwayom/order/paymentResponse/true");
-				return redirect("onlineprocess/paymentResponse/true");
-				die;
+				return redirect("onlineprocess/paymentResponse/false");
 			}
-		} else {
-			$key = stringCrypt($_REQUEST['applyid'], 'encrypt');
-			redirect("onlineprocess/subscriptionorder/" . $key);
 		}
 	}
 

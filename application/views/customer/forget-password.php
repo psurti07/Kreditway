@@ -20,7 +20,7 @@
 	<meta property="og:title" content="Kreditway: Your Trusted Source for Quick and Easy Financing">
 	<meta property="og:site_name" content="Kreditway">
 	<meta property="og:url" content="<?php echo site_url(); ?>">
-	<meta property="og:description" content="CashFincareExpert Financial Consultation company provides fast and easy financing solutions to individuals and businesses in need of financial assistance.">
+	<meta property="og:description" content="Kreditway Expert Financial Consultation company provides fast and easy financing solutions to individuals and businesses in need of financial assistance.">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="<?php echo base_url('assets/img/logo/logo.png'); ?>">
 	<meta property="og:locale" content="en_IN">
